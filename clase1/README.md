@@ -7,10 +7,6 @@
 > 3. Dar los primeros pasos para el planteamiendo de una idea para el proyecto final del curso.
 
 
-
-
-
-
 ## Agenda
 
 - [x] Revisión del concepto de IoT
@@ -85,6 +81,7 @@ La siguiente tabla muestra cada uno de estos aspectos de manera separada fusiona
 
 
 ### Actividad
+
 
 
 * https://github.com/microsoft/IoT-For-Beginners/blob/main/1-getting-started/lessons/1-introduction-to-iot/assignment.md
