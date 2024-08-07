@@ -9,7 +9,9 @@
 - Mencionar algun otro escenario.
 - Poner a llenar la tabla en github...
 
-## Instricciones
+## Actividad
+
+Consulte el
 
 
 Poner lo del fork...
