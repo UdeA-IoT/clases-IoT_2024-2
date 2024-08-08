@@ -82,26 +82,13 @@ La siguiente tabla muestra cada uno de estos aspectos de manera separada fusiona
 
 ### Actividad
 
+Modifique el siguiente archivo ([link](./ACTIVIDAD.md)) de acuerdo a las instrucciones que alli se dan siguiendo las instrucciones dadas en clase.
 
-
-* https://github.com/microsoft/IoT-For-Beginners/blob/main/1-getting-started/lessons/1-introduction-to-iot/assignment.md
-* https://www.ericsson.com/en/reports-and-papers/books/internet-of-things
-* https://www.ericsson.com/4ac5d6/assets/local/reports-papers/books/doc/iot_comic_book_original.pdf
-
-
----
-Review & Self Study
-Read up on the benefits and failures of consumer IoT projects. Check news sites for articles on when it has gone wrong, such as privacy issues, hardware problems or problems caused by lack of connectivity.
-
-Some examples:
-
-Check out the Twitter account Internet of Sh*t (profanity warning) for some good examples of failures with consumer IoT.
-c|net - My Apple Watch saved my life: 5 people share their stories
-c|net - ADT technician pleads guilty to spying on customer camera feeds for years (trigger warning - non-consensual voyeurism)
-Assignment
-Investigate an IoT project
-
----
+**Nota**: Como se necesita realizar la modidicación de un archivo markdown, tenga a la mano una tabla donde se resuma la sintaxis empleada. A continuación se muestran algunos enlaces de utilidad:
+* **Markdown Cheat Sheet** ([link](https://www.markdownguide.org/cheat-sheet/))
+* **Markdown Cheat Sheet** by DataCamp ([link](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23))
+* **Markdown Cheatsheet** by Adam Pritchard ([link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+* **Markdown summary** by Jay Nelson ([link](https://observablehq.com/@jaynel/markdown-summary))
 
 
 ## Referencias
