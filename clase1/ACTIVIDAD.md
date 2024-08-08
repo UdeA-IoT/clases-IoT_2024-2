@@ -13,7 +13,7 @@ Una de las herramientas para facilitar la clasificación son las palabras claves
 |5|Big Data: ¿utopía o distopía? [[link]](https://www.youtube.com/watch?v=LEvE2xQx-bg)||@userid|
 |6|Automated soccer ball possession using AI [[link]](https://www.youtube.com/watch?v=CWnlGBVaRpQ)||@userid|
 |7|Inside Amazon’s BIGGEST Warehouse Full Of ROBOTS! [[link]](https://www.youtube.com/watch?v=9iVmpVMysAo)||@userid|
-|8|Amazon Fulfillment Center Tour with AWS [[link]](https://www.youtube.com/watch?v=8nKPC-WmLjU)||@userid|
+|8|Amazon Fulfillment Center Tour with AWS [[link]](https://www.youtube.com/watch?v=8nKPC-WmLjU)|machine-learning, optimization, cloud-services, devices |@antorpo|
 |9|NVIDIA AI Solutions for Efficient Supply Chain Operation [[link]](https://www.youtube.com/watch?v=he5I6ByoaB4)||@userid|
 |10|AI-based future logistics by Toyota [[link]](https://www.youtube.com/watch?v=xBzgdbG1Rn0)||@userid|
 |11|Siemens and NVIDIA to enable industrial metaverse [[link]](https://www.youtube.com/watch?v=w_yX_Ih1fgE)||@userid|
