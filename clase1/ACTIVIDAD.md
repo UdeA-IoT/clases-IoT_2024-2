@@ -67,7 +67,7 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |#|Escenario|Pagina|Descripción resumida|Problema|Solución propuesta|Grupo (1,2,3,4)|Tags|Github user|
 |---|---|---|---|---|---|---|---|---|
 |1|Waste management|4|Descripcion de la solucion|Descripción del problema tradado|Descripción del a solución implementada|4||@user_id|
-|2|...| | | | | ||@user_id|
+|2|Smart Events|38|Sensores orquestados de tal manera para asistir todo tipo de eventos, en este caso, imprevistos en un estadio|Controlar la logistica en caso de eventos desastrozos donde se involucren grandes volumenes de personas|Sensores interconectados que permiten planificar en caso de un evento que amerite alertar y proceder en caso de posible riesgo | 2 |sensors, orchestration, monitoring, attendance, reactivity |@antorpo|
 |3|...| | | | | ||@user_id|
 |4|Aging population: Alzheimer's disease| 8 | Implementación de sensores que permitan monitorear a las personas de avanzada edad de forma remota | El alzheimer es una enfermedad mental que afecta el estilo de vida de las personas mayores, haciendo que requieran un mayor acompañamiento de parte de sus allegados | Instalar sensores que monitoreen y alerten, casi en tiempo real, del estado de personas que sufren alzheimer a sus familiares o enfermeros a cargo | 1 | sensors, quality of life, messaging, monitoring, real-time |@SebastianSaldarriagaC1|
 
