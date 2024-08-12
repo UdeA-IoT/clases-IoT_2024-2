@@ -13,12 +13,12 @@ Una de las herramientas para facilitar la clasificación son las palabras claves
 |5|Big Data: ¿utopía o distopía? [[link]](https://www.youtube.com/watch?v=LEvE2xQx-bg)||@userid|
 |6|Automated soccer ball possession using AI [[link]](https://www.youtube.com/watch?v=CWnlGBVaRpQ)||@userid|
 |7|Inside Amazon’s BIGGEST Warehouse Full Of ROBOTS! [[link]](https://www.youtube.com/watch?v=9iVmpVMysAo)||@userid|
-|8|Amazon Fulfillment Center Tour with AWS [[link]](https://www.youtube.com/watch?v=8nKPC-WmLjU)||@userid|
+|8|Amazon Fulfillment Center Tour with AWS [[link]](https://www.youtube.com/watch?v=8nKPC-WmLjU)|machine-learning, optimization, cloud-services, devices |@antorpo|
 |9|NVIDIA AI Solutions for Efficient Supply Chain Operation [[link]](https://www.youtube.com/watch?v=he5I6ByoaB4)||@userid|
 |10|AI-based future logistics by Toyota [[link]](https://www.youtube.com/watch?v=xBzgdbG1Rn0)||@userid|
 |11|Siemens and NVIDIA to enable industrial metaverse [[link]](https://www.youtube.com/watch?v=w_yX_Ih1fgE)||@userid|
 |12|Inside Amazon's Smart Robot Warehouses, How Amazon Robots Work, Jeff Bezos Smart Warehouse [[link]](https://www.youtube.com/watch?v=Jh27vjAhE-c)||@userid|
-|13|How Microfactories Could Be the Manufacturing Strategy of the Future [[link]](https://www.youtube.com/watch?v=VNqmvIuzbR4)||@userid|
+|13|How Microfactories Could Be the Manufacturing Strategy of the Future [[link]](https://www.youtube.com/watch?v=VNqmvIuzbR4)| automation, robots, manufacturing, vehicles |@SebastianSaldarriagaC1|
 |14|How Amazon Dominates Smart Home And Why It Wants To Buy iRobot [[link]](https://www.youtube.com/watch?v=qEKKFDP9M3k)||@userid|
 |15|Unlocking Innovation: Dive into Industry 4.0 & Smart Factory [[link]](https://www.youtube.com/watch?v=qntLfMGMTKU)||@userid|
 |16|Smart Factory and Industry 4.0 Demonstration [[link]](https://www.youtube.com/watch?v=7tACXE-_Owo)||@userid|
@@ -69,7 +69,7 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |1|Waste management|4|Descripcion de la solucion|Descripción del problema tradado|Descripción del a solución implementada|4||@user_id|
 |2|...| | | | | ||@user_id|
 |3|...| | | | | ||@user_id|
-|4|...| | | | | ||@user_id|
+|4|Aging population: Alzheimer's disease| 8 | Implementación de sensores que permitan monitorear a las personas de avanzada edad de forma remota | El alzheimer es una enfermedad mental que afecta el estilo de vida de las personas mayores, haciendo que requieran un mayor acompañamiento de parte de sus allegados | Instalar sensores que monitoreen y alerten, casi en tiempo real, del estado de personas que sufren alzheimer a sus familiares o enfermeros a cargo | 1 | sensors, quality of life, messaging, monitoring, real-time |@SebastianSaldarriagaC1|
 |5|...| | | | | ||@user_id|
 |6|...| | | | | ||@user_id|
 |7|...| | | | | ||@user_id|
@@ -78,5 +78,6 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |10|...| | | | | ||@user_id|
 |11|...| | | | | ||@user_id|
 |12|Home Automation|32|La automatización doméstica tiene acceso a la energía, electrodomésticos, mide las condiciones ambientales expertas e internas de la vivienda y monitorea el consumo de los electrodomésticos.|¿Cómo usar eficientemente la energía y los electrodomésticos en un hogar?|Mediante sensores y dispositivos que con conectividad a internet, se recoge información con la que se puede conocer el consumo electico del hogar y al mismo tiempo activar los electrodomésticos solo cuando sea necesario.|1|Access, Real needs, Save money, Interact, Record, House, Sensors, Efficiency|@sofito-code|
+
 
 **Nota importante**: Los tags deben ser puestos en ingles.
