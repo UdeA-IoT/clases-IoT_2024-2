@@ -9,7 +9,7 @@ Una de las herramientas para facilitar la clasificación son las palabras claves
 |1|Worldwide Olympic Partners helping to make Tokyo 2020 most innovative Olympic Games ever [[link]]()|Coloque aqui las palabras clave|@userid|
 |2|How Intel allows everyone to experience the Games [[link]](https://www.youtube.com/watch?v=tvPGg1PyMlU)||@userid|
 |3|Smart Cities: Solving Urban Problems Using Technology [[link]](https://www.youtube.com/watch?v=nnyRZotnPSU)||@userid|
-|4|La ciudad que lo sabe todo sobre ti [[link]](https://www.youtube.com/watch?v=m5yVHer5SPk) ||@userid|
+|4|La ciudad que lo sabe todo sobre ti [[link]](https://www.youtube.com/watch?v=m5yVHer5SPk) |connectivity, intelligent-city, measure, prevent, vulnerable, data, knowledge|@Alejandra-D-H|
 |5|Big Data: ¿utopía o distopía? [[link]](https://www.youtube.com/watch?v=LEvE2xQx-bg)||@userid|
 |6|Automated soccer ball possession using AI [[link]](https://www.youtube.com/watch?v=CWnlGBVaRpQ)||@userid|
 |7|Inside Amazon’s BIGGEST Warehouse Full Of ROBOTS! [[link]](https://www.youtube.com/watch?v=9iVmpVMysAo)||@userid|
@@ -70,5 +70,7 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |2|...| | | | | ||@user_id|
 |3|...| | | | | ||@user_id|
 |4|Aging population: Alzheimer's disease| 8 | Implementación de sensores que permitan monitorear a las personas de avanzada edad de forma remota | El alzheimer es una enfermedad mental que afecta el estilo de vida de las personas mayores, haciendo que requieran un mayor acompañamiento de parte de sus allegados | Instalar sensores que monitoreen y alerten, casi en tiempo real, del estado de personas que sufren alzheimer a sus familiares o enfermeros a cargo | 1 | sensors, quality of life, messaging, monitoring, real-time |@SebastianSaldarriagaC1|
+|5|...| | | | | ||@user_id|
+|6|Emergency Response| 10 | Integrar información de multiples fuentes para la detección e interpretación de eventos en emergencias.| En emergencias, es crucial detectar e interpretar eventos con precisión. Para una respuesta efectiva, se debe recopilar información de diversas fuentes y obtener una descripción exacta del incidente, lo que puede ser decisivo en el caso de accidentes automovilísticos.| Los automóviles envían automáticamente un reporte a la central de emergencia, mientras que los testigos informan del accidente por teléfono. Luego, se crea un mapa completo del incidente con la información recopilada.| 4 | response, multiple sources, data analysis, accuracy |@Alejandra-D-H|
 
 **Nota importante**: Los tags deben ser puestos en ingles.
