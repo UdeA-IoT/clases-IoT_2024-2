@@ -7,7 +7,7 @@ Una de las herramientas para facilitar la clasificación son las palabras claves
 |#|Video|Tags|Github user|
 |---|---|---|---|
 |1|Worldwide Olympic Partners helping to make Tokyo 2020 most innovative Olympic Games ever [[link]]()|Coloque aqui las palabras clave|@userid|
-|2|How Intel allows everyone to experience the Games [[link]](https://www.youtube.com/watch?v=tvPGg1PyMlU)||@userid|
+|2|How Intel allows everyone to experience the Games [[link]](https://www.youtube.com/watch?v=tvPGg1PyMlU)|Technology, Collaboration, Support, Inclusion, Connectivity, Help|@sofito-code|
 |3|Smart Cities: Solving Urban Problems Using Technology [[link]](https://www.youtube.com/watch?v=nnyRZotnPSU)||@userid|
 |4|La ciudad que lo sabe todo sobre ti [[link]](https://www.youtube.com/watch?v=m5yVHer5SPk) |connectivity, intelligent-city, measure, prevent, vulnerable, data, knowledge|@Alejandra-D-H|
 |5|Big Data: ¿utopía o distopía? [[link]](https://www.youtube.com/watch?v=LEvE2xQx-bg)||@userid|
@@ -77,7 +77,7 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |9|...| | | | | ||@user_id|
 |10|...| | | | | ||@user_id|
 |11|...| | | | | ||@user_id|
-|12|...| | | | | ||@user_id|
+|12|Home Automation|32|La automatización doméstica tiene acceso a la energía, electrodomésticos, mide las condiciones ambientales expertas e internas de la vivienda y monitorea el consumo de los electrodomésticos.|¿Cómo usar eficientemente la energía y los electrodomésticos en un hogar?|Mediante sensores y dispositivos que con conectividad a internet, se recoge información con la que se puede conocer el consumo electico del hogar y al mismo tiempo activar los electrodomésticos solo cuando sea necesario.|1|Access, Real needs, Save money, Interact, Record, House, Sensors, Efficiency|@sofito-code|
 |13|...| | | | | ||@user_id|
 |14|...| | | | | ||@user_id|
 |15|...| | | | | ||@user_id|
