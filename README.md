@@ -39,6 +39,7 @@ La siguiente tabla muestra la lista de clases asociadas a esta sección:
 |Clase|Fecha|Tema|Recursos|
 |---|---|---|---|
 |1|08/08/2023|Introducción al IoT|[[link]](./clase1/)|
+|2|13/08/2023|Redes y protocolos |[[link]](./clase2/)|
 
 ### Capa de percepción
 

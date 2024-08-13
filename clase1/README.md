@@ -1,7 +1,7 @@
 # Sesión 1 - Introducción al IoT
 
 
-> ## Objetivos
+> ### Objetivos
 > 1. Introducir el concepto de IoT.
 > 2. Estudiar varios escenarios de aplicación.
 > 3. Dar los primeros pasos para el planteamiendo de una idea para el proyecto final del curso.
