@@ -145,12 +145,6 @@ a través de un medio sólido. La siguiente tabla resume algunos:
     
     ![satelite](satelite.png)
    
-
-
-
-
-
-
 ## 4. Protocolos
 
 Cualquier actividad de Internet que implique dos o más entidades remotas que se comunican está gobernada por un protocolo. 
@@ -161,7 +155,29 @@ Basicamente, define el conjunto de reglas que hacen posible la comunicación, es
 
 > Un **protocolo** define el formato y el orden de los mensajes intercambiados entre dos o más entidades que se comunican, así como las acciones tomadas al producirse la transmisión y/o recepción de un mensaje u otro suceso.
 
-Existen muchos protocolos
+Existen muchos protocolos de red los cuales pueden ser clasificados en función del ancho de banda y el alzance tal y como se muestra en la siguiente figura:
 
-https://wigle.net/
+![protocolos](protocolos.png)
+
+Sin embargo, otra clasificación que puede ser empleada tiene que ver con el tipo de red en la que se emplean:
+
+![tipos](tipos_protocolos.png)
+
+La siguiente tabla resume algunos protocolos dependiendo el tipo de red en la que se usan:
+
+| **Tipo de Red** | **Protocolo**           | **Descripción**                                                                                      | **Uso Principal**                          |
+|-----------------|-------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| **PAN (Personal Area Network)** | **Bluetooth**           | Tecnología de comunicación inalámbrica de corto alcance para conectar dispositivos personales.         | Conexión de dispositivos personales como auriculares y teclados. |
+|                 | **Zigbee**              | Protocolo de comunicación inalámbrica para redes de bajo consumo de energía y bajo ancho de banda.       | Automatización del hogar, sensores IoT.   |
+|                 | **IrDA (Infrared Data Association)** | Protocolo para la transferencia de datos mediante luz infrarroja en distancias cortas.                  | Transferencia de datos entre dispositivos cercanos.               |
+| **LAN (Local Area Network)**    | **Ethernet (IEEE 802.3)** | Tecnología de red que utiliza tramas para la comunicación dentro de una red local.                     | Redes locales en oficinas y hogares.     |
+|                 | **Wi-Fi (IEEE 802.11)**   | Estándar para redes inalámbricas que proporciona acceso a redes locales mediante radiofrecuencia.        | Conexión inalámbrica en redes locales.    |
+|                 | **Token Ring (IEEE 802.5)** | Protocolo que utiliza un anillo lógico para el control del acceso al medio de comunicación en redes LAN. | Redes LAN basadas en anillo.              |
+| **MAN (Metropolitan Area Network)** | **Frame Relay**         | Protocolo de conmutación de tramas utilizado para conectar redes en áreas metropolitanas.                 | Conexión de redes en áreas metropolitanas. |
+|                 | **ATM (Asynchronous Transfer Mode)** | Protocolo de conmutación de celdas para la transmisión de datos en redes metropolitanas.                  | Redes WAN y MAN para transmisión de datos a alta velocidad.        |
+|                 | **WiMAX (Worldwide Interoperability for Microwave Access)** | Tecnología para redes metropolitanas de área amplia que utiliza microondas para la transmisión de datos. | Provisión de banda ancha en áreas metropolitanas. |
+
+## 5. Referencias
+
+* https://wigle.net/
 
