@@ -3,7 +3,7 @@
 > ### Objetivos
 > 1. Recordar los conceptos de redes.
 > 2. Comprender como se lleva a cabo la comunicación entre los dispositivos.
-> 3. Introducir...
+> 3. En construcción...
 
 
 
@@ -177,7 +177,43 @@ La siguiente tabla resume algunos protocolos dependiendo el tipo de red en la qu
 |                 | **ATM (Asynchronous Transfer Mode)** | Protocolo de conmutación de celdas para la transmisión de datos en redes metropolitanas.                  | Redes WAN y MAN para transmisión de datos a alta velocidad.        |
 |                 | **WiMAX (Worldwide Interoperability for Microwave Access)** | Tecnología para redes metropolitanas de área amplia que utiliza microondas para la transmisión de datos. | Provisión de banda ancha en áreas metropolitanas. |
 
+## 5. Arquitectura IoT
+
+Las capas en una arquitectura definen las interacciones entre el hardware del sistema IoT con los dispositivos de red, protocolos de comunicación y el software de interacción con el usuario.
+
+En el caso de IoT existen diferentes arquitecturas con un numero de capas que varian dependiendo del aspectos como el uso de la aplicación, los protocolos de transferencia de informacipon y el grado de seguridad requerido por el sistema IoT.
+
+Sin embargo, la arquitectura de tres capas de Internet de las Cosas IoT es la base fundamental de las demás arquitecturas existentes. Estas capas son:
+* **Capa de aplicación**: En esta capa se encuentran las aplicaciones, generalmente interfaces, que se encargan de la interacción con el usuario final de la aplicación.
+* **Capa de red**: En esta capa se encuentran los dispositivos de Red que se encargan de gestionar todo el tráfico de información a través de la red mediante protocolos como HTTP, RESTful, MQTT, CoAP.
+* **Percepción**: En esta capa se encuentran las cosas (Things) que se encargan de la recolección de la información del ambiente a través de sensores y la interacción con el mismo mediante actuadores.
+
+La siguiente tabla muestra algunos de los protocolos IoT mas comunes de acuerdo al modelo de capas anteriormente visto:
+
+| **Capa**            | **Protocolo**       | **Descripción**                                                                                      | **Uso Principal**                          |
+|---------------------|---------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| **Capa de Percepción** | **I2C (Inter-Integrated Circuit)** | Protocolo de comunicación serial para la conexión de sensores y actuadores en un bus de datos.         | Conexión de sensores y dispositivos en la misma placa. |
+|                     | **SPI (Serial Peripheral Interface)** | Protocolo de comunicación serial para la transferencia de datos entre microcontroladores y periféricos. | Comunicación entre microcontroladores y dispositivos. |
+| **Capa de Red**        | **MQTT (Message Queuing Telemetry Transport)** | Protocolo de mensajería ligero para la comunicación entre dispositivos IoT y servidores.                 | Comunicación en redes de sensores y dispositivos IoT. |
+|                     | **CoAP (Constrained Application Protocol)** | Protocolo de transferencia de datos optimizado para dispositivos con recursos limitados.                | Comunicación en redes de dispositivos IoT de bajo consumo. |
+|                     | **HTTP/HTTPS (Hypertext Transfer Protocol / Secure)** | Protocolo de transferencia de datos en la web, con HTTPS ofreciendo cifrado para mayor seguridad.       | Comunicación entre dispositivos IoT y servidores web. |
+| **Capa de Aplicación** | **REST (Representational State Transfer)** | Estilo de arquitectura para sistemas distribuidos que utiliza HTTP para la comunicación entre aplicaciones. | Interacción con servicios web y APIs en aplicaciones IoT. |
+|                     | **WebSocket**       | Protocolo de comunicación que proporciona un canal de comunicación bidireccional y persistente.        | Comunicación en tiempo real entre dispositivos y servidores. |
+|                     | **AMQP (Advanced Message Queuing Protocol)** | Protocolo de mensajería para la comunicación entre aplicaciones, que garantiza la entrega de mensajes.  | Intercambio de mensajes en sistemas IoT complejos. |
+
+Desde otro punto de vista, que tiene en cuenta el modelo TCP/IP la internet de las cosas hace uso de los siguiente protocolos.
+
+|Layer|Protocol|
+|----|----|
+|Application|	CoAP, MQTT|
+|Transport|	UDP, TCP, DTLS|
+|Internet|	IPv6, 6LoWPAN, RPL, LoRaWAN|
+|Network Access|	IEEE 802.15.4, IEEE802.11 a/b/g/n/ac/ad/ah/ax, IEEE 802.3 Ethernet, GSM, LTE, LPWAN, LoRaWAN|
+
+
 ## 5. Referencias
 
+* Capitulo 1 del libro Computer Networking A Top-Down Approach (https://gaia.cs.umass.edu/kurose_ross/index.php)
+* https://hackmd.io/@lyqht/Hkb4tAotL
 * https://wigle.net/
 
