@@ -110,8 +110,58 @@ Esta clasificación toma como criterio la forma en que son conectados los dispos
    
    ![arbol](arbol.png)
 
-## 3. Protocolos
+
+## 3. Enlaces - Medios fisicoa
+
+Un medio fisico hace alusión al canal empleado para la transmisión de la información (en forma de bits) entre un origen y un destino.
+
+Los medios de transmisión fisicos se pueden clasificar dentro de dos grandes categorias:
+* **Medios guiados**: En estos las señales se canalizan 
+a través de un medio sólido. La siguiente tabla resume algunos:
+   
+  |Medio Guiado | Descripción | Usos ||
+  |---|---|---|---|
+  |Par Trenzado (UTP/STP)|Cables compuestos por pares de hilos de cobre que se trenzan para reducir la interferencia electromagnética|Redes LAN, Telefonía, PoE|![par](par.png)|
+  |Cable Coaxial|Cable de cobre con un conductor central, un aislamiento dieléctrico y una malla de blindaje.|Televisión por cable, Internet por cable, CCTV|![coaxial](coaxial.png)|
+  |Fibra Óptica (SMF/MMF)|Utiliza filamentos de vidrio o plástico para transmitir datos a través de pulsos de luz.|Conexiones de larga distancia, WAN, FTTH|![fibra](fibra.png)|
+  
+* **Medios no guiados**: En estos, las ondas se propagan a traves de la atmosfera y el espacio exterior. Dentro de estos se encuentran: los canales de radio terrestre y los canales de radio satelidal.
+
+  ![espectro](espectro.png)
+  
+  * **Canales de radio terrestre**: En este caso, la información es transportada a traves de diferentes canales (bandas) dentro del espectro electromagnético. 
+  
+  ![bandas](bandas.png)
+  
+  Dependiendo de la distancia de operación las bandas de radio se pueden clasificar en tres grandes grupos:
+     
+     |Grupo|Descripción|Aplicación|
+     |---|---|---|
+     |1|Aquellos que operan a cortas distancias (1 ~2 m)|Redes PAN|
+     |2|Aquellos con un alcance entre diez y cientos de metros|Redes LAN|
+     |3|Aquellos que operan en un area extensa con una alcance de decenas de kilometros|MAN|
+
+  * **Canales de radio via satelite**: Un satélite de comunicaciones enlaza dos o más transmisores/receptores de microondas situados en la superficie, que se conocen como estaciones terrestres. El satélite recibe las transmisiones en una banda de frecuencia, regenera la señal utilizando un repetidor y transmite la señal a otra frecuencia. En este tipo de comunicaciones se emplean dos tipos de satélites: los satélites geoestacionarios y los satélites de la órbita baja terrestre (LEO, Low-Earth Orbiting).
+    
+    ![satelite](satelite.png)
+   
 
 
 
+
+
+
+## 4. Protocolos
+
+Cualquier actividad de Internet que implique dos o más entidades remotas que se comunican está gobernada por un protocolo. 
+
+![protocolo](protocolo.png)
+
+Basicamente, define el conjunto de reglas que hacen posible la comunicación, esto es:
+
+> Un **protocolo** define el formato y el orden de los mensajes intercambiados entre dos o más entidades que se comunican, así como las acciones tomadas al producirse la transmisión y/o recepción de un mensaje u otro suceso.
+
+Existen muchos protocolos
+
+https://wigle.net/
 
