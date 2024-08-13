@@ -36,3 +36,8 @@ lsb_release -a
    58  ./AppRun
    59  ./AppRun &
    60  ./AppRun
+
+
+Platformio linux: 
+https://community.platformio.org/t/ubuntu-vscode-pio-extension-install-platformio-can-not-find-working-python-3-6-interpreter/27853
+
