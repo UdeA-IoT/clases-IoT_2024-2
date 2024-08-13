@@ -68,19 +68,9 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |---|---|---|---|---|---|---|---|---|
 |1|Waste management|4|Descripcion de la solucion|Descripción del problema tradado|Descripción del a solución implementada|4||@user_id|
 |2|Smart Events|38|Sensores orquestados de tal manera para asistir todo tipo de eventos, en este caso, imprevistos en un estadio|Controlar la logistica en caso de eventos desastrozos donde se involucren grandes volumenes de personas|Sensores interconectados que permiten planificar en caso de un evento que amerite alertar y proceder en caso de posible riesgo | 2 |sensors, orchestration, monitoring, attendance, reactivity |@antorpo|
-|3|...| | | | | ||@user_id|
 |4|Aging population: Alzheimer's disease| 8 | Implementación de sensores que permitan monitorear a las personas de avanzada edad de forma remota | El alzheimer es una enfermedad mental que afecta el estilo de vida de las personas mayores, haciendo que requieran un mayor acompañamiento de parte de sus allegados | Instalar sensores que monitoreen y alerten, casi en tiempo real, del estado de personas que sufren alzheimer a sus familiares o enfermeros a cargo | 1 | sensors, quality of life, messaging, monitoring, real-time |@SebastianSaldarriagaC1|
-|5|...| | | | | ||@user_id|
 |6|Emergency Response| 10 | Integrar información de multiples fuentes para la detección e interpretación de eventos en emergencias.| En emergencias, es crucial detectar e interpretar eventos con precisión. Para una respuesta efectiva, se debe recopilar información de diversas fuentes y obtener una descripción exacta del incidente, lo que puede ser decisivo en el caso de accidentes automovilísticos.| Los automóviles envían automáticamente un reporte a la central de emergencia, mientras que los testigos informan del accidente por teléfono. Luego, se crea un mapa completo del incidente con la información recopilada.| 4 | response, multiple sources, data analysis, accuracy |@Alejandra-D-H|
-|7|...| | | | | ||@user_id|
-|8|...| | | | | ||@user_id|
-|9|...| | | | | ||@user_id|
-|10|...| | | | | ||@user_id|
-|11|...| | | | | ||@user_id|
 |12|Home Automation|32|La automatización doméstica tiene acceso a la energía, electrodomésticos, mide las condiciones ambientales expertas e internas de la vivienda y monitorea el consumo de los electrodomésticos.|¿Cómo usar eficientemente la energía y los electrodomésticos en un hogar?|Mediante sensores y dispositivos que con conectividad a internet, se recoge información con la que se puede conocer el consumo electico del hogar y al mismo tiempo activar los electrodomésticos solo cuando sea necesario.|1|Access, Real needs, Save money, Interact, Record, House, Sensors, Efficiency|@sofito-code|
-|13|...| | | | | ||@user_id|
-|14|...| | | | | ||@user_id|
-|15|...| | | | | ||@user_id|
 |16| Smart Orchard | 40 | Use of sensor to monitoring fields and workers | The use of the sensor networks for third parts and the ethic in the use of sensor for people | take into account the ethical aspects of data use | 3 | monitoring, sensor, data, ethic | @sebudea |
 
 
