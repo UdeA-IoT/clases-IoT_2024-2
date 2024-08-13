@@ -29,7 +29,7 @@ Una de las herramientas para facilitar la clasificación son las palabras claves
 |21|DHL Smart Warehouse [[link]](https://www.youtube.com/watch?v=5zuyssUMGTc)||@userid|
 |22|An IIoT based Smart Robotic Warehouse Management System for Industry 4.0 [[link]](https://www.youtube.com/watch?v=1-o6tBhEHOU)||@userid|
 |23|¿Qué es el Internet de las Cosas? / What is Internet of things? [[link]](https://www.youtube.com/watch?v=FrcmgTs7buY)||@userid|
-|24|NVIDIA Inception Startup Spotlight: WeRide [[link]](https://www.youtube.com/watch?v=lGkM_xWDO8I)||@userid|
+|24|NVIDIA Inception Startup Spotlight: WeRide [[link]](https://www.youtube.com/watch?v=lGkM_xWDO8I)|Autonomous Vehicles, Robots, AI, Deep Learning Network, NVIDIA, WeRide|@andres-calvo|
 |25|Waabi and NVIDIA: Bringing Generative AI to the Edge [[link]](https://www.youtube.com/watch?v=iDGwP45B_GA)||@userid|
 |26| Introducing Menace-X [[link]](https://www.youtube.com/watch?v=gwrH4EpUxvE)||@userid|
 |27|Anduril unveils Roadrunner & Roadrunner-M [[link]](https://www.youtube.com/watch?v=al9ITeP4fUA)||@userid|
@@ -70,5 +70,6 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |2|...| | | | | ||@user_id|
 |3|...| | | | | ||@user_id|
 |4|Aging population: Alzheimer's disease| 8 | Implementación de sensores que permitan monitorear a las personas de avanzada edad de forma remota | El alzheimer es una enfermedad mental que afecta el estilo de vida de las personas mayores, haciendo que requieran un mayor acompañamiento de parte de sus allegados | Instalar sensores que monitoreen y alerten, casi en tiempo real, del estado de personas que sufren alzheimer a sus familiares o enfermeros a cargo | 1 | sensors, quality of life, messaging, monitoring, real-time |@SebastianSaldarriagaC1|
+|7|Smart Product Management| 15 | Implementar etiquetas y sensores RFID para llevar un seguimiento preciso sobre todos los productos en una tienda. | Hacer un seguimiento de todos los productos y sus diferentes condiciones conlleva un arduo trabajo manual. Tener que estar pendiente de fechas de expiración, variedad, ubicación del producto entre otras cosas, lo convierte en un proceso poco eficiente a larga escala. | Agregar una etiqueta RFID a cada uno de los productos de la tienda, la cual permite almacenar información sobre el producto. También permite generar información al dueño de la tienda sobre el comportamiento y la satisfacción de los clientes, al poder conocer que productos son tomados, pero no comprados. | 2 | Smart Product Management, RFID, Real time consumer behavior, Inventory tracking |@andres-calvo|
 
 **Nota importante**: Los tags deben ser puestos en ingles.
