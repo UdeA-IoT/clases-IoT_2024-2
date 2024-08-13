@@ -36,7 +36,7 @@ Una de las herramientas para facilitar la clasificación son las palabras claves
 |28|Introducing DJI FlyCart 30 [[link]](https://www.youtube.com/watch?v=Hhp11I-vGHA)||@userid|
 |29| Anduril Lattice Counter Drone System [[link]](https://www.youtube.com/watch?v=KX0ji1sAXl8)||@userid|
 |30| Introducing Rogue 1 Lethal Unmanned Aerial System: Precision, Speed, and Versatility [[link]](https://www.youtube.com/watch?v=2v49r-65gC8)||@userid|
-|31| La granja del futuro - Drones, robots y esperma optimizado [[link]](https://www.youtube.com/watch?v=YX28N-mZZo8)||@userid|
+|31| La granja del futuro - Drones, robots y esperma optimizado [[link]](https://www.youtube.com/watch?v=YX28N-mZZo8)|efficiency, control, planning, indicator, precision, optimization|@sebudea|
 |32| Walmart sirve a domicilio con drones [[link]](https://www.youtube.com/watch?v=rrtplhR08Zo)||@userid|
 |33|Drones, hackers y mercenarios - Los campos de batalla del futuro [[link]](https://www.youtube.com/watch?v=2z3l2AcXlWw&rco=1)|
 |34|Alemania y los drones de EE.UU [[link]](https://www.youtube.com/watch?v=yZacXQZTUJk)||@userid|
@@ -70,5 +70,6 @@ Alli se muestran varios casos de uso. Su tarea consiste en seleccionar un caso d
 |2|...| | | | | ||@user_id|
 |3|...| | | | | ||@user_id|
 |4|Aging population: Alzheimer's disease| 8 | Implementación de sensores que permitan monitorear a las personas de avanzada edad de forma remota | El alzheimer es una enfermedad mental que afecta el estilo de vida de las personas mayores, haciendo que requieran un mayor acompañamiento de parte de sus allegados | Instalar sensores que monitoreen y alerten, casi en tiempo real, del estado de personas que sufren alzheimer a sus familiares o enfermeros a cargo | 1 | sensors, quality of life, messaging, monitoring, real-time |@SebastianSaldarriagaC1|
+|16| Smart Orchard | 40 | Use of sensor to monitoring fields and workers | The use of the sensor networks for third parts and the ethic in the use of sensor for people | take into account the ethical aspects of data use | 3 | monitoring, sensor, data, ethic | @sebudea |
 
 **Nota importante**: Los tags deben ser puestos en ingles.
