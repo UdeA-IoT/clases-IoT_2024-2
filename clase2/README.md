@@ -183,10 +183,13 @@ Las capas en una arquitectura definen las interacciones entre el hardware del si
 
 En el caso de IoT existen diferentes arquitecturas con un numero de capas que varian dependiendo del aspectos como el uso de la aplicación, los protocolos de transferencia de informacipon y el grado de seguridad requerido por el sistema IoT.
 
+![three layer model](three_layer.png)
+
 Sin embargo, la arquitectura de tres capas de Internet de las Cosas IoT es la base fundamental de las demás arquitecturas existentes. Estas capas son:
 * **Capa de aplicación**: En esta capa se encuentran las aplicaciones, generalmente interfaces, que se encargan de la interacción con el usuario final de la aplicación.
 * **Capa de red**: En esta capa se encuentran los dispositivos de Red que se encargan de gestionar todo el tráfico de información a través de la red mediante protocolos como HTTP, RESTful, MQTT, CoAP.
 * **Percepción**: En esta capa se encuentran las cosas (Things) que se encargan de la recolección de la información del ambiente a través de sensores y la interacción con el mismo mediante actuadores.
+
 
 La siguiente tabla muestra algunos de los protocolos IoT mas comunes de acuerdo al modelo de capas anteriormente visto:
 
