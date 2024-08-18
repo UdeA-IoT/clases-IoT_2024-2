@@ -40,6 +40,8 @@ La siguiente tabla muestra la lista de clases asociadas a esta sección:
 |---|---|---|---|
 |1|08/08/2023|Introducción al IoT|[[link]](./clase1/)|
 |2|13/08/2023|Redes y protocolos |[[link]](./clase2/)|
+|3|15/08/2023|Componentes basicos de un Sistema IoT |[[link]](./clase3/)|
+|5|20/08/2023|...|[[link]](./clase4/)|
 
 ### Capa de percepción
 
