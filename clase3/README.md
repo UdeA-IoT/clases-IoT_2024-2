@@ -175,7 +175,7 @@ Asi mismo tenga a la mano los siguientes recursos para consulta rapida:
   
   ![arduino-ref](arduino-reference.png)
 
-Para montar los siguientes ejemplos siga los pasos descritos la sección del anexo **Uso del Platformio** ([link](#uso-del-platformio))
+Para montar los siguientes ejemplos siga los pasos descritos la pagina **Primeros pasos con platformio** ([link](./plaftormio_tutorial))
 
 #### Ejemplo 1
 
@@ -316,48 +316,6 @@ void loop() {
 En el siguiente [link](ejemplos_GPIO/README.md) se muestran algunos escenarios de uso donde se usan las funciones anteriormente descritas. El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
 
 Para este fin crear un directorio llamado **exampleX** (donde X es el numero del ejemplo que sera agregado a la secuencia). Tenga en cuenta que ya estan los dos primeros ejemplos la numeración empieza en **X=3**. Luego en el directorio creado copie y pegue la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Puede usar como base el directorio [example1](example1/). Despues de crear el directorio, elija uno de los ejemplos de [link](ejemplos_GPIO/README.md), realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
-
-
-## Anexos
-
-### Uso del Platformio
-
-[Platformio](https://platformio.org/) es una extención del VS Code que permite programar y realizar pruebas sobre placas de desarrollo como la ESP32. A continuación, se describe el proceso para codificar y descargar el firmware usando este complemento.
-1. Iniciar Platformio
-   
-   ![platformio-1](platformio1.png)
-   
-   Si todo esta bien aparecera:
-
-   ![platformio-2](platformio2.png)
-
-2. Crear nuevo proyecto:
-   
-   ![platformio-3](platformio3.png)
-
-3. Seleccionar la plataforma y el lugar donde estara el proyecto.
-   
-   ![platformio-4](platformio4.png)
-   
-   Si todo esta bien el resultado sera como el siguiente:
-   
-   ![platformio-5](platformio5.png)
-
-4. Abrir el archivo **main.cpp** y editarlo:
-   
-   ![platformio-6](platformio6.png)
-
-5. Seleccionar el botón para subir el codigo a la tarjeta:
-   
-   ![platformio-7](platformio7.png)
-
-   Luego se procede a subir el codigo dando click en el botón de upload (**flecha**):
-
-   ![platformio-8](platformio8.png)
-
-6. Ensayar el funcionamiento. En la imagen mostrada a continuación se muestra la salida en el monitor serial cuando se emplea comunicación serial en la placa:
-   
-   ![platformio-9](platformio9.png)
 
 
 ## Recursos para ir mas lejos
