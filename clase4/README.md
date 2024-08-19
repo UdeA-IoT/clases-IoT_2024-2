@@ -13,7 +13,7 @@
 1. Lección 2 **A deeper dive into IoT** ([link](https://github.com/microsoft/IoT-For-Beginners/blob/main/1-getting-started/lessons/2-deeper-dive/README.md)) del curso de Microsoft **IoT for Beginners** [[link](https://github.com/microsoft/IoT-For-Beginners)]
 2. Lección 3 **Interact with the phisycal world** ([link](https://github.com/microsoft/IoT-For-Beginners/blob/main/1-getting-started/lessons/3-sensors-and-actuators/README.md)) del curso **IoT for Beginners** ([link](https://github.com/microsoft/IoT-For-Beginners)) de Microsoft.
 
-## Componentes basicos
+## 1. Componentes basicos
 
 Dentro del contexto de Internet of Things (IoT), una "thing" se refiere a cualquier dispositivo físico que está conectado a la red y pueda interactuar con otros dispositivos, sistemas, o servicios. 
 
@@ -24,7 +24,7 @@ Los componentes principales de una cosa, desde el punto de vista de Hardware, se
 
 Vamos a tratar estos con un poco mas de detalle.
 
-### Sensores y actuadores
+### 1.1. Sensores y actuadores
 
 Los **transductores** son los elemetos de la **cosa** que permiten la interación del dispositivo IoT con el ambiente; son el equivalente a los sentidos los seres vivos y los perifericos en los computadores.
 
@@ -36,7 +36,7 @@ Por ejemplo, en la siguiente figura se muestra el diagrama de bloques de un sist
 
 A continuación, se va a tratar con mayor detalle cada uno de estos.
 
-#### Sensores
+#### 1.1.1. Sensores
 
 Un sensor es un tipo de transductor cuya función consiste transformar las señales del entorno (señales fisicas) en señales electricas las cuales son las entradas al sistema. La siguiente tabla, clasifica y resume algunos de los principales tipos de sensores:
 
@@ -111,7 +111,7 @@ Los sensores pueden clasificarse en función de las necesidades de alimentación
 > Para conocer mas sobre la terminologia asociada a los sensores consulte el siguiente material sobre sensores ([link](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/sensores/intro)) disponible en las notas de clase.
 
 
-#### Actuadores
+#### 1.1.2. Actuadores
 
 Los actuadores realizand la tarea opuesta a los sensores conviertiendo una señal electrica proveniente del dispositivo IoT en una señal ambiental cuyo fin es interactuar con el mundo fisico. Algunos actuadores comunes incluyen:
 * **Led**: Estos emiten luz cuando son encendidos.
@@ -159,7 +159,7 @@ Al igual que para el caso de los sensores, el tipo de señal electrica hace que 
 
   ![actuador_digital2](actuador_digital2.png)
 
-### Microcontroladores y microprocesadores
+### 2. Microcontroladores y microprocesadores
 
 Como se vió en la sesión anterior, los microcontroladores y los micropocesadores son el componente de la **cosa** (**thing**) encargados de la recolección y procesamiento de los datos del entorno y del desarrollo de las acciones de control.
 
@@ -172,26 +172,56 @@ Para realizar labores de prototipado, se disponen de los elementos listados a co
 |Single-board Computer|<li> Raspberry Pi 4 <li> Raspberry Pi 3 |
 |Development boards|<li> Arduino UNO <li> ESP8266 <li> ESP32 <li> ESP32-CAM <li>ARDUINO NANO 33 BLE Sense Lite|
 
-> **Para profundizar** <br>
-Para conocer mas sobre estos elementos disponibles en el laboratorio consulte el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
+### 3. Módulos de conectividad
+
+Estos permiten que el dispositivo IoT se conecte a la red y se comunique con otros dispositivos o servicios en la nube. Los módulos pueden ser Wi-Fi, Bluetooth, Zigbee, LoRa, entre otros.
+
+![modulos_conexion](modulos_conexion.png)
+
+La siguiente tabla resume algunos de los principales modulos de acuerdo a la tecnologia:
+
+| Tecnología          | Módulo de Conectividad                | Descripción                                      |
+|---------------------|---------------------------------------|--------------------------------------------------|
+| **Wi-Fi**           | ESP8266                               | Módulo Wi-Fi económico y ampliamente utilizado.  |
+|                     | ESP32                                 | Microcontrolador con Wi-Fi y Bluetooth integrados.|
+|                     | CC3200                                | Módulo Wi-Fi con un procesador ARM Cortex-M4.    |
+| **Bluetooth**       | HC-05                                 | Módulo Bluetooth clásico, adecuado para comunicación serie. |
+|                     | HC-06                                 | Similar al HC-05, pero solo actúa como esclavo.   |
+|                     | nRF24L01                              | Módulo de comunicación inalámbrica de bajo costo, basado en 2.4 GHz, con soporte para Bluetooth Low Energy (BLE). |
+| **Zigbee**          | XBee Series 2                         | Módulo Zigbee para redes de malla, muy usado en domótica. |
+|                     | CC2530                                | SoC Zigbee de bajo consumo para comunicaciones inalámbricas. |
+| **LoRa**            | RFM95W                                | Módulo LoRa para comunicaciones de largo alcance y baja potencia. |
+|                     | SX1276                                | Chip LoRa de bajo consumo y largo alcance, utilizado en IoT. |
+| **Celular (2G, 3G, 4G, 5G)** | SIM800                      | Módulo GSM/GPRS para comunicación celular 2G.    |
+|                     | SIM900                                | Módulo GSM/GPRS ampliamente utilizado en proyectos IoT. |
+|                     | Quectel EC25                          | Módulo LTE 4G para comunicación celular de alta velocidad. |
+| **Sub-GHz (915 MHz, 868 MHz)** | RFM69                     | Módulo de radiofrecuencia para comunicaciones a 433/868/915 MHz. |
+|                     | CC1101                                | Transceptor Sub-1 GHz de bajo consumo, ideal para redes de sensores. |
 
 ## 3. Sensores y actuadores
 
 Mediante los sensores y los actuadores es como la cosa interactua con el entorno (ambiente). Existen numerosos kits de iniciación en el mercado. En el laboratorio se disponen de los siguientes modulos:
-* Grove - Starter Kit v3
+* **Grove - Starter Kit v3** [[link]](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/inventario-lab#grove---starter-kit-v3)
   
   ![kit_groove](Grove-Starter_Kit_v2.jpg)
 
-* 37 Sensor Kit - Elegoo
+  > **Documentación**<br>
+  > Para mas información consultar la documentación del **Grove - Starter Kit v3** ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
+
+* **37 Sensor Kit - Elegoo** [[link]](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/inventario-lab#37-sensor-kit---elegoo)
   
   ![sensores_elegoo](sensores_elegoo.jpg)
 
-* Landzo 37 In 1 Sensors Kit For Arduino
+  > **Documentación**<br>
+  > Para mas información consultar la documentación del **Elegoo-sensor-kit** ([link](https://github.com/ieee-uh-makers/elegoo-sensor-kit))
+
+* **Landzo 37 In 1 Sensors Kit For Arduino** [[link]](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/inventario-lab#landzo-37-in-1-sensors-kit-for-arduino)
   
   ![sensores_ladzo](sensores_ladzo.png)
 
-> **Para profundizar** <br>
-Para conocer mas sobre los sensores [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/inventario-lab)
+    > **Documentación**<br>
+    > Varios ejemplos asociados a este kit se pueden encontrar en la pagina **Arduino | 37 in 1 Sensors Kit Explained** ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
+
 
 ## 4. Trabajando con las placas de desarrollo a estudiar
 
@@ -201,7 +231,7 @@ Este último es sumamente importante pues nos indicará los nombres, numeros y f
 
 El conocimiento de los pines es ademas importante por que constituye el punto de partida para la configuración de los puertos y modulos de software que serán empleados en la aplicación IoT en cuestión.
 
-A continuación se muestra el diagrama de pines para el Arduino UNO y el ESP32.
+A continuación se muestra el diagrama de pines (**pinout**) para el Arduino UNO y el ESP32.
 
 * **Mapa de pines Arduino UNO**
   
@@ -210,6 +240,17 @@ A continuación se muestra el diagrama de pines para el Arduino UNO y el ESP32.
 * **Mapa de pines ESP32**
 
   ![esp32_pinout](nodemcu-esp_32s-pines.jpg)
+
+* **Mapa de pines ESP8266**
+  
+  ![esp8266_pinout](nodemcu_pins.png)
+
+* **Arduino Nano 33 BLE Sense**
+
+  ![arduino_ble_sense](arduino_ble_sense.png)
+
+<br/>
+<br/>
 
 > **Para profundizar** <br>
 Para profundizar mas consulte la información relacionada con los sistemas de desarrollo anteriores en el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
@@ -398,94 +439,6 @@ Existen una gran cantidad de fabricantes de modulos y tarjetas de expación, a c
 |keyestudio|https://www.keyestudio.com/|
 |Arduino|https://store-usa.arduino.cc/products/|
 
-## 8. Interacción con el entorno
-
-Los **transductores** son los elemtos del sistema que permiten la interación del dispositivo IoT con el ambiente; son el equivalente a los sentidos los seres vivos y los perifericos en los computadores.
-
-![sistema_electronico](sistema_electronico.png)
-
-Por ejemplo, en la siguiente figura se muestra el diagrama de bloques de un sistema electronico que permite lanzar una alarma cuando la temperatura medida sobrepasa un valor determinado.
-
-![temperatura](sistema_electronico_ejemplo.png)
-
-### Sensores
-
-Un sensor es un tipo de transductor cuya función consiste transformar las señales del entorno (señales fisicas) en señales electricas las cuales son las entradas al sistema. La siguiente tabla, clasifica y resume algunos de los principales tipos de sensores:
-
-![lista_sensores](sensores_lista.png)
-
-
-Exiten diversas clasificaciones para los sensores dependiendo de diferentes criterios como: El tipo de señal ambiental sensada y el tipo de señal electrica entre otros. A continuación se tratan algunos.
-
-#### **Tipos de sensores de acuerdo a la señal ambiental sensada**
-
-Los sensores permiten medir muchas cosas, desde propiedades naturales taltes como la temperatura del aire a interacciones fisicas como el movimiento. Algunos tipos de sensores existentes son:
-* **Sensores de temperatura**: Permiten medir la temperatura del aire o el medio en el cual se encuentran inmersos. A veces suelen venir cominados con sensores de humedad y presión en un mismo modulo.
-* **Botones**: Permiten sensar cuando estos son presionados.
-* **Sensores de luz**: Estos detectan niveles de luz. Tambien permiten medir distintos tipos de luz (de colores especificos, ultravioleta, infraroja o luz visible en general).
-* **Acelerometros**: Permiten medir el movimiento en multiples direcciones.
-* **Microfonos**: estos permiten detectar sonidos.
-
-#### **Tipos de sensores de acuerdo a la señal electrica**
-
-De acuerdo al tipo de señal electrica obtenida a la entrada, los sensores se pueden clasificar en dos tipos basicos:
-* **Sensores Analógicos**: Son el tipo de sensores mas basicos que existen. Estos sensores son alimentados con voltaje (voltaje de alimentación) desde el dispositivo IoT y devolvuelven (mediante el uso de un **ADC**) a este para su lectura, un voltaje cuya variación depende de la variable medida.
-
-  ![potenciometro](potentiometer.png) 
-
-* **Sensores Digitales**: Los sensores digitales detectan cambios de voltaje que solo pueden tomar dos posibles valores (**alto** y **bajo**). El tipo mas simple de sensor de este tipo es un **boton** o **switch**, el cual es un sensor con dos estados **ON** y **OFF**.
-  
-
-  ![pulsador](button.png) 
-
-  Existen sensores digitales mas avanzados que tienen la capacidad de sensar variables analógicas gracias a que possen el hardware necesario para poder procesar la señal leida de modo tal, que pueden ser conectados directamente al dispositivo IoT. Un caso tipico de estos, consiste en los sensores de temperatura que vienen integrados con un ADC de modo que los valores analogos leidos son convertidos en señales digitales que se envian al dispositivo IoT como datos en forma serial.
-
-  ![serial](temperature-as-digital.png)
-
-  En este tipo de sensores, el envio de los datos se realiza comunmente por medio de un protocolo serial. La siguiente lista resalta algunos de los mas comunmente usados:
-
-  ![protocolos_lista](protocolos.png)
-
-  Dentro de los protocolos más comunmente usados para IoT se encuentran el: RS-232, I2C, el SPI y el One Wire, pero esos los veremos despues con mas detalle.
-
-#### **Tipos de sensores de acuerdo a la alimentación**
-
-Los sensores pueden clasificarse en función de las necesidades de alimentación o de energía:
-* **Sensor Activo**: Requiere una fuente de alimentación para su funcionamiento. Algunos ejemplos incluyen: IMUs, LiDAR (Light detection and ranging), CCDs.
-* **Sensor pasivo**: No necesitan ser alimentados para funcionar. Algunos ejemplos son: RFID tags, thermistors, y temperature dependant resistors.
-
-> **Para profundizar** <br>
-> Para conocer mas sobre la terminologia asociada a los sensores consulte el siguiente material sobre sensores ([link](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/sensores/intro)) disponible en las notas de clase.
-
-### Actuadores
-
-Los actuadores realizand la tarea opuesta a los sensores conviertiendo una señal electrica proveniente del dispositivo IoT en una señal ambiental cuyo fin es interactuar con el mundo fisico. Algunos actuadores comunes incluyen:
-* **Led**: Estos emiten luz cuando son encendidos.
-Alatavoz: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
-* **Motor paso a paso**: Este convierte una señal en una rotación definida.
-* **Relay**: Son swiches que pueden ser encendidos o apagados por medio de una señal electrica. Estos permiten que pequeños voltajes provenientes de dispositivos IoT puedan manejar altos voltajes.
-* **Pantallas**: Son uno de los actuadores mas completos y muesntran información en un display multi.segmentos. Los displays pueden variar desde display LED sencillos a monitores de video de alta resolución.
-
-Al igual que los sensores los actuadores tambien se pueden clasificar de acuerdo a diferentes criterios, en nuestro caso solo nos limitaremos al caso en el cual la clasificación se hace dependiendo de la señal electrica manejada.
-
-#### **Tipos de actuadores de acuerdo a la señal electrica**
-
-Al igual que para el caso de los sensores, el tipo de señal electrica hace que estos se clasifiquen en:
-* **Actuadores analógicos**: Los actuadores analogicos toman una señal analoga y la convierten en alguna clase de interacción la cual esta basada en cambios del voltaje aplicado.
-  
-  ![actuador_analogo](actuador_analogo.png)
-
-  Es importante tener en cuenta que asi como los sensores, los dispositivos IoT de la actualidad trabajan con señales digitales y no analogas; de modo que, para enviar una señal analoga, el dispositivo IoT necesita un conversor analogo digital (ADC) el cual puede estar integrado en el dispositivo IoT o adaptado a una placa externa que se conecta al dispositivo. El ADC convertira los 0s y 1s del dispositivo IoT a un voltaje analogo que el actuador pueda usar.
-
-* **Actuadores por modulación PWM**: A diferencia del uso de **ADCs**, otra forma de conversion de señales digitales a señales analogas es por medio de la **modulación PWM** lo cual involucra enviar una tren de pulsos los caules actuan como si fueran una señal analogica cuya amplitud, depende del ancho de los pulsos del tren. Un ejemplo tipico del uso de PWM econsiste en el control de la velocidad de un motor. Para este caso a mayor ancho del pulso de la onda cuadrada, mayor velocidad en el motor.
-  
-  ![actuador_pwm](actuador_pwm.png)
-
-* **Actuadores digitales**: De modo similar a los sensores digitales, los actuadores digitales, tienen dos estados que son controlados por un voltaje **alto** y uno **bajo** o tienen un ADC que les permite convertir una señal analoga en una digital. 
-  
-  ![actuador_digital](actuador_digital.png)
-
-  Tal y como en el caso de los sensores, los actuadores digitales mas avanzados pueden involucrar protocolos de comunicación serial para la conexión con el sistem electrónico. 
 
 ## 8. Arduino Framework 
 
@@ -715,3 +668,5 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://github.com/microsoft/Web-Dev-For-Beginners
 * https://github.com/microsoft/ai-for-beginners
 * https://github.com/microsoft/Data-Science-For-Beginners
+* https://digitalconcepts.net.au/fritzing/index.php?op=parts
+* https://www.studiopieters.nl/fritzing/
