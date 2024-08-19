@@ -261,6 +261,34 @@ Fritzing es una plataforma para plataforma permitira prototipar hardware en su c
 
 ![fritzing](Fritzing_breadboard_view.jpg)
 
+Para realizar prototipado usado Fritzing empleando elementos de terceros (de diferentes fabricantes) realice los siguientes pasos:
+1. **Buscar el componente**: En internet hay muchos lugares en los que puede encontrar archivos `**.fzpz files**`  (Fritzing part files). En este caso lo unico que debe hacer es descargar el archivo una vez importado. Por ejemplo en el siguiente [link](https://forum.fritzing.org/t/looking-for-raspberry-pi-5-fritzing-part/21511/2), se encuentra el componente de la **Rpi5**:
+   
+   ![download_component](download_component.png)
+   
+2. **Importar el componente**: Despues de descargar el componente vaya al menu de **Compontentes** y seleccione la opción **Importar**:
+
+   ![importar_componente](importar_componente.png)   
+
+   Luego busque los componentes y agreguelos (en este caso vamos a agregar [Raspberry-Pi5.fzpz](Raspberry-Pi5.fzpz)):
+
+   ![rPi5_component](rPi5_component.png)
+
+   Una vez importado este aparecerá en el almacen de **My Parts** tal y como se muestra en la siguiente figura:
+
+   ![componente_agregado](componente_agregado.png)
+
+   > **Parentesis**<br>
+   > Repita el procedimiento anterior agregando los siguientes componentes:
+       
+
+
+ If the component you need is already created by someone, you can often find it online. Look for .fzpz files, which are Fritzing part files.
+
+disponibles en kits de desarrollo puede seguir cualquiera de los dos enlaces que se muestran a continuación:
+1. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
+2. **Fritzing** [[link]](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/IOST_Library/07%3A_Electronics_Book/01%3A_Electric_Fundamentals/05%3A_Fritzing)
+
 > **Importante** <br>
 > Consulte la sección **Prototipado básico usando fritzing** en el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
 
