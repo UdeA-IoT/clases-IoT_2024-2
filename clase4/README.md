@@ -18,10 +18,9 @@
 Dentro del contexto de Internet of Things (IoT), una "thing" se refiere a cualquier dispositivo físico que está conectado a la red y pueda interactuar con otros dispositivos, sistemas, o servicios. 
 
 Los componentes principales de una cosa, desde el punto de vista de Hardware, se pueden resumir en los siguientes:
-1. Sensores
-2. Actuadores
-3. Microcontroladores/Microprocesadores
-4. Módulos de conectividad
+1. Transductores (Sensores y actuadores)
+2. Microcontroladores/Microprocesadores
+3. Módulos de conectividad
 
 Vamos a tratar estos con un poco mas de detalle.
 
@@ -112,14 +111,14 @@ Los sensores pueden clasificarse en función de las necesidades de alimentación
 > Para conocer mas sobre la terminologia asociada a los sensores consulte el siguiente material sobre sensores ([link](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/sensores/intro)) disponible en las notas de clase.
 
 
-### Actuadores
+#### Actuadores
 
 Los actuadores realizand la tarea opuesta a los sensores conviertiendo una señal electrica proveniente del dispositivo IoT en una señal ambiental cuyo fin es interactuar con el mundo fisico. Algunos actuadores comunes incluyen:
 * **Led**: Estos emiten luz cuando son encendidos.
   
   ![leds.png](leds.png)
 
-* **Alatavoz**: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
+* **Altavoz**: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
   
   ![speaker](speaker.png)
 
@@ -148,29 +147,30 @@ Al igual que para el caso de los sensores, el tipo de señal electrica hace que 
   
   ![actuador_pwm](actuador_pwm.png)
 
+  La siguiente figura muestra algunos casos:
+
+  ![actuador_pwm2](actuador_pwm2.png)
+
 * **Actuadores digitales**: De modo similar a los sensores digitales, los actuadores digitales, tienen dos estados que son controlados por un voltaje **alto** y uno **bajo** o tienen un ADC que les permite convertir una señal analoga en una digital. 
   
   ![actuador_digital](actuador_digital.png)
 
   Tal y como en el caso de los sensores, los actuadores digitales mas avanzados pueden involucrar protocolos de comunicación serial para la conexión con el sistem electrónico. 
 
+  ![actuador_digital2](actuador_digital2.png)
 
-----------------
-----------------
+### Microcontroladores y microprocesadores
 
+Como se vió en la sesión anterior, los microcontroladores y los micropocesadores son el componente de la **cosa** (**thing**) encargados de la recolección y procesamiento de los datos del entorno y del desarrollo de las acciones de control.
 
-
-
-## 1. Sistemas de desarrollo
-
-El corazón de los sistemas IoT son las cosas. Estas, son las encargadas de permitir la interacción del sistema con el medio ambiente mediante la recolección, el procesamiento de los datos y las acciones de control sobre este. 
+![sistemas_de_desarrollo](sistemas_de_desarrollo.png)
 
 Para realizar labores de prototipado, se disponen de los elementos listados a continuación:
 
 |Tipo|Ejemplos|
 |---|---|
-|Single-board Computer|<li> Raspberry Pi <li> BeagleBoard <li> Orange Pi <li> Intel Galileo |
-|Development boards|<li> Arduino UNO <li> ESP8266 <li> ESP32 <li>ARDUINO NANO 33 BLE Sense Lite|
+|Single-board Computer|<li> Raspberry Pi 4 <li> Raspberry Pi 3 |
+|Development boards|<li> Arduino UNO <li> ESP8266 <li> ESP32 <li> ESP32-CAM <li>ARDUINO NANO 33 BLE Sense Lite|
 
 > **Para profundizar** <br>
 Para conocer mas sobre estos elementos disponibles en el laboratorio consulte el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
