@@ -116,12 +116,24 @@ Los sensores pueden clasificarse en función de las necesidades de alimentación
 
 Los actuadores realizand la tarea opuesta a los sensores conviertiendo una señal electrica proveniente del dispositivo IoT en una señal ambiental cuyo fin es interactuar con el mundo fisico. Algunos actuadores comunes incluyen:
 * **Led**: Estos emiten luz cuando son encendidos.
-Alatavoz: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
-* **Motor paso a paso**: Este convierte una señal en una rotación definida.
-* **Relay**: Son swiches que pueden ser encendidos o apagados por medio de una señal electrica. Estos permiten que pequeños voltajes provenientes de dispositivos IoT puedan manejar altos voltajes.
-* **Pantallas**: Son uno de los actuadores mas completos y muesntran información en un display multi.segmentos. Los displays pueden variar desde display LED sencillos a monitores de video de alta resolución.
+  
+  ![leds.png](leds.png)
 
-Al igual que los sensores los actuadores tambien se pueden clasificar de acuerdo a diferentes criterios, en nuestro caso solo nos limitaremos al caso en el cual la clasificación se hace dependiendo de la señal electrica manejada.
+* **Alatavoz**: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
+  
+  ![speaker](speaker.png)
+
+* **Motor**: Este convierte una señal electrica en una rotación definida.
+  
+  ![motor](motor.png)
+
+* **Relay**: Son swiches que pueden ser encendidos o apagados por medio de una señal electrica. Estos permiten que pequeños voltajes provenientes de dispositivos IoT puedan manejar altos voltajes.
+  
+  ![realy](realy.png)
+
+* **Pantallas**: Son uno de los actuadores mas completos y muesntran información en un display multi.segmentos. Los displays pueden variar desde display LED sencillos a monitores de video de alta resolución.
+  
+  ![display](display.png)
 
 #### **Tipos de actuadores de acuerdo a la señal electrica**
 
