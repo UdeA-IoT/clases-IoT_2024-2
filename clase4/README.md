@@ -279,11 +279,31 @@ Para realizar prototipado usado Fritzing empleando elementos de terceros (de dif
    ![componente_agregado](componente_agregado.png)
 
    > **Parentesis**<br>
-   > Repita el procedimiento anterior agregando los siguientes componentes:
+   > Repita el procedimiento anterior agregando los siguientes componentes: [ESP32-C3-DevKitC-02.f](ESP32-C3-DevKitC-02.fzpz), [ESP32S_HiLetgo](ESP32S_HiLetgo.fzpz) y [Arduino Nano 33 BLE Sense](Arduino%20Nano%2033%20BLE%20Sense.fzpz)
+
        
+3. **Guarde el componente agregado**: Cierre el fritzing y cuando aparezca el mensaje para guardar los cambios en el almacen **My Parts** de click en el botón guardar. 
+   
+   ![guardar_componente](guardar_componente.png)
+
+   Si esto esta bien hecho, la proxima vez que abra fritzing, el almacen **My parts** contendra los nuevos componentes agregados y listos para ser usados en el circuito que vaya a realizar.
+
+   ![componente_ok](componente_ok.png)
 
 
- If the component you need is already created by someone, you can often find it online. Look for .fzpz files, which are Fritzing part files.
+La siguiente tabla muestra enlaces con componentes disponibles en la Web:
+
+|Fabricante|	Información	|Repositorio	|Link descarga|
+|---|---|---|---|
+|Adafruit|Using the Adafruit Library with Fritzing [[link]](https://learn.adafruit.com/using-the-adafruit-library-with-fritzing)|https://github.com/adafruit/Fritzing-Library|[[descarga]](https://github.com/adafruit/Fritzing-Library/archive/master.zip)|
+|Sparkfun|Make Your Own Fritzing Parts [[link]](https://learn.sparkfun.com/tutorials/make-your-own-fritzing-parts)|https://github.com/adafruit/Fritzing-Library||
+|Seeed Studio|Let’s Fritzing: Announcing XIAO Fritzing Parts! [[link]](https://www.seeedstudio.com/blog/2024/07/11/xiao-fritzing-parts/)|https://github.com/Seeed-Studio/fritzing_parts|[[descarga]](https://github.com/Seeed-Studio/fritzing_parts/blob/master/seeed_fritzing_parts.fzbz)|
+|Elegoo||https://github.com/marcinwisniowski/ElegooFritzingBin|[[descarga]](https://github.com/marcinwisniowski/ElegooFritzingBin/releases/download/0.6.3/Elegoo-0.6.3.fzbz)|
+|StudioPieters|Fritzing – New Parts [[link]](https://www.studiopieters.nl/fritzing/)|https://github.com/AchimPieters/Fritzing-Custom-Parts|[[descarga]](https://github.com/AchimPieters/Fritzing-Custom-Parts/releases/download/0.0.4/Fritzing.parts.rar)|
+|ESP32 NodeMCU|ESP32S-HiLetgo Dev Boad with Pinout Template [[link]](https://forum.fritzing.org/t/esp32s-hiletgo-dev-boad-with-pinout-template/5357)||[[descarga]](https://forum.fritzing.org/uploads/default/original/2X/1/1c6c1b0e5bff03730a40b696b354783432fbb506.fzpz)|
+|Arduino Nano 33 BLE Sense [[link]](https://store-usa.arduino.cc/products/arduino-nano-33-ble-sense)|||[[descarga]](https://content.arduino.cc/assets/Arduino%20Nano%2033%20BLE%20Sense.fzpz)|
+
+
 
 disponibles en kits de desarrollo puede seguir cualquiera de los dos enlaces que se muestran a continuación:
 1. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
