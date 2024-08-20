@@ -343,6 +343,10 @@ Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se
 
    Aqui, se llevan a cabo las primeras pruebas de funcionamiento y se hacen las correcciones necesarias antes de seguir con la versión final del producto.
 
+   A veces el proceso de montaje se reduce si se cuentan con modulos externos y tarjetas de expanción ([**sección 6**](#6-tarjetas-de-expación-y-modulos)) tal y como el que se muestra a continuación:
+
+   ![modulo_switch](Tactile-Pushbutton-Switch-Module-1.jpg)
+
 3. **Definir la lista de componentes**: Una vez hecho lo anterior, el siguiente paso cosiste en hacer un inventario de los componentes necesarios conocido como **Bill of Materials (BOM)** ([What is a Bill of Materials (BOM) in PCB Design?](https://www.seeedstudio.com/blog/2019/07/24/what-is-a-bill-of-materials-bom-in-pcb-design/)). La siguiente figura (tomada del siguiente [link](https://www.proto-electronics.com/blog/how-to-create-best-bom-for-pcb)) muestra un BOM tipico:
    
    ![BOM](BOM_example.png)
@@ -536,7 +540,7 @@ El modelo de programación de arduino esta basado en el **API de Arduino** el cu
 
 Antes de empezar se recomienda que tenga a la mano el documento  **Arduino Cheat Sheet** ([link](https://github.com/UdeA-IoT/reference-sheets/blob/main/percepcion/arduino/Arduino_Cheat_Sheet.pdf)) de Sparkfun.
 
-## 9. Desarrollo básico de aplicaciónes usando las placas base
+## 6. Desarrollo básico de aplicaciónes usando las placas base
 
 Desarrollar aplicación implica combinar conocimientos de hardware y software. En lo que respecta al primero, en nuestro caso lo fundamental es tener un conocimiento claro de las capacidades de la placa a emplear y del diagrama de pines (para mas información consulte el siguiente. En lo que respecta al software, el conocimiento implica un conocimiento del lenguaje C++ (para nuestro caso) y del modelo de programación del Framework de Arduino.
 
@@ -558,54 +562,6 @@ Una vez se tiene claridad en esto, se procede a realizar los siguientes pasos co
 2. Proceder a programar la placa empleando el modelo de programación de Arduino (o cualquier otro). Para ello use el IDE que mejor le parezca ya sea el **Arduino IDE** o la extención **Platformio**.
 3. Mediante el IDE, compilar y descargar el programa en la placa de desarrollo.
 4. Probar que el sistema IoT funcione de acuerdo a los requisitos definidos en la etapa de analisis y diseño.
-
-A continuación se va a mostrar el procedimiento anterior mediante algunos ejemplos.
-
-#### Ejemplo 1
-
-En el [**ejercicio 1**](#54-ejercicios-de-refuerzo) se mostró un sistema de sistema de parpadeo manual usando el Arduino UNO:
-
-![ejercicio1](ejercicio1.png)
-
-El código originalmente implementado, se muestra a continuación:
-
-```C++
-const int voltsInPin = A3;
-const int ledPin = 9;
-
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
-void loop() {
-  int rawReading = analogRead(voltsInPin);
-  int period = map(rawReading, 0, 1023, 100, 500);
-  digitalWrite(ledPin, HIGH);
-  delay(period);
-  digitalWrite(ledPin, LOW);
-  delay(period);
-}
-```
-
-Reimplemente el sistema anterior empleando el ESP32 y usando los módulos descritos en la siguiente lista de materiales:
-
-|Item #|Cantidad|Referencia|Descripción|Información|Observaciones|
-|---|---|---|---|---|---|
-|1|1|LED1|ESP32|||
-|2|1|R1|Potenciometro de $10k\Omega$|Grove - Rotary Angle Sensor ([link](https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor/))|Este modulo hace parte del Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))|
-|3|1|R2|Resistencia de $1k\Omega$|Grove - Red LED ([link](https://wiki.seeedstudio.com/Grove-Red_LED/))|Este modulo hace parte del Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))|
-
-**Actividades**:
-- [ ] Usando Fritzing realizar el esquemático y la conexión de los componentes.
-- [ ] Reescriba la parte del programa para hacer que este funcione para el ESP32.
-- [ ] Simule el sistema usando el [wokwi](https://wokwi.com/)
-- [ ] Si la simulación es correcta, realice la conexión fisica del sistema empleando los componentes de la tabla anterior.
-- [ ] Codifique, compile y descargue el programa en el ESP32 teniendo en cuenta que el resultado del montaje real coincide con el de la simulación.
-  - [ ] Realice este proceso usando el Arduino IDE (Ver la sección de ejemplos introductorios para el ESP32 siguiendo el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3))
-  - [ ] Realice este proceso usando el Platformio (Siga los pasos mostrados en el ejemplo 2 de la sesión 4 [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion4c))
-
-#### Ejemplo 2
-
-Repita los pasos realizados anteriormente para el circuito de [**ejercicio 2**](#54-ejercicios-de-refuerzo)
 
 ## 6.1. I/O básico en el ESP32
 
@@ -655,7 +611,306 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`millis()`](https://www.arduino.cc/reference/en/language/functions/time/millis/)|`time = millis()`|Devuelve la cantidad de milisegundos que pasan desde que el placa empieza la ejecución del programa.|
 |[`micros()`](https://www.arduino.cc/reference/en/language/functions/time/micros/)|`time = micros()`|Obtiene el numero de microsegundos que han pasado desde que el placa empieza la ejecución del programa.|
 
-## 6.4. Descarga de aplicaciones en la placa base
+### 6.4. Ejemplos GPIO
+
+A continuación, se muestran algunos ejemplos basicos donde se explota el API de Arduino para I/O:
+
+**Circuito 1**: Parpadeo de un led ([link](https://wokwi.com/projects/357845157032899585))
+
+* **Montaje**:
+  
+  ![esp32-1](montaje1.png)
+
+
+* **Código**: esp32-ej1.ino
+  
+  ```ino 
+  void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+  }
+  void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);   
+    delay(1000);                       
+    digitalWrite(LED_BUILTIN, LOW);    
+    delay(1000);                      
+  }
+  ```
+
+**Circuito 2**: Lectura de una señal digital ([link](https://wokwi.com/projects/335034266233602642))
+
+* **Montaje**:
+  
+  ![esp32-12](montaje2.png)
+
+
+* **Código**: esp32-ej2.ino
+
+    ```ino
+    #define LED_BUILTIN 2
+    
+    const int buttonPin = 5;         //  (GPIO5 - D5)
+    const int ledPin =  LED_BUILTIN; 
+    
+    // variables will change:
+    int buttonState = 0;         
+    
+    void setup() {
+      pinMode(ledPin, OUTPUT);
+      pinMode(buttonPin, INPUT);
+    }
+    
+    void loop() {
+      buttonState = digitalRead(buttonPin);
+    
+      if (buttonState == HIGH) {
+        digitalWrite(ledPin, HIGH);
+      } else {
+        digitalWrite(ledPin, LOW);
+      }
+    }
+    ```
+
+**Circuito 3**: Manejo de una señal PWM ([link](https://wokwi.com/projects/335030762714694227))
+
+* **Montaje**:
+  
+  ![esp32-3](montaje3.png)
+
+
+* **Código**: esp32-ej3.ino
+
+    ```ino
+    int ledPin = 2;    // GPIO2
+    
+    void setup() {
+      // nothing happens in setup
+    }
+    
+    void loop() {
+      for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 5) {
+        analogWrite(ledPin, fadeValue);
+        delay(30);
+      }
+    
+      for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 5) {
+        analogWrite(ledPin, fadeValue);
+        delay(30);
+      }
+    }
+    ```
+
+**Circuito 4**: Lectura de una entrada Análoga ([link](https://wokwi.com/projects/335035080677261908)).
+
+* **Montaje**:
+  
+  ![esp32-4](montaje4.png)
+
+
+* **Código**: esp32-ej4.ino
+
+    ```ino
+    const int analogInPin = 15;  //  GPIO15
+    const int analogOutPin = LED_BUILTIN; // ESP32 led
+    
+    int sensorValue = 0;        
+    int outputValue = 0;        
+    
+    void setup() {
+      Serial.begin(9600);
+    }
+    
+    void loop() {
+      sensorValue = analogRead(analogInPin);
+      outputValue = map(sensorValue, 0, 4095, 0, 255); // ADC de 12 bits
+      analogWrite(analogOutPin, outputValue);
+    
+      Serial.print("sensor = ");
+      Serial.print(sensorValue);
+      Serial.print("\t output = ");
+      Serial.println(outputValue);
+    
+      delay(2);
+    }
+    ```
+
+**Circuito 5**: Debug usando el puerto serial ([link](https://wokwi.com/projects/358500354708861953)).
+
+Una de las aplicaciones mas utilies del puerto serial es que facilita el debug de aplicaciones gracias a que por medio de este se pueden imprimir, en tiempo de ejecución, mensajes de log que sirven como verificar el correcto funcionamiento de la logica del programa al usar un programa como el monitor serial o cualquier programa similar. Es muy comun imprimir variables (que pueden indican el estado o valor de un sensor, mensajes de la aplicación, etc). 
+
+* **Montaje**:
+  
+  ![esp32-4](esp32_debug-serial.png)
+
+
+* **Código**: 
+
+    ```ino
+    // C++ code
+
+    /* Puertos */
+
+    // Swichtes
+    #define SW1 22
+    #define SW0 23
+
+    // Leds switches
+    #define LED_SW1 21
+    #define LED_SW0 19
+
+    // Leds secuencia
+    #define LED_PWM 4
+
+
+    // Potenciometro
+    #define POT 2
+
+    /* Variables */
+    int pot_value = 0;   // Valor del potenciometro (0 - 2013)
+    int val_pwm = 0;     // Valor del pwm (0 - 255)
+    int sw_val1;
+    int sw_val0;
+    int num_seq; 
+    int loop_time = 500;
+
+    void inicializar_entradas() {
+      // Inicialice aqui las entradas
+      pinMode(SW1, INPUT);
+      pinMode(SW0, INPUT);
+    }
+
+    void inicializar_salidas() {
+      // Inicialice aqui las salidas
+      pinMode(LED_SW1, OUTPUT);
+      pinMode(LED_SW0, OUTPUT);
+    }
+
+    void setup() {
+      // Inicializacion de las entradas
+      inicializar_entradas();
+      inicializar_salidas();
+      // Debug Serial
+      Serial.begin(9600);
+      Serial.println("Configuración de I/O -> OK");
+    }
+
+    int obtener_numero_secuencia(int sw1, int sw0) {
+      // Obtiene el numero asociado a una combinación de switches
+      int number;  
+      if ((sw1 == LOW)&&(sw0 == LOW)) {
+        number = 0;  
+      }
+      else if ((sw1 == LOW)&&(sw0 == HIGH)) {
+        number = 1;
+      }
+      else if ((sw1 == HIGH)&&(sw0 == LOW)) {
+        number = 2;  
+      }
+      else {
+        number = 3;
+      }
+      //Serial.print("Numero:");
+      //Serial.println(number, BIN);
+      return number;
+    }
+
+    void encender_leds_indicadores(int number) {
+      // Encendido de luces indicadores  
+      switch(number) {
+        case 0:
+          digitalWrite(LED_SW1,LOW);
+          digitalWrite(LED_SW0,LOW);
+          break;
+        case 1:
+          digitalWrite(LED_SW1,LOW);
+          digitalWrite(LED_SW0,HIGH);
+          break;
+        case 2:
+          digitalWrite(LED_SW1,HIGH);
+          digitalWrite(LED_SW0,LOW);
+          break;
+        default:
+          digitalWrite(LED_SW1,HIGH);
+          digitalWrite(LED_SW0,HIGH);
+      }
+    }
+
+    void loop() {
+      pot_value = analogRead(POT);
+      val_pwm = map(pot_value, 0 , 4095, 0, 255);
+      analogWrite(LED_PWM,val_pwm);
+      Serial.print("POT: ");
+      Serial.print(pot_value);  
+      Serial.print("; PWM: ");
+      Serial.print(val_pwm);
+      // Lectura de los switches
+      sw_val0 = digitalRead(SW0);  
+      sw_val1 = digitalRead(SW1);
+      Serial.print("- SW0: ");
+      Serial.print(sw_val0);
+      Serial.print("; SW1: ");
+      Serial.println(sw_val1);
+      // Obtencion de la secuencia
+      num_seq = obtener_numero_secuencia(sw_val1, sw_val0);  
+      // Encendido de los leds
+      encender_leds_indicadores(num_seq); 
+      delay(loop_time);
+    }
+    ```
+
+> **Para profundizar**: Para ver mas cosas de lo que se puede realizar con la ESP32 puede consultar dentro de la pagia de **randomnerdtutorials** el link **160+ ESP32 Projects, Tutorials and Guides with Arduino IDE** ([link](https://randomnerdtutorials.com/projects-esp32/))
+
+
+A continuación se va a mostrar el procedimiento anterior mediante algunos ejemplos.
+
+### 6.5. Ejemplos de refuerzo
+
+#### 6.5.1. Ejemplo 1
+
+En el [**ejercicio 1**](#54-ejercicios-de-refuerzo) se mostró un sistema de sistema de parpadeo manual usando el Arduino UNO:
+
+![ejercicio1](ejercicio1.png)
+
+El código originalmente implementado, se muestra a continuación:
+
+```C++
+const int voltsInPin = A3;
+const int ledPin = 9;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+void loop() {
+  int rawReading = analogRead(voltsInPin);
+  int period = map(rawReading, 0, 1023, 100, 500);
+  digitalWrite(ledPin, HIGH);
+  delay(period);
+  digitalWrite(ledPin, LOW);
+  delay(period);
+}
+```
+
+Reimplemente el sistema anterior empleando el ESP32 y usando los módulos descritos en la siguiente lista de materiales:
+
+|Item #|Cantidad|Referencia|Descripción|Información|Observaciones|
+|---|---|---|---|---|---|
+|1|1|LED1|ESP32|||
+|2|1|R1|Potenciometro de $10k\Omega$|Grove - Rotary Angle Sensor ([link](https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor/))|Este modulo hace parte del Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))|
+|3|1|R2|Resistencia de $1k\Omega$|Grove - Red LED ([link](https://wiki.seeedstudio.com/Grove-Red_LED/))|Este modulo hace parte del Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))|
+
+**Actividades**:
+- [ ] Usando Fritzing realizar el esquemático y la conexión de los componentes.
+- [ ] Reescriba la parte del programa para hacer que este funcione para el ESP32.
+- [ ] Simule el sistema usando el [wokwi](https://wokwi.com/)
+- [ ] Si la simulación es correcta, realice la conexión fisica del sistema empleando los componentes de la tabla anterior.
+- [ ] Codifique, compile y descargue el programa en el ESP32 teniendo en cuenta que el resultado del montaje real coincide con el de la simulación.
+  - [ ] Realice este proceso usando el Arduino IDE (Ver la sección de ejemplos introductorios para el ESP32 siguiendo el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3))
+  - [ ] Realice este proceso usando el Platformio (Siga los pasos mostrados en el ejemplo 2 de la sesión 4 [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion4c))
+
+#### 6.5.2. Ejemplo 1
+
+Repita los pasos realizados anteriormente para el circuito de [**ejercicio 2**](#54-ejercicios-de-refuerzo)
+
+### 6.6. Descarga de aplicaciones en la placa base
 
 Antes de empezar, tenga a la mano, el diagrama de pines del NodeMCU (dada la importantci de esto, se lo volvemos a mostrar, disculpenos por cansones):
 
@@ -663,72 +918,29 @@ Antes de empezar, tenga a la mano, el diagrama de pines del NodeMCU (dada la imp
 
 Luego, dependiendo de los requerimientos del sistema determine con claridad los pines a emplear y el funcionamiento que estos tendran. Luego, proceda a codificar el programa y realice las conexiones del montaje y, finalmente, proceda a compilar y a descargar el firmware en la placa usando el IDE apropiado.  En nuestro caso hablaremos de los dos mas empleados:
 * Arduino IDE
-* Platformio (extención de VS Code)
+* Platformio ([link](../clase3/plaftormio_tutorial/))
 
-### Arduino IDE
+## 7. Algunos casos de aplicación
 
-Inicialmente, configure el IDE para que pueda soportar las tarjetas ESP32 siguiento los pasos descritor en la pagina **Installing the ESP32 Board in Arduino IDE (Windows, Mac OS X, Linux)** ([link](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)).
+A continuación, se muestra una lista de proyectos aplicando algunas de las cosas previamente mensionadas.
 
-Luego, lleve a cabo el procedimiento normal para descargar el firmware como sucede con cualquier placa de la marca Arduino. Para ello siga los siguientes pasos:
-1. Elija la placa de desarrollo ESP de la lista de placas disponibles en el IDE. En nuestro caso la placa **NodeMCU-32s** es la que elegimos (pues es la que está disponible en el laboratorio):
-   
-   ![seleccion-placa](seleccion_nodemcu-32s.png)
+|#|Proyecto|Link|Equipo|
+|---|---|---|---|
+|1|Ultrasonic Security System|https://projecthub.arduino.cc/Krepak/ultrasonic-security-system-a6ea3a||
+|2|Arduino Calculator|https://projecthub.arduino.cc/123samridhgarg/arduino-calculator-bce0df||
+|3|Arduino Solar Tracker|https://projecthub.arduino.cc/Aboubakr_Elhammoumi/arduino-solar-tracker-77347b||
+|4|Line Following Robot|https://projecthub.arduino.cc/lightthedreams/line-following-robot-34b1d3||
 
-2. Teniendo en cuenta el montaje realizado, codifique el programa para la plataforma elegida. Como el **ESP32** es compatible con Arduino la documentación se encuentra en **Arduino-ESP32** ([link](https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/))
+## 8. Actividad
 
-3. Descargue el programa en la placa:
-   
-   ![descarga-placa](placa-node_esp32.png)
+Si no lo recuerda, revise el **Tutorial de platformio** ([link](../clase3/plaftormio_tutorial/)) donde se muestra el procedimiento para para descargar una programa en la ESP32. Luego, trate de comprender los ejemplos basicos mostrados en el siguiente [link](ejemplos_GPIO/README.md). El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
 
-   Si todo esta bien, se deberia ver el mensaje **"Done uploading"** en el log que indique que el proceso fue exitoso.
+Una vez entendidos los ejemplos anteriormente mostrados realice las siguientes tareas:
+1. Para este fin crear un directorio llamado **exampleX** (donde X es el numero del ejemplo que sera agregado a la secuencia).
+2. Copie y pegue en el directorio creado la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Para esto se puede basar en el directorio como base el directorio [example1](example1/). 
+3. Realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando los recursos que necesarios (archivo fritzing, imagen esquematico y montaje, código fuente, directorio con el código fuente generado por platformio) la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
 
-   > **Importante** </br> Tenga en cuenta que antes de empezar la descarga del programa debe presionar el botón boot de la placa del ESP32 y liberarlo cuando salga el mensaje **"Connecting..."** en el IDE de Arduino. (Para más información ver la sección Troubleshooting en el siguiente [link](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)) </br></br>![descarga-placa](error.png)
-
-
-### Platformio
-
-[Platformio](https://platformio.org/) es una extención del VS Code que permite programar y realizar pruebas sobre placas de desarrollo como la ESP32. A continuación, se describe el proceso para codificar y descargar el firmware usando este complemento.
-1. Iniciar Platformio
-   
-   ![platformio-1](platformio1.png)
-   
-   Si todo esta bien aparecera:
-
-   ![platformio-2](platformio2.png)
-
-2. Crear nuevo proyecto:
-   
-   ![platformio-3](platformio3.png)
-
-3. Seleccionar la plataforma y el lugar donde estara el proyecto.
-   
-   ![platformio-4](platformio4.png)
-   
-   Si todo esta bien el resultado sera como el siguiente:
-   
-   ![platformio-5](platformio5.png)
-
-4. Abrir el archivo **main.cpp** y editarlo:
-   
-   ![platformio-6](platformio6.png)
-
-5. Seleccionar el botón para subir el codigo a la tarjeta:
-   
-   ![platformio-7](platformio7.png)
-
-   Luego se procede a subir el codigo dando click en el botón de upload (**flecha**):
-
-   ![platformio-8](platformio8.png)
-
-6. Ensayar el funcionamiento. En la imagen mostrada a continuación se muestra la salida en el monitor serial cuando se emplea comunicación serial en la placa:
-   
-   ![platformio-9](platformio9.png)
-
-## Ejemplos introductorios
-
-En el siguiente [link](ejemplos_GPIO/README.md) se muestran algunos escenarios de uso donde se usan las funciones anteriormente descritas. El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta.
-
-## Recursos para ir mas lejos
+## 9. Recursos para ir mas lejos
 
 Explore los siguientes citios para que vaya teniendo una idea de lo que se puede hacer:
 * https://randomnerdtutorials.com/
@@ -744,7 +956,7 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://es.ubidots.com/
 * https://www.wildernesslabs.co/
 
-## Referencias
+## 10. Referencias
 
 * https://how2electronics.com/10-essential-iot-starter-kits-to-kickstart-your-journey/
 * https://github.com/UdeA-IoT/actividad-4
