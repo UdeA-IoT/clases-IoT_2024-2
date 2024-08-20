@@ -906,7 +906,7 @@ Reimplemente el sistema anterior empleando el ESP32 y usando los módulos descri
   - [ ] Realice este proceso usando el Arduino IDE (Ver la sección de ejemplos introductorios para el ESP32 siguiendo el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3))
   - [ ] Realice este proceso usando el Platformio (Siga los pasos mostrados en el ejemplo 2 de la sesión 4 [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion4c))
 
-#### 6.5.2. Ejemplo 1
+#### 6.5.2. Ejemplo 2
 
 Repita los pasos realizados anteriormente para el circuito de [**ejercicio 2**](#54-ejercicios-de-refuerzo)
 
@@ -931,7 +931,47 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
 |3|Arduino Solar Tracker|https://projecthub.arduino.cc/Aboubakr_Elhammoumi/arduino-solar-tracker-77347b||
 |4|Line Following Robot|https://projecthub.arduino.cc/lightthedreams/line-following-robot-34b1d3||
 
-## 8. Actividad
+
+### 8. Sobre los componentes
+
+#### 8.1. Fabricantes
+
+En la siguiente tabla se muestran algunas de las principales empresas que se dedican a la fabricación de modulos para prototipado IoT:
+
+|Fabricante|Link|
+|---|---|
+|Adafruit Industries|https://www.adafruit.com/|
+|SparkFun Electronics|https://www.sparkfun.com/|
+|dfrobot|https://www.dfrobot.com/|
+|Seeeed Studio|https://www.seeedstudio.com/|
+|Elegoo|https://www.elegoo.com/|
+
+Ademas de la fabricación, tambien documentan y muestran ejemplos demostrativos de como usar los componentes que allí se fabrican.
+
+#### 8.2. Distribuidores
+
+Si lo que se quiere es comprar son componentes electronicos existen distribuidores para ello, en la siguiente tabla se muestran algunos de los principales distribuidores de componentes a nivel mundial (tomados de la pagina **2023 Top 50 Electronics Distributors List** ([link](https://www.supplychainconnect.com/rankings-research/article/21264998/2023-top-50-electronics-distributors-list))):
+
+|Distribuidores|Link|
+|---|---|
+|Mouser Electronics|https://www.mouser.com/|
+|DigiKey Corporation|https://www.digikey.com/|
+|Arrow Electronics|https://www.arrow.com/|
+|WPG Holdings|https://www.wpgholdings.com/main/index/en|
+|Avnet|https://www.avnet.com/wps/portal/us/|
+|Future Electronics|https://www.futureelectronics.com/|
+
+En el caso colombiano, la siguiente lista (tomada del foro **Listado de proveedores de Electrónica - Colombia** ([link](https://www.forosdeelectronica.com/resources/listado-de-proveedores-de-electr%C3%B3nica-colombia.105/))) contiene algunos de los distribuidores en Colombia:
+
+|Distribuidores|Link|
+|---|---|
+|I + D|https://didacticaselectronicas.com/|
+|Sigma Electronica|https://www.sigmaelectronica.net/|
+|Electronilab|https://electronilab.co/|
+|Suconel|https://suconel.com/|
+|La Red Electronica|https://laredelectronica.com/|
+
+## 9. Actividad
 
 Si no lo recuerda, revise el **Tutorial de platformio** ([link](../clase3/plaftormio_tutorial/)) donde se muestra el procedimiento para para descargar una programa en la ESP32. Luego, trate de comprender los ejemplos basicos mostrados en el siguiente [link](ejemplos_GPIO/README.md). El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
 
@@ -940,7 +980,7 @@ Una vez entendidos los ejemplos anteriormente mostrados realice las siguientes t
 2. Copie y pegue en el directorio creado la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Para esto se puede basar en el directorio como base el directorio [example1](example1/). 
 3. Realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando los recursos que necesarios (archivo fritzing, imagen esquematico y montaje, código fuente, directorio con el código fuente generado por platformio) la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
 
-## 9. Recursos para ir mas lejos
+## 10. Recursos para ir mas lejos
 
 Explore los siguientes citios para que vaya teniendo una idea de lo que se puede hacer:
 * https://randomnerdtutorials.com/
@@ -956,7 +996,7 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://es.ubidots.com/
 * https://www.wildernesslabs.co/
 
-## 10. Referencias
+## 11. Referencias
 
 * https://how2electronics.com/10-essential-iot-starter-kits-to-kickstart-your-journey/
 * https://github.com/UdeA-IoT/actividad-4

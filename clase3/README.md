@@ -311,29 +311,6 @@ void loop() {
 
 ![simu2](simulation_example2.png)
 
-## Actividad
-
-En el siguiente [link](ejemplos_GPIO/README.md) se muestran algunos escenarios de uso donde se usan las funciones anteriormente descritas. El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
-
-Para este fin crear un directorio llamado **exampleX** (donde X es el numero del ejemplo que sera agregado a la secuencia). Tenga en cuenta que ya estan los dos primeros ejemplos la numeración empieza en **X=3**. Luego en el directorio creado copie y pegue la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Puede usar como base el directorio [example1](example1/). Despues de crear el directorio, elija uno de los ejemplos de [link](ejemplos_GPIO/README.md), realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
-
-
-## Recursos para ir mas lejos
-
-Explore los siguientes citios para que vaya teniendo una idea de lo que se puede hacer:
-* https://randomnerdtutorials.com/
-* https://www.adafruit.com/
-* https://www.sparkfun.com/
-* https://www.seeedstudio.com/
-* https://www.luisllamas.es/
-* https://www.hackster.io/
-* https://hackaday.com/
-* https://projecthub.arduino.cc/
-* https://makezine.com/
-* https://make.co/
-* https://es.ubidots.com/
-* https://www.wildernesslabs.co/
-
 
 ## Referencias
 
