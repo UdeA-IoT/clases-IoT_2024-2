@@ -313,7 +313,7 @@ La siguiente tabla muestra enlaces con componentes disponibles en la Web:
 > 2. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
 > 2. **Fritzing** [[link]](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/IOST_Library/07%3A_Electronics_Book/01%3A_Electric_Fundamentals/05%3A_Fritzing)
 
-#### 5.2. Pasos para llevar a cabo el prototipado
+### 5.2. Pasos para llevar a cabo el prototipado
 
 Un **prototipo** es una versión inicial del producto cuya finalidad es proporcionar una representación tangible y funcional del producto para identificar posibles mejoras, problemas y obtener retroalimentación de usuarios.
 
@@ -358,7 +358,6 @@ Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se
    Despues de esto, se pueden llevar a cabo nuevas mejoras mediante la aplicación de un proceso iterativo con el fin de obtener el producto ideal.
 
 <br>
-<br>
 
 > **Para profundizar mas**<br>
 > Si desea profundizar un poco mas sobre el proceso de prototipado, lo invitamos a que lea estas paginas:
@@ -367,14 +366,9 @@ Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se
 > 3. **Ultimate Guide: How to Develop and Prototype a New Electronic Hardware Product in 2024** [[link]](https://predictabledesigns.com/how-to-develop-and-prototype-a-new-product/)
 > 4. **7 steps to making a prototype and supercharging your product design** [[link]](https://www.linkedin.com/pulse/7-steps-making-prototype-supercharging-your-product-design-gufhc)
 
-### Ejemplo
+### 5.3. Ejemplo sencillo
 
-El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los pasos 1 y 2. Para esto suponga que se desea diseñar un circuito que permita encender y apagar un del usando un interruptor.
-
-|Item #|Cantidad|Referencia|Descripción|
-|---|---|---|---|
-|1|1|LED1|Led rojo|
-|2|1|R1|Resistencia de $1k\Omega$|
+El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los primeros tres pasos. Para esto suponga que se desea diseñar un circuito que permita encender y apagar un del usando un interruptor.
 
 1. **Diseñar el circuito**: A continuación se muestra el esquematico:
    
@@ -390,18 +384,40 @@ El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los
 
    ![led_fisico](montaje-fisico.png)
 
+   A continuación se muestra el circuito simulado en tinkercad ([link](https://www.tinkercad.com/things/3xGQvJq9Oq1-ejemploprototipo)):
+
+   ![simulacion](simulacion_prototipo.png)
+
+   La simulación en wokwi ([link](https://wokwi.com/projects/406696186582842369)) tambien se muestra a continuación:
+
+   ![simulacion_wokwi](sim_wokwi.png)
+
+
+3. **Definir la lista de componentes**: A continuación se muestra la lista de componentes del circuito:
+   
+   |Item #|Cantidad|Referencia|Descripción|
+   |---|---|---|---|
+   |1|1|LED1|Led rojo|
+   |2|1|R1|Resistencia de $330\Omega$|
+   |3|1|P1|Pulsador|
+
 Con el objetivo de afianzar el procedimiento anterior, lo invitamos a que desarrolle los siguientes dos ejercicios.
 
-### Ejercicio 1
+### 5.4. Ejercicios de refuerzo
 
-A continuación se muestra un circuito que permite variar la intensidad de un led a traves de un potenciometro conectado a un arduino. La lista de componentes se muestra en el siguiente BOM:
+#### Ejercicio 1
+
+A continuación se muestra un circuito que permite variar la intensidad de un led a traves de un potenciometro conectado a un arduino. 
+
+La lista de componentes se muestra en el siguiente BOM:
+
 
 |Item #|Cantidad|Referencia|Descripción|
 |---|---|---|---|
 |1|1|LED1|Arduino Uno R3|
 |2|1|R1|Potenciometro de $10k\Omega$|
 |3|1|R2|Resistencia de $270\Omega$|
-|4|1|D1|LED|
+
 
 El esquemático se muestra a continuación:
 
@@ -428,7 +444,7 @@ Realizar las siguientes tareas:
    }
    ```
 
-3. Empleando Tinkercad (https://tinkercad.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
+3. Empleando [wokwi](https://wokwi.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
 
 ### Ejercicio 2
 
@@ -471,9 +487,9 @@ Realizar las siguientes tareas:
    }
    ```
 
-3. Empleando Tinkercad (https://tinkercad.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
+3. Empleando [wokwi](https://wokwi.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
 
-## 7. Tarjetas de expación y modulos
+## 6. Tarjetas de expación y modulos
 
 El proceso de prototipado usando protoboard depende de la complejidad del circuito y de los componentes disponible y en el peor de los casos, puede ser sumamente completo (imagen tomada de **BREADBIN IS AN 8-BIT TTL CPU ON A BREADBOARD, IN A BREAD BIN** ([link](https://hackaday.com/2021/10/05/breadbin-is-an-8-bit-ttl-cpu-on-a-breadboard-in-a-bread-bin/))):
 
@@ -490,7 +506,7 @@ Por otro lado un **modulo externo**, consiste de uno o varios componentes de har
 En la sección 3, se mostraron algunos de los modulos **plug & play** disponibles en el aboratorio, estos se caracterizan por ser modulos de iniciación ya que la complejidad de los componentes no es mayor. Sin embargo existen modulos mas expecializados como GPS, transeptores, modulos inalambricos y sensores y actuadores de mayor presición y potencia disponibles. 
 
 > **Importante** <br>
-Usar modulos y targetas de expanción facilita el prototipado ahorrando la etapa 3 del proceso presentado en la sección 5.
+Usar modulos y targetas de expanción facilita el prototipado ahorrando trabajo en el [paso 2](#52-pasos-para-llevar-a-cabo-el-prototipado)  del proceso presentado en la sección 5.
 
 Existen una gran cantidad de fabricantes de modulos y tarjetas de expación, a continuación se listan algunos:
 
@@ -508,8 +524,7 @@ Existen una gran cantidad de fabricantes de modulos y tarjetas de expación, a c
 |keyestudio|https://www.keyestudio.com/|
 |Arduino|https://store-usa.arduino.cc/products/|
 
-
-## 8. Arduino Framework 
+## 7. Arduino Framework 
 
 Cuando hablamos de Arduino nos referimos al framework para microcontroladores mas popular en la actualidad.
 
@@ -546,9 +561,9 @@ Una vez se tiene claridad en esto, se procede a realizar los siguientes pasos co
 
 A continuación se va a mostrar el procedimiento anterior mediante algunos ejemplos.
 
-### Ejemplo 1
+#### Ejemplo 1
 
-En el **ejercicio 1** se mostró un sistema de sistema de parpadeo manual usando el Arduino UNO:
+En el [**ejercicio 1**](#54-ejercicios-de-refuerzo) se mostró un sistema de sistema de parpadeo manual usando el Arduino UNO:
 
 ![ejercicio1](ejercicio1.png)
 
@@ -571,7 +586,7 @@ void loop() {
 }
 ```
 
-Reimplemente el sistema anterior empleando el ESP32 yusando los módulos descritos en la siguiente lista de materiales:
+Reimplemente el sistema anterior empleando el ESP32 y usando los módulos descritos en la siguiente lista de materiales:
 
 |Item #|Cantidad|Referencia|Descripción|Información|Observaciones|
 |---|---|---|---|---|---|
@@ -588,7 +603,11 @@ Reimplemente el sistema anterior empleando el ESP32 yusando los módulos descrit
   - [ ] Realice este proceso usando el Arduino IDE (Ver la sección de ejemplos introductorios para el ESP32 siguiendo el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3))
   - [ ] Realice este proceso usando el Platformio (Siga los pasos mostrados en el ejemplo 2 de la sesión 4 [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion4c))
 
-## I/O básico en el ESP32
+#### Ejemplo 2
+
+Repita los pasos realizados anteriormente para el circuito de [**ejercicio 2**](#54-ejercicios-de-refuerzo)
+
+## 6.1. I/O básico en el ESP32
 
 Inicialmente, vamos a explorar el API de Arduino para manejar entradas y salidas analogas y digitales básicas. Como punto de partida se tiene que tener claro los pines que se van a usar y, como estos son multifuncionales, tener claridad en las funciones que estos soportan. Para esto es necesario consultar en el datasheet de la placa el diagrama de pines y las funciones que estos pueden llevar a cabo. A continuación, por comodidad volvemos a mostrar el mapa de pines para la ESP32 disponible en el laboratorio:
 
@@ -612,7 +631,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 > **Para profundizar mas** </br> Para tener mas claridad al respecto, remitase a la pagina **ESP32 Pinout Reference: Which GPIO pins should you use?** ([link](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/
 ))
 
-### Digital I/O
+### 6.2. Digital I/O
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
@@ -620,14 +639,14 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`digitalWrite()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)|`digitalWrite(pin)`|Escribe un `HIGH` o `LOW` en el `pin` espeficicado|
 |[`digitalRead()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)|`int digitalRead(pin)`|Lee el valor del digital del `pin` especificado, el valor retornado puede ser `HIGH` o `LOW`|
 
-### Analog I/O
+### 6.3. Analog I/O
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
 |[`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)|`analogRead(pin)`|Lee el valor de un pin ánalogo. El valor leido depende de la resolución (numero de bits) del conversor analogo digital del pin elegido.|
 |[`analogWrite()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)|`analogWrite(pin, value)`|Escribe un valor analogo ([señal PWM](https://docs.arduino.cc/learn/microcontrollers/analog-output/)) en el pin. El valor del ciclo de dureza de la señal PWM (`value`) es un valor entre `0` y `255`.|
 
-### Tiempo
+### 6.3. Tiempo
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
@@ -636,7 +655,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`millis()`](https://www.arduino.cc/reference/en/language/functions/time/millis/)|`time = millis()`|Devuelve la cantidad de milisegundos que pasan desde que el placa empieza la ejecución del programa.|
 |[`micros()`](https://www.arduino.cc/reference/en/language/functions/time/micros/)|`time = micros()`|Obtiene el numero de microsegundos que han pasado desde que el placa empieza la ejecución del programa.|
 
-## Descarga de aplicaciones en la placa base
+## 6.4. Descarga de aplicaciones en la placa base
 
 Antes de empezar, tenga a la mano, el diagrama de pines del NodeMCU (dada la importantci de esto, se lo volvemos a mostrar, disculpenos por cansones):
 
@@ -724,7 +743,6 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://make.co/
 * https://es.ubidots.com/
 * https://www.wildernesslabs.co/
-
 
 ## Referencias
 
