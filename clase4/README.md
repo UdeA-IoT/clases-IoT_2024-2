@@ -257,7 +257,9 @@ Para profundizar mas consulte la información relacionada con los sistemas de de
 
 ## 5. Prototipado básico
 
-Fritzing es una plataforma para plataforma permitira prototipar hardware en su computador y verificar su funcionamiento antes de hacer el montaje en fisico.
+### 5.1. Primeros pasos con Fritzing
+
+[Fritzing](https://fritzing.org/) es una plataforma para plataforma permitira prototipar hardware en su computador y verificar su funcionamiento antes de hacer el montaje en fisico.
 
 ![fritzing](Fritzing_breadboard_view.jpg)
 
@@ -302,23 +304,27 @@ La siguiente tabla muestra enlaces con componentes disponibles en la Web:
 |StudioPieters|Fritzing – New Parts [[link]](https://www.studiopieters.nl/fritzing/)|https://github.com/AchimPieters/Fritzing-Custom-Parts|[[descarga]](https://github.com/AchimPieters/Fritzing-Custom-Parts/releases/download/0.0.4/Fritzing.parts.rar)|
 |ESP32 NodeMCU|ESP32S-HiLetgo Dev Boad with Pinout Template [[link]](https://forum.fritzing.org/t/esp32s-hiletgo-dev-boad-with-pinout-template/5357)||[[descarga]](https://forum.fritzing.org/uploads/default/original/2X/1/1c6c1b0e5bff03730a40b696b354783432fbb506.fzpz)|
 |Arduino Nano 33 BLE Sense [[link]](https://store-usa.arduino.cc/products/arduino-nano-33-ble-sense)|||[[descarga]](https://content.arduino.cc/assets/Arduino%20Nano%2033%20BLE%20Sense.fzpz)|
+|Fritzing Projects|Pagina de proyectos de Fritzing [[link]](https://fritzing.org/projects/)|
+|Arduino Modules Info| ArduinoModulesInfo [[link]](https://arduinomodules.info/)|
 
+> **Para profundizar**<br>
+> Para profundizar mas en el uso de la herramienta Fritzing puede seguir los siguientes enlaces:
+> 1. **Fritzing - Documentación de Aprendizaje** [[link]](https://fritzing.org/learning/)
+> 2. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
+> 2. **Fritzing** [[link]](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/IOST_Library/07%3A_Electronics_Book/01%3A_Electric_Fundamentals/05%3A_Fritzing)
 
+#### 5.2. Pasos para llevar a cabo el prototipado
 
-disponibles en kits de desarrollo puede seguir cualquiera de los dos enlaces que se muestran a continuación:
-1. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
-2. **Fritzing** [[link]](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/IOST_Library/07%3A_Electronics_Book/01%3A_Electric_Fundamentals/05%3A_Fritzing)
+Un **prototipo** es una versión inicial del producto cuya finalidad es proporcionar una representación tangible y funcional del producto para identificar posibles mejoras, problemas y obtener retroalimentación de usuarios.
 
-> **Importante** <br>
-> Consulte la sección **Prototipado básico usando fritzing** en el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
+![prototipado](prototipado.png)
 
-Antes de empezar, es necesario tener bien claro cuales son los requerimientos que debe cumplir el sistema electronico y proceder a determinar los componentes que haran parte del sistema en cuestión. 
+En nuestro contexto, antes de empezar, es necesario tener bien claro cuales son los requerimientos que debe cumplir el sistema electronico y proceder a determinar los componentes que haran parte del sistema en cuestión. 
 
-Una vez hecho lo anterior, el siguiente paso cosiste en hacer un inventario de los componentes necesarios conocido como **Bill of Materials (BOM)** ([What is a Bill of Materials (BOM) in PCB Design?](https://www.seeedstudio.com/blog/2019/07/24/what-is-a-bill-of-materials-bom-in-pcb-design/)). La siguiente figura (tomada del siguiente [link](https://www.proto-electronics.com/blog/how-to-create-best-bom-for-pcb)) muestra un BOM tipico:
+![thinking_design](thinking_design.png)
 
-![BOM](BOM_example.png)
+Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se describen a continuación:
 
-Con esto ya definido, es posible empezar el proceso de prototipado el cual, se puede resumir en los siguientes pasos:
 1. **Diseñar el circuito**: Este procedimiento implica el diseño del esquematico (para profundizar respecto al tema acceda al sitio [How to Read a Schematic](https://learn.sparkfun.com/tutorials/how-to-read-a-schematic/)) en el cual se especifique claramente la conexión de los componentes. La siguiente figura muestra algunos simbolos de uso común:
    
    ![esquematico](fig-esquematico.png)
@@ -335,16 +341,31 @@ Con esto ya definido, es posible empezar el proceso de prototipado el cual, se p
    
    ![montaje-bb](fig-montaje.png)
 
-3. **Diseñar el PCB del prototipo**: Una vez que el diseño es probado y se determina que funciona de acuerdo a las especificaciones, se procede a diseñar el circuito impreso del diseño. Para ello se pueden usar programas de diseño PCB como KiCad o Eagle.
+   Aqui, se llevan a cabo las primeras pruebas de funcionamiento y se hacen las correcciones necesarias antes de seguir con la versión final del producto.
+
+3. **Definir la lista de componentes**: Una vez hecho lo anterior, el siguiente paso cosiste en hacer un inventario de los componentes necesarios conocido como **Bill of Materials (BOM)** ([What is a Bill of Materials (BOM) in PCB Design?](https://www.seeedstudio.com/blog/2019/07/24/what-is-a-bill-of-materials-bom-in-pcb-design/)). La siguiente figura (tomada del siguiente [link](https://www.proto-electronics.com/blog/how-to-create-best-bom-for-pcb)) muestra un BOM tipico:
+   
+   ![BOM](BOM_example.png)
+
+4. **Diseñar el PCB del prototipo**: Una vez que el diseño es probado y se determina que funciona de acuerdo a las especificaciones, se procede a diseñar el circuito impreso del diseño. Para ello se pueden usar programas de diseño PCB como KiCad o Eagle.
    
    ![pcb](fig-pcb.png)
 
-> **Importante** <br>
-El último paso esta fuera del alcance de este curso por lo que no se hará a paso.
+5. **Ensamblar y probar el protipo**: Una vez se tiene tiene lo anterior lo que se debe realizar es soldar los componentes a la PCB y mostrar el producto funcional.
+   
+   ![product](Electronic_Product_1.jpeg)
+   
+   Despues de esto, se pueden llevar a cabo nuevas mejoras mediante la aplicación de un proceso iterativo con el fin de obtener el producto ideal.
+<br>
+<br>
+> **Para profundizar mas**<br>
+> Si desea profundizar un poco mas sobre el proceso de prototipado, lo invitamos a que lea estas paginas:
+> 1. **The Essential Guide to Prototyping your Electronic Hardware Product** [[link]](https://www.sparkfun.com/news/3928)
+> 2. **The Essential Guide to Prototyping Your New Electronic Hardware Product** [[link]](https://www.elecrow.com/blog/the-essential-guide-to-prototyping-your-new-electronic-hardware-product.html)
+> 3. **Ultimate Guide: How to Develop and Prototype a New Electronic Hardware Product in 2024** [[link]](https://predictabledesigns.com/how-to-develop-and-prototype-a-new-product/)
+> 4. **7 steps to making a prototype and supercharging your product design** [[link]](https://www.linkedin.com/pulse/7-steps-making-prototype-supercharging-your-product-design-gufhc)
 
-En la siguiente figura (tomada de [How to read a schematic](https://learn.sparkfun.com/tutorials/how-to-read-a-schematic) de Sparkfun) muestra algunos de los principales simbolos usados en esqumeticos:
 
-![simbolos-esquemtatico](simbolos_esquematicos.png)
 
 ### Ejemplo
 
