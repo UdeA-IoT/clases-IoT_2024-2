@@ -356,16 +356,16 @@ Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se
    ![product](Electronic_Product_1.jpeg)
    
    Despues de esto, se pueden llevar a cabo nuevas mejoras mediante la aplicación de un proceso iterativo con el fin de obtener el producto ideal.
+
 <br>
 <br>
+
 > **Para profundizar mas**<br>
 > Si desea profundizar un poco mas sobre el proceso de prototipado, lo invitamos a que lea estas paginas:
 > 1. **The Essential Guide to Prototyping your Electronic Hardware Product** [[link]](https://www.sparkfun.com/news/3928)
 > 2. **The Essential Guide to Prototyping Your New Electronic Hardware Product** [[link]](https://www.elecrow.com/blog/the-essential-guide-to-prototyping-your-new-electronic-hardware-product.html)
 > 3. **Ultimate Guide: How to Develop and Prototype a New Electronic Hardware Product in 2024** [[link]](https://predictabledesigns.com/how-to-develop-and-prototype-a-new-product/)
 > 4. **7 steps to making a prototype and supercharging your product design** [[link]](https://www.linkedin.com/pulse/7-steps-making-prototype-supercharging-your-product-design-gufhc)
-
-
 
 ### Ejemplo
 
