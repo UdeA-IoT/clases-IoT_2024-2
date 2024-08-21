@@ -11,9 +11,9 @@
 1. Lección 3 **Interact with the phisycal world** ([link](https://github.com/microsoft/IoT-For-Beginners/blob/main/1-getting-started/lessons/2-deeper-dive/README.md)) del curso **IoT for Beginners** ([link](https://github.com/microsoft/IoT-For-Beginners)) de Microsoft.
 
 
-## Librerias
+## 1. Librerias
 
-### Conceptos preliminares
+### 1.1. Conceptos preliminares
 
 Cuando se adquiere una una impresora, el primer paso para que esta pueda usarse, consiste en obtener e instalar los drivers para que esta pueda funcionar correctamente en el sistema operativo. Normalmente, los fabricantes proporcionan los drivers de los dispositivos y por lo tanto, el procedimiento de poner en marcha el hardware consiste simplemente en ejecutar un simple instalador y listo; sin embargo, a veces se puede dar el caso en que el driver no existe y a menos que uno mismo lo cree, esta condenado a no poder usar dicho hardware y, generalmente, si esto ultimo pasa el resultado es que se quede con los crespos hechos a no ser que sea como Richard Stallman (Saint IGNUcius) (Ver: Cómo sería el mundo y la tecnología hoy en día sin el software libre y sin las ideas de Richard Stallman ([link](https://www.xataka.com/especiales/como-seria-mundo-tecnologia-hoy-dia-software-libre-ideas-richard-stallman)))
 
@@ -21,13 +21,16 @@ Cuando se adquiere una una impresora, el primer paso para que esta pueda usarse,
   <img src="saintignucius.jpg">
 </p>
 
-Con el caso de los sistemas elecrónicos basados en microcontroladores sucede algo similar, cuando se desea que una aplicación use un hardware externo (sensor, actuador o memoria, por citar algunos casos), es necesario disponer de los drivers necesarios para permitir la interacción entre el firmware (programa descargado en el microcontrolador) y el hardware externo con el que este interactua.
+Con el caso de los sistemas elecrónicos basados en microcontroladores sucede algo similar, cuando se desea que una aplicación use un hardware externo (sensor, actuador o memoria, por citar algunos casos), es necesario disponer de los ***drivers*** necesarios para permitir la interacción entre el ***firmware*** (programa descargado en el microcontrolador) y el ***hardware externo*** con el que este interactua.
+
+![drivers](drivers.png)
+
 
 Existen casos en los que el hardware externo no posee soporte, de modo que, se hace necesario para el programador el diseño y la programación de los programas (drivers) necesarios para su interacción y control; sin embargo, esta es una tarea dificil por que exige conocimiento de hardware, protocolos y detalles de bajo nivel relacionados con el diseño del hardware. Afortunadamente, una de las caracteristicas del proyecto Arduino radica en su filosofia **Open Hardware y Software** lo cual hace que gran candidad de hardware sea soportada para la plataforma Arduino.
 
 Gracias a este soporte, es posible encontrar gran cantidad de bibliotecas prediseñadas que ocultan todos los detalles de bajo nivel para controlar el hardware, lo cual permite que el programador se centre en la logica del sistema en vez de en los detalles de bajo nivel.
 
-### Agregando librerias
+### 1.2. Agregando librerias
 
 Exiten tutoriales en internet que explican muy bien como importar librerias portadas al API de Arduino, a continuación se listan estos enlaces:
 1. **Installing an Arduino Library** de Sparkfun ([link](https://learn.sparkfun.com/tutorials/installing-an-arduino-library/all))
@@ -38,7 +41,7 @@ Exiten tutoriales en internet que explican muy bien como importar librerias port
 6. **Getting Started with VS Code and PlatformIO IDE for ESP32 and ESP8266 (Windows, Mac OS X, Linux Ubuntu)** de randomnerdtutorials ([link](https://randomnerdtutorials.com/vs-code-platformio-ide-esp32-esp8266-arduino/))
 7. **Library Management** de Platformio ([link](https://docs.platformio.org/en/latest/librarymanager/index.html))
 
-### Instalación de librerias en el Arduino IDE
+#### 1.2.1. Instalación de librerias en el Arduino IDE (Opcional)
 
 El proceso de instalación de librerias en Arduino es sumamente facil, lo unico que se tiene que hacer es seguir las instrucciones de la pagina **Installing Libraries**. El procedimiento varia dependiendo de la version del IDE de Arduino que se tenga instalado, en los siguientes enlaces se puede consultar el procedimiento:
 1. **Instalación de librerias para el IDE de Arduino (v1)** [[link]](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries/)
@@ -57,7 +60,7 @@ Despues de que se tiene instalada la biblioteca, es posible usar las funciones q
   <img src="arduino_keypad.png">
 </p>
 
-### Instalación de librerias en el Platformio
+#### 1.2.2. Instalación de librerias en el Platformio
 
 La instalación de librerias en el platformio se puede realizar de varias maneras. Para instalar librerias se accede al **Library manager** en la interfaz **PlatformIO Home** ([link](https://docs.platformio.org/en/stable/home/index.html))  dando click en el botón **Libraries** tal y como se muestra en la siguiente imagen:
 
@@ -131,11 +134,71 @@ Una vez hecho lo anterior, ya es posible empezar a trabajar en el archivo **main
 
 > **Para profundizar** </br> En el tutorial **Installing SimpleFOClibrary with PlatformIO** ([link](https://docs.simplefoc.com/library_platformio)) se muestra claramente un ejemplo completo del proceso de instalación.
 
-### Ejemplos
+### 1.3. Actividad de refuerzo (Aun no se ha probado)
+
+1. **Prototipado en Fritzing**: Prototipar el Fritzing para el ESP32 un circuito similar a los descritos en la pagina **Grove - LCD RGB Backlight** [[link]](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/#play-with-arduino) agregando el Grove-LCD_RGB_Backlight (Buscar el componente en **Johnny-Five** [[repo]](https://github.com/rwaldron/johnny-five/tree/main)) al almacen de componentes ([grove-lcd-rgb.fzpz](grove-lcd-rgb.fzpz)).
+2. Observe que en la siguiente figura se conecta este dispositivo para el Arduino a traves del puerto I2C.
+   
+   ![seeeduino_rgb](seeeduino_rgb.jpg)
+
+   Identifique en el ESP32 los pines I2C para realizar la conexión de este componente. Luego usando frizting realice la conexión a los pines apropiados:
+   
+   La idea es descargar el siguiente código:
+
+   
+
+3. Descargar el firmaware en el ESP32 siguiendo las siguientes instrucciones:
+   - [x] Instalar la libreria necesaria para usar este LCD siguiendo los pasos descritos previamente. La siguiente tabla resume los detalles necesarios:
+   
+   |# | Libreria|	Tipo [H: Harware / S: Software]|Descripción|
+   |---|---|---|---|
+   |1 |Grove - LCD RGB Backlight [[link]](https://registry.platformio.org/libraries/seeed-studio/Grove%20-%20LCD%20RGB%20Backlight) [[repo]](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight)|H|Grove - 16X2 LCD RGB Backlight - Full Color Display [[link]](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight.html)|
+
+
+   - [x] Codificar el siguiente ejemplo en el archivo `main.cpp`.
+   
+      ```cpp
+      #include <Arduino>
+      #include <Wire.h>
+      #include "rgb_lcd.h"
+
+      rgb_lcd lcd;
+
+      const int colorR = 255;
+      const int colorG = 0;
+      const int colorB = 0;
+
+      void setup()  {
+        // set up the LCD's number of columns and rows:
+        lcd.begin(16, 2);
+    
+        lcd.setRGB(colorR, colorG, colorB);
+    
+        // Print a message to the LCD.
+        lcd.print("hello, world!");
+
+        delay(1000);
+      }
+
+      void loop() {
+        // set the cursor to column 0, line 1
+        // (note: line 1 is the second row, since counting begins with 0):
+        lcd.setCursor(0, 1);
+        // print the number of seconds since reset:
+        lcd.print(millis()/1000);
+
+        delay(100);
+      }
+      ```
+
+    - [x] Descargar la aplicación en el ESP32 para comprobar si el driver esta funcionando correctamente.
+ 
+
+## 2. Ejemplos
 
 A continuación se muestran algunos ejemplos en los cuales se emplean librerias de terceros para adaptar hardware externo a los diferentes proyectos sin necesidad de entrar en los detalles de su funcionamiento (casi como si se instalaran drivers por asi decirlo).
 
-#### Teclado matricial
+### 2.1. Teclado matricial
 
 El teclado, es uno de los elementos mas comunes para la entrada de datos en un sistema embebido. Existen de todos los tipos y tamaños; sin embargo, en los siguientes ejemplos haremos uso del teclado matricial.
 
@@ -161,7 +224,7 @@ En los siguientes ejemplos se muestran como usar un teclado matricial.
    <img src = "esp32_keypad_bb.png">
    </p>
 
-#### Display LCD
+#### 2.2. Display LCD
 
 Para que un usuario pueda usar facilmente un sistema embebido, éste tiene que disponer de alguna forma de desplegar los datos de manera clara para que el usuario pueda conocer el estado del sistema y pueda interactuar de manera correcta con este. En esta parte se abordara el display LCD, un periferico de salida mas robusto que los leds y los buzzer.
 
@@ -185,7 +248,7 @@ En los siguientes sencillos ejemplos se ilustra el uso del LCD.
    <img src = "esp32_keypad_lcd_bb.png">
    </p> 
 
-#### Sensor de temperatura y humedad - DTHxx
+### 2.3 Sensor de temperatura y humedad - DTHxx
 
 Los sistemas embebidos perciben el ambiente por medio de sensores. Los sensores permiten medir diferentes variables ambientales. En el siguiente ejemplo se explorara el sensore de temperatura y humedad DHT11.
 
@@ -211,8 +274,10 @@ A continuación, se muestran un ejemplo relacionado.
    <img src = "dh11-esp32_bb-1.jpg">
    </p>
 
-## Referencias
+## 3. Referencias
 
+* https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/
+* https://docs.espressif.com/projects/esp-idf/en/v3.1.6/get-started-cmake/get-started-devkitc.html
 * https://learn.sparkfun.com/tutorials/serial-communication/all
 * https://resources.altium.com/es/p/spi-versus-i2c-how-choose-best-protocol-your-memory-chips
 * https://resources.altium.com/es/p/i2c-vs-spi-vs-uart-how-layout-these-common-buses
