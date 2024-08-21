@@ -36,12 +36,14 @@ Con esto, tanto su repositorio como el original se iran actualizando conforme va
 
 La siguiente tabla muestra la lista de clases asociadas a esta sección:
 
-|Clase|Fecha|Tema|Recursos|
-|---|---|---|---|
-|1|08/08/2023|Introducción al IoT|[[link]](./clase1/)|
-|2|13/08/2023|Redes y protocolos |[[link]](./clase2/)|
-|3|15/08/2023|Componentes basicos de un Sistema IoT |[[link]](./clase3/)|
-|5|20/08/2023|...|[[link]](./clase4/)|
+|Clase|Fecha|Tema|Recursos|Observaciones|
+|---|---|---|---|---|
+|1|08/08/2023|Introducción al IoT|[[link]](./clase1/)||
+|2|13/08/2023|Redes y protocolos |[[link]](./clase2/)||
+|3|15/08/2023|Componentes basicos de un Sistema IoT |[[link]](./clase3/)||
+|4|20/08/2023|Implementando una Cosa [Parte 1]|[[link]](./clase4/)||
+|5|22/08/2023|Implementando una Cosa [Parte 2]|[[link]](./clase4/)||
+|6|27/08/2023|...|[[link]](./clase5/)||
 
 ### Capa de percepción
 
