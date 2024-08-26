@@ -224,7 +224,7 @@ En los siguientes ejemplos se muestran como usar un teclado matricial.
    <img src = "esp32_keypad_bb.png">
    </p>
 
-#### 2.2. Display LCD
+### 2.2. Display LCD
 
 Para que un usuario pueda usar facilmente un sistema embebido, éste tiene que disponer de alguna forma de desplegar los datos de manera clara para que el usuario pueda conocer el estado del sistema y pueda interactuar de manera correcta con este. En esta parte se abordara el display LCD, un periferico de salida mas robusto que los leds y los buzzer.
 
@@ -248,7 +248,25 @@ En los siguientes sencillos ejemplos se ilustra el uso del LCD.
    <img src = "esp32_keypad_lcd_bb.png">
    </p> 
 
-### 2.3 Sensor de temperatura y humedad - DTHxx
+### 2.3. Ejemplo Grove - OLED Display 0.96" (SSD1315)
+
+![oled_grove](Grove-OLED-Displey-0.96-SSD1315-pin.jpg)
+
+Enlaces:
+* https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/
+* https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/
+* https://docs.wokwi.com/parts/board-ssd1306
+* https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/
+* 
+
+Libreria:
+* U8g2 is a monochrome graphics library for embedded devices. U8g2 supports monochrome OLEDs and LCDs, which include our chip SSD1315.
+* https://github.com/olikraus/u8g2/wiki
+* https://github.com/olikraus/u8g2/wiki/u8g2reference
+* 
+
+
+### 2.4. Sensor de temperatura y humedad - DTHxx
 
 Los sistemas embebidos perciben el ambiente por medio de sensores. Los sensores permiten medir diferentes variables ambientales. En el siguiente ejemplo se explorara el sensore de temperatura y humedad DHT11.
 
@@ -273,6 +291,13 @@ A continuación, se muestran un ejemplo relacionado.
    <p align = "center">
    <img src = "dh11-esp32_bb-1.jpg">
    </p>
+
+
+**En remojo**:
+* https://randomnerdtutorials.com/esp32-flash-memory/
+* https://randomnerdtutorials.com/esp32-pir-motion-sensor-interrupts-timers/#:~:text=In%20this%20example%2C%20when%20motion,LED%20is%20automatically%20turned%20off.
+* 
+* 
 
 ## 3. Referencias
 
