@@ -205,12 +205,68 @@ Mediante los sensores y los actuadores es como la cosa interactua con el entorno
   
   ![kit_groove](Grove-Starter_Kit_v2.jpg)
 
+  La siguiente tabla detalla la lista de componentes con la que cuenta este kit:
+  
+  |#|Módulo|Tipo|
+  |---|---|---|
+  |1|Grove - LCD RGB Backlight|actuador|
+  |2|Grove – Relay|actuador|
+  |3|Grove – Buzzer|actuador|
+  |4|Grove - Sound Sensor|sensor|
+  |5|Grove - Touch Sensor|sensor|
+  |6|Grove - Rotary Angle Sensor|sensor|
+  |7|Grove – Temperature Sensor|sensor|
+  |8|Grove - LED|actuador|
+  |9|Grove - Light Sensor|sensor|
+
   > **Documentación**<br>
   > Para mas información consultar la documentación del **Grove - Starter Kit v3** ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
 
 * **37 Sensor Kit - Elegoo** [[link]](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/inventario-lab#37-sensor-kit---elegoo)
   
   ![sensores_elegoo](sensores_elegoo.jpg)
+
+  La lista de elementos para este kit se describe a continuación:
+
+  | No. | Módulo                                 | Tipo     |
+  |-----|----------------------------------------|----------|
+  | 1   | DHT11 Temperature and Humidity Module  | sensor   |
+  | 2   | DS18B20 Temperature Sensor Module      | sensor   |
+  | 3   | Button switch module                   | sensor   |
+  | 4   | Tilt Switch module                     | sensor   |
+  | 5   | IR Transmitter Module                  | actuador |
+  | 6   | IR Receiver Module                     | sensor   |
+  | 7   | Seven-Color flash Module               | actuador |
+  | 8   | Passive Buzzer                         | actuador |
+  | 9   | Active Buzzer                          | actuador |
+  | 10  | Laser Module                           | actuador |
+  | 11  | RGB LED Module                         | actuador |
+  | 12  | SMD RGB LED Module                     | actuador |
+  | 13  | Photo Interrupter Module               | sensor   |
+  | 14  | Two Color LED Module (5mm)             | actuador |
+  | 15  | Light Dependent Resistor Module        | sensor   |
+  | 16  | Large Microphone Module                | sensor   |
+  | 17  | Small microphone module                | sensor   |
+  | 18  | Reed Switch Module                     | sensor   |
+  | 19  | Digital temperature sensor module      | sensor   |
+  | 20  | Linear Magnetic Hall Sensor            | sensor   |
+  | 21  | Flame Sensor Module                    | sensor   |
+  | 22  | Touch Sensor                           | sensor   |
+  | 23  | Seven Color flash Module               | actuador |
+  | 24  | Joystick Module                        | sensor   |
+  | 25  | Line Tracking Module                   | sensor   |
+  | 26  | Obstacle Avoidance Sensor              | sensor   |
+  | 27  | Rotary Encode Module                   | sensor   |
+  | 28  | Relay Module                           | actuador |
+  | 29  | LCD display                            | actuador |
+  | 30  | Ultrasonic Sensor Module               | sensor   |
+  | 31  | MPU 6050 Module                        | sensor   |
+  | 32  | HC SR501 PIR Sensor                    | sensor   |
+  | 33  | Water Level Detection Sensor Module    | sensor   |
+  | 34  | DS1307 Serial Real Time Clock          | sensor   |
+  | 35  | Keypad Module                          | sensor   |
+
+  <br>
 
   > **Documentación**<br>
   > Para mas información consultar la documentación del **Elegoo-sensor-kit** ([link](https://github.com/ieee-uh-makers/elegoo-sensor-kit))
@@ -219,8 +275,141 @@ Mediante los sensores y los actuadores es como la cosa interactua con el entorno
   
   ![sensores_ladzo](sensores_ladzo.png)
 
-    > **Documentación**<br>
-    > Varios ejemplos asociados a este kit se pueden encontrar en la pagina **Arduino | 37 in 1 Sensors Kit Explained** ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
+  La lista de modulos se describe a continuación:
+
+  | No. | Módulo                            | Tipo     |
+  |-----|-----------------------------------|----------|
+  | 1   | KY-023 Joystick module            | sensor   |
+  | 2   | KY-026 Flame Sensor Module        | sensor   |
+  | 3   | KY-016 RGB LED Module             | actuador |
+  | 4   | KY-027 2PCS Light Cup module      | sensor   |
+  | 5   | KY-003 Hall Magnetic Sensor       | sensor   |
+  | 6   | KY-019 Relay Module               | actuador |
+  | 7   | KY-024 Linear Hall Sensor         | sensor   |
+  | 8   | KY-009 SMD RGB LED                | actuador |
+  | 9   | KY-034 7 Color Flash LED          | actuador |
+  | 10  | KY-017 Mercury Tilt Switch        | sensor   |
+  | 11  | KY-001 18B20 Temperature Sensor   | sensor   |
+  | 12  | KY-037 Big Sound Sensor           | sensor   |
+  | 13  | KY-036 Touch Sensor               | sensor   |
+  | 14  | KY-011 Two Color LED              | actuador |
+  | 15  | KY-008 Laser Emitter              | sensor   |
+  | 16  | KY-020 Ball Switch                | sensor   |
+  | 17  | KY-013 Analog Temperature Sensor  | sensor   |
+  | 18  | KY-038 Small Sound Sensor         | sensor   |
+  | 19  | KY-028 Digital Temperature Sensor | sensor   |
+  | 20  | KY-029 Mini Two-color LED         | actuador |
+  | 21  | KY-004 Button                     | sensor   |
+  | 22  | KY-018 Photoresistor              | sensor   |
+  | 23  | KY-005 IR Emitter                 | actuador |
+  | 24  | KY-033 Tracking Sensor            | sensor   |
+  | 25  | KY-012 Buzzer                     | actuador |
+  | 26  | KY-025 Reed Switch                | actuador |
+  | 27  | KY-002 Shock Sensor               | sensor   |
+  | 28  | KY-015 Temperature and Humidity Sensor | sensor   |
+  | 29  | KY-022 IR Receiver                | sensor   |
+  | 30  | KY-032 Avoidance Sensor           | sensor   |
+  | 31  | KY-006 Passive Buzzer             | actuador |
+  | 32  | KY-021 Mini Reed Switch           | sensor   |
+  | 33  | KY-040 Rotary Encoder             | sensor   |
+  | 34  | KY-035 Analog Hall Sensor         | sensor   |
+  | 35  | KY-031 - Tap Module               | sensor   |
+  | 36  | KY-010 - Light blocking           | sensor   |
+
+  <br>
+
+  > **Documentación**<br>
+  > Varios ejemplos asociados a este kit se pueden encontrar en la pagina **Arduino | 37 in 1 Sensors Kit Explained** ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
+
+
+La siguiente tabla muestra una clasificación resumida de los sensores anteriormente mostrados de acuerdo a los criterios mencionados en las secciones previas:
+
+| COUNTA de Reference |                      | Comunicación |              |              |              |              |     |              |
+|---------------------|----------------------|--------------|--------------|--------------|--------------|--------------|-----|--------------|
+| Transductor         | Reference            | 1-Wire       | analog       | digital      | digital + analog | digital + pwm | I2C | Suma total   |
+| **Actuador**        |                      |              |              |              |              |              |     |              |
+|                     | Active Buzzer        |              |              | x            |              |              |     | x            |
+|                     | Grove - LCD RGB Backlight |          |              |              |              |              | x   | x            |
+|                     | Grove - LED          |              |              |              |              | x            |     | x            |
+|                     | Grove – Buzzer       |              | x            |              |              |              |     | x            |
+|                     | Grove – Relay        |              | x            |              |              |              |     | x            |
+|                     | IR Transmitter Module |             |              |              |              | x            |     | x            |
+|                     | KY-005 IR Emitter    |              | x            |              |              |              |     | x            |
+|                     | KY-006 Passive Buzzer |             | x            |              |              |              |     | x            |
+|                     | KY-009 SMD RGB LED   |              |              |              |              | x            |     | x            |
+|                     | KY-011 Two Color LED |              |              |              |              | x            |     | x            |
+|                     | KY-012 Buzzer        |              | x            |              |              |              |     | x            |
+|                     | KY-016 RGB LED Module |             |              |              |              | x            |     | x            |
+|                     | KY-019 Relay Module  |              | x            |              |              |              |     | x            |
+|                     | KY-025 Reed Switch   |              | x            |              |              |              |     | x            |
+|                     | KY-029 Mini Two-color LED |         |              |              |              | x            |     | x            |
+|                     | KY-034 7 Color Flash LED |          | x            |              |              |              |     | x            |
+|                     | Laser Module         |              |              |              |              | x            |     | x            |
+|                     | LCD display          |              | x            |              |              |              |     | x            |
+|                     | Passive Buzzer       |              | x            |              |              |              |     | x            |
+|                     | Relay Module         |              | x            |              |              |              |     | x            |
+|                     | RGB LED Module       |              |              |              |              | x            |     | x            |
+|                     | Seven Color flash Module |          |              |              |              | x            |     | x            |
+|                     | Seven-Color flash Module |          | x            |              |              |              |     | x            |
+|                     | SMD RGB LED Module   |              |              |              |              | x            |     | x            |
+|                     | Two Color LED Module (5mm) |        | x            |              |              |              |     | x            |
+**Sensor**          |                      |              |              |              |              |              |     |              |
+|                     | Button switch module |              | x            |              |              |              |     | x            |
+|                     | DHT11 Temperature and Humidity Module | x          |              |              |              |              |     | x            |
+|                     | digital temperature sensor module | x           |              |              |              |              |     | x            |
+|                     | DS1307 Serial Real Time Clock |              |              |              |              |              | x   | x            |
+|                     | DS18B20 Temperature Sensor Module | x          |              |              |              |              |     | x            |
+|                     | Flame Sensor Module  |              |              |              |              |              | x   | x            |
+|                     | Grove - Light Sensor |              | x            |              |              |              |     | x            |
+|                     | Grove - Rotary Angle Sensor |      | x            |              |              |              |     | x            |
+|                     | Grove - Sound Sensor |              | x            |              |              |              |     | x            |
+|                     | Grove - Touch Sensor |              |              | x            |              |              |     | x            |
+|                     | Grove – Temperature Sensor |       | x            |              |              |              |     | x            |
+|                     | HC SR501 PIR Sensor  |              |              | x            |              |              |     | x            |
+|                     | IR Receiver Module   |              |              | x            |              |              |     | x            |
+|                     | Joystick Module      |              | x            |              |              |              |     | x            |
+|                     | Keypad Module        |              |              | x            |              |              |     | x            |
+|                     | KY-001 18B20 Temperature Sensor | x            |              |              |              |              |     | x            |
+|                     | KY-002 Shock Sensor  |              |              | x            |              |              |     | x            |
+|                     | KY-003 Hall Magnetic Sensor |              | x            |              |              |              |     | x            |
+|                     | KY-004 Button        |              |              | x            |              |              |     | x            |
+|                     | KY-008 Laser Emitter |              |              |              |              | x            |     | x            |
+|                     | KY-010 - Light blocking |          |              | x            |              |              |     | x            |
+|                     | KY-013 Analog Temperature Sensor |   | x            |              |              |              |     | x            |
+|                     | KY-015 Temperature and Humidity Sensor | x         |              |              |              |              |     | x            |
+|                     | KY-017 Mercury Tilt Switch |           |              | x            |              |              |     | x            |
+|                     | KY-018 Photoresistor |              | x            |              |              |              |     | x            |
+|                     | KY-020 Ball Switch   |              |              | x            |              |              |     | x            |
+|                     | KY-021 Mini Reed Switch |             |              | x            |              |              |     | x            |
+|                     | KY-022 IR Receiver   |              |              | x            |              |              |     | x            |
+|                     | KY-023 Joystick module |              | x            |              |              |              |     | x            |
+|                     | KY-024 Linear Hall Sensor |             | x            |              |              |              |     | x            |
+|                     | KY-026 Flame Sensor Module |            |              | x            |              |              |     | x            |
+|                     | KY-027 2PCS Light Cup module |           |              | x            |              |              |     | x            |
+|                     | KY-028 Digital Temperature Sensor | x           |              |              |              |              |     | x            |
+|                     | KY-031 - Tap Module |              |              | x            |              |              |     | x            |
+|                     | KY-032 Avoidance Sensor |              |              | x            |              |              |     | x            |
+|                     | KY-033 Tracking Sensor |              |              | x            |              |              |     | x            |
+|                     | KY-035 Analog Hall Sensor |             | x            |              |              |              |     | x            |
+|                     | KY-036 Touch Sensor  |              |              | x            |              |              |     | x            |
+|                     | KY-037 Big Sound Sensor |              |              |              |              |              |     | x            |
+|                     | KY-038 Small Sound Sensor |            |              |              |              |              |     | x            |
+|                     | KY-040 Rotary Encoder |              |              | x            |              |              |     | x            |
+|                     | Large Microphone Module |            |              |              |              |              |     | x            |
+|                     | Light Dependent Resistor Module |      | x            |              |              |              |     | x            |
+|                     | Line Tracking Module |              |              | x            |              |              |     | x            |
+|                     | Linear Magnetic Hall Sensor |              |              |              |              |              |     | x            |
+|                     | MPU 6050 Module |                      |              |              |              |              | x   | x            |
+|                     | Obstacle Avoidance Sensor |            |              | x            |              |              |     | x            |
+|                     | Photo Interrupter Module |            |              | x            |              |              |     | x            |
+|                     | Reed Switch Module |                  |              |              |              |              |     | x            |
+|                     | Rotary Encode Module |                |              | x            |              |              |     | x            |
+|                     | Small microphone module |             |              |              |              |              |     | x            |
+|                     | Tilt Switch module |                  |              | x            |              |              |     | x            |
+|                     | Touch Sensor |                        |              | x            |              |              |     | x            |
+|                     | Ultrasonic Sensor Module |            |              | x            |              |              |     | x            |
+|                     | Water Level Detection Sensor Module | |              | x            |              |              |     | x            |
+
 
 
 ## 4. Trabajando con las placas de desarrollo a estudiar
@@ -255,9 +444,9 @@ A continuación se muestra el diagrama de pines (**pinout**) para el Arduino UNO
 > **Para profundizar** <br>
 Para profundizar mas consulte la información relacionada con los sistemas de desarrollo anteriores en el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
 
-## 5. Prototipado básico
+## 6. Prototipado básico
 
-### 5.1. Primeros pasos con Fritzing
+### 6.1. Primeros pasos con Fritzing
 
 [Fritzing](https://fritzing.org/) es una plataforma para plataforma permitira prototipar hardware en su computador y verificar su funcionamiento antes de hacer el montaje en fisico.
 
@@ -313,7 +502,7 @@ La siguiente tabla muestra enlaces con componentes disponibles en la Web:
 > 2. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
 > 2. **Fritzing** [[link]](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/IOST_Library/07%3A_Electronics_Book/01%3A_Electric_Fundamentals/05%3A_Fritzing)
 
-### 5.2. Pasos para llevar a cabo el prototipado
+### 6.2. Pasos para llevar a cabo el prototipado
 
 Un **prototipo** es una versión inicial del producto cuya finalidad es proporcionar una representación tangible y funcional del producto para identificar posibles mejoras, problemas y obtener retroalimentación de usuarios.
 
@@ -370,7 +559,7 @@ Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se
 > 3. **Ultimate Guide: How to Develop and Prototype a New Electronic Hardware Product in 2024** [[link]](https://predictabledesigns.com/how-to-develop-and-prototype-a-new-product/)
 > 4. **7 steps to making a prototype and supercharging your product design** [[link]](https://www.linkedin.com/pulse/7-steps-making-prototype-supercharging-your-product-design-gufhc)
 
-### 5.3. Ejemplo sencillo
+### 6.3. Ejemplo sencillo
 
 El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los primeros tres pasos. Para esto suponga que se desea diseñar un circuito que permita encender y apagar un del usando un interruptor.
 
@@ -407,7 +596,7 @@ El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los
 
 Con el objetivo de afianzar el procedimiento anterior, lo invitamos a que desarrolle los siguientes dos ejercicios.
 
-### 5.4. Ejercicios de refuerzo
+### 6.4. Ejercicios de refuerzo
 
 #### Ejercicio 1
 
@@ -493,7 +682,7 @@ Realizar las siguientes tareas:
 
 3. Empleando [wokwi](https://wokwi.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
 
-## 6. Tarjetas de expación y modulos
+## 7. Tarjetas de expación y modulos
 
 El proceso de prototipado usando protoboard depende de la complejidad del circuito y de los componentes disponible y en el peor de los casos, puede ser sumamente completo (imagen tomada de **BREADBIN IS AN 8-BIT TTL CPU ON A BREADBOARD, IN A BREAD BIN** ([link](https://hackaday.com/2021/10/05/breadbin-is-an-8-bit-ttl-cpu-on-a-breadboard-in-a-bread-bin/))):
 
@@ -528,7 +717,7 @@ Existen una gran cantidad de fabricantes de modulos y tarjetas de expación, a c
 |keyestudio|https://www.keyestudio.com/|
 |Arduino|https://store-usa.arduino.cc/products/|
 
-## 7. Arduino Framework 
+## 8. Arduino Framework 
 
 Cuando hablamos de Arduino nos referimos al framework para microcontroladores mas popular en la actualidad.
 
@@ -540,7 +729,7 @@ El modelo de programación de arduino esta basado en el **API de Arduino** el cu
 
 Antes de empezar se recomienda que tenga a la mano el documento  **Arduino Cheat Sheet** ([link](https://github.com/UdeA-IoT/reference-sheets/blob/main/percepcion/arduino/Arduino_Cheat_Sheet.pdf)) de Sparkfun.
 
-## 6. Desarrollo básico de aplicaciónes usando las placas base
+## 9. Desarrollo básico de aplicaciónes usando las placas base
 
 Desarrollar aplicación implica combinar conocimientos de hardware y software. En lo que respecta al primero, en nuestro caso lo fundamental es tener un conocimiento claro de las capacidades de la placa a emplear y del diagrama de pines (para mas información consulte el siguiente. En lo que respecta al software, el conocimiento implica un conocimiento del lenguaje C++ (para nuestro caso) y del modelo de programación del Framework de Arduino.
 
@@ -563,7 +752,7 @@ Una vez se tiene claridad en esto, se procede a realizar los siguientes pasos co
 3. Mediante el IDE, compilar y descargar el programa en la placa de desarrollo.
 4. Probar que el sistema IoT funcione de acuerdo a los requisitos definidos en la etapa de analisis y diseño.
 
-## 6.1. I/O básico en el ESP32
+## 9.1. I/O básico en el ESP32
 
 Inicialmente, vamos a explorar el API de Arduino para manejar entradas y salidas analogas y digitales básicas. Como punto de partida se tiene que tener claro los pines que se van a usar y, como estos son multifuncionales, tener claridad en las funciones que estos soportan. Para esto es necesario consultar en el datasheet de la placa el diagrama de pines y las funciones que estos pueden llevar a cabo. A continuación, por comodidad volvemos a mostrar el mapa de pines para la ESP32 disponible en el laboratorio:
 
@@ -587,7 +776,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 > **Para profundizar mas** </br> Para tener mas claridad al respecto, remitase a la pagina **ESP32 Pinout Reference: Which GPIO pins should you use?** ([link](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/
 ))
 
-### 6.2. Digital I/O
+### 9.2. Digital I/O
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
@@ -595,14 +784,14 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`digitalWrite()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)|`digitalWrite(pin)`|Escribe un `HIGH` o `LOW` en el `pin` espeficicado|
 |[`digitalRead()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)|`int digitalRead(pin)`|Lee el valor del digital del `pin` especificado, el valor retornado puede ser `HIGH` o `LOW`|
 
-### 6.3. Analog I/O
+### 9.3. Analog I/O
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
 |[`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)|`analogRead(pin)`|Lee el valor de un pin ánalogo. El valor leido depende de la resolución (numero de bits) del conversor analogo digital del pin elegido.|
 |[`analogWrite()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)|`analogWrite(pin, value)`|Escribe un valor analogo ([señal PWM](https://docs.arduino.cc/learn/microcontrollers/analog-output/)) en el pin. El valor del ciclo de dureza de la señal PWM (`value`) es un valor entre `0` y `255`.|
 
-### 6.3. Tiempo
+### 9.4. Tiempo
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
@@ -611,7 +800,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`millis()`](https://www.arduino.cc/reference/en/language/functions/time/millis/)|`time = millis()`|Devuelve la cantidad de milisegundos que pasan desde que el placa empieza la ejecución del programa.|
 |[`micros()`](https://www.arduino.cc/reference/en/language/functions/time/micros/)|`time = micros()`|Obtiene el numero de microsegundos que han pasado desde que el placa empieza la ejecución del programa.|
 
-### 6.4. Ejemplos GPIO
+### 9.5. Ejemplos GPIO
 
 A continuación, se muestran algunos ejemplos basicos donde se explota el API de Arduino para I/O:
 
@@ -862,9 +1051,9 @@ Una de las aplicaciones mas utilies del puerto serial es que facilita el debug d
 
 A continuación se va a mostrar el procedimiento anterior mediante algunos ejemplos.
 
-### 6.5. Ejemplos de refuerzo
+### 9.6. Ejemplos de refuerzo
 
-#### 6.5.1. Ejemplo 1
+#### 9.6.1. Ejemplo 1
 
 En el [**ejercicio 1**](#54-ejercicios-de-refuerzo) se mostró un sistema de sistema de parpadeo manual usando el Arduino UNO:
 
@@ -906,11 +1095,11 @@ Reimplemente el sistema anterior empleando el ESP32 y usando los módulos descri
   - [ ] Realice este proceso usando el Arduino IDE (Ver la sección de ejemplos introductorios para el ESP32 siguiendo el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3))
   - [ ] Realice este proceso usando el Platformio (Siga los pasos mostrados en el ejemplo 2 de la sesión 4 [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion4c))
 
-#### 6.5.2. Ejemplo 2
+#### 9.6.2. Ejemplo 2
 
 Repita los pasos realizados anteriormente para el circuito de [**ejercicio 2**](#54-ejercicios-de-refuerzo)
 
-### 6.6. Descarga de aplicaciones en la placa base
+### 9.7. Descarga de aplicaciones en la placa base
 
 Antes de empezar, tenga a la mano, el diagrama de pines del NodeMCU (dada la importantci de esto, se lo volvemos a mostrar, disculpenos por cansones):
 
@@ -920,7 +1109,7 @@ Luego, dependiendo de los requerimientos del sistema determine con claridad los 
 * Arduino IDE
 * Platformio ([link](../clase3/plaftormio_tutorial/))
 
-## 7. Algunos casos de aplicación
+## 10. Algunos casos de aplicación
 
 A continuación, se muestra una lista de proyectos aplicando algunas de las cosas previamente mensionadas.
 
@@ -932,9 +1121,9 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
 |4|Line Following Robot|https://projecthub.arduino.cc/lightthedreams/line-following-robot-34b1d3||
 
 
-### 8. Sobre los componentes
+### 11. Sobre los componentes
 
-#### 8.1. Fabricantes
+#### 11.1. Fabricantes
 
 En la siguiente tabla se muestran algunas de las principales empresas que se dedican a la fabricación de modulos para prototipado IoT:
 
@@ -948,7 +1137,7 @@ En la siguiente tabla se muestran algunas de las principales empresas que se ded
 
 Ademas de la fabricación, tambien documentan y muestran ejemplos demostrativos de como usar los componentes que allí se fabrican.
 
-#### 8.2. Distribuidores
+#### 11.2. Distribuidores
 
 Si lo que se quiere es comprar son componentes electronicos existen distribuidores para ello, en la siguiente tabla se muestran algunos de los principales distribuidores de componentes a nivel mundial (tomados de la pagina **2023 Top 50 Electronics Distributors List** ([link](https://www.supplychainconnect.com/rankings-research/article/21264998/2023-top-50-electronics-distributors-list))):
 
@@ -971,7 +1160,7 @@ En el caso colombiano, la siguiente lista (tomada del foro **Listado de proveedo
 |Suconel|https://suconel.com/|
 |La Red Electronica|https://laredelectronica.com/|
 
-## 9. Actividad
+## 12. Actividad
 
 Si no lo recuerda, revise el **Tutorial de platformio** ([link](../clase3/plaftormio_tutorial/)) donde se muestra el procedimiento para para descargar una programa en la ESP32. Luego, trate de comprender los ejemplos basicos mostrados en el siguiente [link](ejemplos_GPIO/README.md). El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
 
@@ -980,7 +1169,7 @@ Una vez entendidos los ejemplos anteriormente mostrados realice las siguientes t
 2. Copie y pegue en el directorio creado la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Para esto se puede basar en el directorio como base el directorio [example1](example1/). 
 3. Realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando los recursos que necesarios (archivo fritzing, imagen esquematico y montaje, código fuente, directorio con el código fuente generado por platformio) la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
 
-## 10. Recursos para ir mas lejos
+## 13. Recursos para ir mas lejos
 
 Explore los siguientes citios para que vaya teniendo una idea de lo que se puede hacer:
 * https://randomnerdtutorials.com/
@@ -996,7 +1185,8 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://es.ubidots.com/
 * https://www.wildernesslabs.co/
 
-## 11. Referencias
+
+## 14. Referencias
 
 * https://how2electronics.com/10-essential-iot-starter-kits-to-kickstart-your-journey/
 * https://github.com/UdeA-IoT/actividad-4
@@ -1009,3 +1199,9 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://github.com/microsoft/Data-Science-For-Beginners
 * https://digitalconcepts.net.au/fritzing/index.php?op=parts
 * https://www.studiopieters.nl/fritzing/
+* https://codeadam.ca
+* https://github.com/Intelligent-Internet-of-Things-Course
+* https://github.com/ETSISI-CCforIoT
+* https://azure.github.io/IoTTrainingPack/
+* https://github.com/orgs/programming-the-iot/repositories
+* https://github.com/antmicro/dl-in-iot-course

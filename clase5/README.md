@@ -263,7 +263,8 @@ Libreria:
 * U8g2 is a monochrome graphics library for embedded devices. U8g2 supports monochrome OLEDs and LCDs, which include our chip SSD1315.
 * https://github.com/olikraus/u8g2/wiki
 * https://github.com/olikraus/u8g2/wiki/u8g2reference
-* 
+* https://wokwi.com/projects/407297301135822849
+* https://wokwi.com/projects/407293686594197505
 
 
 ### 2.4. Sensor de temperatura y humedad - DTHxx
