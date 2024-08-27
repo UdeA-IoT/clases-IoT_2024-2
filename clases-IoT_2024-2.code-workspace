@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "oled-example",
+			"path": "clase5/examples_2024-2/oled-example"
+		},
+		{
+			"name": "oled-example2",
+			"path": "clase5/examples_2024-2/oled-example2"
+		}
+	],
+	"settings": {}
+}

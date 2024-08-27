@@ -800,7 +800,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`millis()`](https://www.arduino.cc/reference/en/language/functions/time/millis/)|`time = millis()`|Devuelve la cantidad de milisegundos que pasan desde que el placa empieza la ejecución del programa.|
 |[`micros()`](https://www.arduino.cc/reference/en/language/functions/time/micros/)|`time = micros()`|Obtiene el numero de microsegundos que han pasado desde que el placa empieza la ejecución del programa.|
 
-### 8.5. Ejemplos GPIO
+### 8.5. Ejemplos básicos usando GPIO
 
 A continuación, se muestran algunos ejemplos basicos donde se explota el API de Arduino para I/O:
 
@@ -824,6 +824,11 @@ A continuación, se muestran algunos ejemplos basicos donde se explota el API de
     delay(1000);                      
   }
   ```
+
+<br/>
+
+> **Nota**: El desarrollo detallado de este ejemplo se encuentra en el siguiente [link](ejemplos_GPIO/basic_examples/example1/)
+
 
 **Circuito 2**: Lectura de una señal digital ([link](https://wokwi.com/projects/335034266233602642))
 
@@ -859,6 +864,11 @@ A continuación, se muestran algunos ejemplos basicos donde se explota el API de
     }
     ```
 
+<br/>
+
+> **Nota**: El desarrollo detallado de este ejemplo se encuentra en el siguiente [link](ejemplos_GPIO/basic_examples/example2/)
+
+
 **Circuito 3**: Manejo de una señal PWM ([link](https://wokwi.com/projects/335030762714694227))
 
 * **Montaje**:
@@ -887,6 +897,10 @@ A continuación, se muestran algunos ejemplos basicos donde se explota el API de
       }
     }
     ```
+
+<br/>
+
+> **Nota**: El desarrollo detallado de este ejemplo se encuentra en el siguiente [link](ejemplos_GPIO/basic_examples/example3/)
 
 **Circuito 4**: Lectura de una entrada Análoga ([link](https://wokwi.com/projects/335035080677261908)).
 
@@ -922,6 +936,10 @@ A continuación, se muestran algunos ejemplos basicos donde se explota el API de
     }
     ```
 
+<br/>
+
+> **Nota**: El desarrollo detallado de este ejemplo se encuentra en el siguiente [link](ejemplos_GPIO/basic_examples/example4/)
+ 
 **Circuito 5**: Debug usando el puerto serial ([link](https://wokwi.com/projects/358500354708861953)).
 
 Una de las aplicaciones mas utilies del puerto serial es que facilita el debug de aplicaciones gracias a que por medio de este se pueden imprimir, en tiempo de ejecución, mensajes de log que sirven como verificar el correcto funcionamiento de la logica del programa al usar un programa como el monitor serial o cualquier programa similar. Es muy comun imprimir variables (que pueden indican el estado o valor de un sensor, mensajes de la aplicación, etc). 
@@ -1046,6 +1064,12 @@ Una de las aplicaciones mas utilies del puerto serial es que facilita el debug d
     }
     ```
 
+<br/>
+
+> **Nota**: El desarrollo detallado de este ejemplo se encuentra en el siguiente [link](ejemplos_GPIO/basic_examples/example3/)
+
+<br/>
+
 > **Para profundizar**: Para ver mas cosas de lo que se puede realizar con la ESP32 puede consultar dentro de la pagia de **randomnerdtutorials** el link **160+ ESP32 Projects, Tutorials and Guides with Arduino IDE** ([link](https://randomnerdtutorials.com/projects-esp32/))
 
 
@@ -1120,10 +1144,42 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
 |3|Arduino Solar Tracker|https://projecthub.arduino.cc/Aboubakr_Elhammoumi/arduino-solar-tracker-77347b||
 |4|Line Following Robot|https://projecthub.arduino.cc/lightthedreams/line-following-robot-34b1d3||
 
+## 10. Ejemplos adicionales
 
-### 10. Sobre los componentes
+### 10.1. Ejemplos usando un led RGB
 
-#### 10.1. Fabricantes
+1. Conectar al ESP32 un led RGB y ponerlo a alumbrar usando diferentes colores [[[simulacion]](https://wokwi.com/projects/391210532094486529) | [[solucion]](ejemplos_GPIO/RGB_example/example1/README.md)].
+   
+   ![RGB_1](ESP32_RGB_1.png)
+
+2. Conectar al ESP32 un led RGB y ponerlo a alumbrar cambiano a un color diferentes cada vez que el usuario presione un botón [[[simulacion]](https://wokwi.com/projects/391344633629636609) | [[solucion]](ejemplos_GPIO/RGB_example/example2/README.md)].
+   
+   ![RGB_2](ESP32_RGB_2.png)
+
+### 10.2. Ejemplos usando un sensor PIR
+
+1. Activar un led cuando se detecte presencia a traves del uso de un sensor PIR [[[simulacion]](https://wokwi.com/projects/391364172928279553) | [[solucion]](https://github.com/UdeA-IoT/clases-IoT_2024-2/blob/main/clase4/ejemplos_GPIO/PIR_example/example1/README.md)]
+   
+   ![PIR_1](ESP32_PIR_example1.png)
+
+2. Activar un led cuando se detecte presencia a traves del uso de un sensor PIR. Ademas de la señal luminosa que empleada para indicar la presencia, el sistema contara con un buzzer para generar una alarma sonora. Esta alarma sonora se podrá desactivar o activar por medio de un pulsador. [[[simulacion]](https://wokwi.com/projects/391364988125921281) | [[solucion]](https://github.com/UdeA-IoT/clases-IoT_2024-2/blob/main/clase4/ejemplos_GPIO/PIR_example/example2/README.md)]
+   
+   ![PIR_2](ESP32_PIR_example2.png)
+
+
+### 10.3. Ejemplos usando un sensor de ultrasonido
+
+1. Este ejemplo fue adaptado de **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/project-3-motion)) para el ESP32 [[[simulacion]](https://wokwi.com/projects/391349504507707393) | [[solucion]](https://github.com/UdeA-IoT/clases-IoT_2024-2/blob/main/clase4/ejemplos_GPIO/ultrasonic-sensor_example/example1/README.md)].
+   
+   ![ultrasonido_1](esp32-ultrasonido_1.png)
+  
+2. En el siguiente ejemplo muestra, usando el monitor serial, la distancia en centimetros y pulgadas el cual se implemento en el anterior con un led que cambia de color conforme la distancia medida por el sensor ultrasonico cambia. [[[simulacion]](https://wokwi.com/projects/391350736522728449) | [[solucion]](https://github.com/UdeA-IoT/clases-IoT_2024-2/blob/main/clase4/ejemplos_GPIO/ultrasonic-sensor_example/example2/README.md)]
+   
+   ![ultrasonido_2](esp32-ultrasonido_2.png)
+
+## 11. Sobre los componentes
+
+### 11.1. Fabricantes
 
 En la siguiente tabla se muestran algunas de las principales empresas que se dedican a la fabricación de modulos para prototipado IoT:
 
@@ -1137,7 +1193,7 @@ En la siguiente tabla se muestran algunas de las principales empresas que se ded
 
 Ademas de la fabricación, tambien documentan y muestran ejemplos demostrativos de como usar los componentes que allí se fabrican.
 
-#### 10.2. Distribuidores
+### 11.2. Distribuidores
 
 Si lo que se quiere es comprar son componentes electronicos existen distribuidores para ello, en la siguiente tabla se muestran algunos de los principales distribuidores de componentes a nivel mundial (tomados de la pagina **2023 Top 50 Electronics Distributors List** ([link](https://www.supplychainconnect.com/rankings-research/article/21264998/2023-top-50-electronics-distributors-list))):
 
@@ -1160,7 +1216,7 @@ En el caso colombiano, la siguiente lista (tomada del foro **Listado de proveedo
 |Suconel|https://suconel.com/|
 |La Red Electronica|https://laredelectronica.com/|
 
-## 11. Actividad
+## 12. Actividad
 
 Si no lo recuerda, revise el **Tutorial de platformio** ([link](../clase3/plaftormio_tutorial/)) donde se muestra el procedimiento para para descargar una programa en la ESP32. Luego, trate de comprender los ejemplos basicos mostrados en el siguiente [link](ejemplos_GPIO/README.md). El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
 
@@ -1169,7 +1225,7 @@ Una vez entendidos los ejemplos anteriormente mostrados realice las siguientes t
 2. Copie y pegue en el directorio creado la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Para esto se puede basar en el directorio como base el directorio [example1](example1/). 
 3. Realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando los recursos que necesarios (archivo fritzing, imagen esquematico y montaje, código fuente, directorio con el código fuente generado por platformio) la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
 
-## 12. Recursos para ir mas lejos
+## 13. Recursos para ir mas lejos
 
 Explore los siguientes citios para que vaya teniendo una idea de lo que se puede hacer:
 * https://randomnerdtutorials.com/
@@ -1186,7 +1242,7 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://www.wildernesslabs.co/
 
 
-## 13. Referencias
+## 14. Referencias
 
 * https://how2electronics.com/10-essential-iot-starter-kits-to-kickstart-your-journey/
 * https://github.com/UdeA-IoT/actividad-4
