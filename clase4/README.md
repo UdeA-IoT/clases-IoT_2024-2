@@ -134,7 +134,7 @@ Los actuadores realizand la tarea opuesta a los sensores conviertiendo una seña
   
   ![display](display.png)
 
-#### **Tipos de actuadores de acuerdo a la señal electrica**
+**Tipos de actuadores de acuerdo a la señal electrica**
 
 Al igual que para el caso de los sensores, el tipo de señal electrica hace que estos se clasifiquen en:
 * **Actuadores analógicos**: Los actuadores analogicos toman una señal analoga y la convierten en alguna clase de interacción la cual esta basada en cambios del voltaje aplicado.
@@ -159,7 +159,7 @@ Al igual que para el caso de los sensores, el tipo de señal electrica hace que 
 
   ![actuador_digital2](actuador_digital2.png)
 
-### 2. Microcontroladores y microprocesadores
+## 2. Microcontroladores y microprocesadores
 
 Como se vió en la sesión anterior, los microcontroladores y los micropocesadores son el componente de la **cosa** (**thing**) encargados de la recolección y procesamiento de los datos del entorno y del desarrollo de las acciones de control.
 
@@ -172,7 +172,7 @@ Para realizar labores de prototipado, se disponen de los elementos listados a co
 |Single-board Computer|<li> Raspberry Pi 4 <li> Raspberry Pi 3 |
 |Development boards|<li> Arduino UNO <li> ESP8266 <li> ESP32 <li> ESP32-CAM <li>ARDUINO NANO 33 BLE Sense Lite|
 
-### 3. Módulos de conectividad
+## 3. Módulos de conectividad
 
 Estos permiten que el dispositivo IoT se conecte a la red y se comunique con otros dispositivos o servicios en la nube. Los módulos pueden ser Wi-Fi, Bluetooth, Zigbee, LoRa, entre otros.
 
@@ -198,7 +198,7 @@ La siguiente tabla resume algunos de los principales modulos de acuerdo a la tec
 | **Sub-GHz (915 MHz, 868 MHz)** | RFM69                     | Módulo de radiofrecuencia para comunicaciones a 433/868/915 MHz. |
 |                     | CC1101                                | Transceptor Sub-1 GHz de bajo consumo, ideal para redes de sensores. |
 
-## 3. Sensores y actuadores
+## 4. Sensores y actuadores disponibles en el laboratorio
 
 Mediante los sensores y los actuadores es como la cosa interactua con el entorno (ambiente). Existen numerosos kits de iniciación en el mercado. En el laboratorio se disponen de los siguientes modulos:
 * **Grove - Starter Kit v3** [[link]](https://udea-iot.github.io/UdeA_IoT-page/docs/sensores-actuadores/inventario-lab#grove---starter-kit-v3)
@@ -412,7 +412,7 @@ La siguiente tabla muestra una clasificación resumida de los sensores anteriorm
 
 
 
-## 4. Trabajando con las placas de desarrollo a estudiar
+## 5. Trabajando con las placas de desarrollo a estudiar
 
 Cuando se trabaja con un sistema de desarrollo, lo primero que hay que hacer es conocerlo. Para ello es necesario consultar la documentación de la cual este dispone como manual de usuario, datasheet, ejemplos y el diagrama de pines.
 
@@ -444,9 +444,9 @@ A continuación se muestra el diagrama de pines (**pinout**) para el Arduino UNO
 > **Para profundizar** <br>
 Para profundizar mas consulte la información relacionada con los sistemas de desarrollo anteriores en el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion2)
 
-## 5. Prototipado básico
+## 6. Prototipado básico
 
-### 5.1. Primeros pasos con Fritzing
+### 6.1. Primeros pasos con Fritzing
 
 [Fritzing](https://fritzing.org/) es una plataforma para plataforma permitira prototipar hardware en su computador y verificar su funcionamiento antes de hacer el montaje en fisico.
 
@@ -502,7 +502,7 @@ La siguiente tabla muestra enlaces con componentes disponibles en la Web:
 > 2. **How to Add Components in Fritzing** [[link]](https://steemit.com/utopian-io/@thinkingmind/how-to-add-components-in-fritzing)
 > 2. **Fritzing** [[link]](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/IOST_Library/07%3A_Electronics_Book/01%3A_Electric_Fundamentals/05%3A_Fritzing)
 
-### 5.2. Pasos para llevar a cabo el prototipado
+### 6.2. Pasos para llevar a cabo el prototipado
 
 Un **prototipo** es una versión inicial del producto cuya finalidad es proporcionar una representación tangible y funcional del producto para identificar posibles mejoras, problemas y obtener retroalimentación de usuarios.
 
@@ -559,7 +559,7 @@ Dentro de los alcances que vamos a manejar definimos algunos pasos los cuales se
 > 3. **Ultimate Guide: How to Develop and Prototype a New Electronic Hardware Product in 2024** [[link]](https://predictabledesigns.com/how-to-develop-and-prototype-a-new-product/)
 > 4. **7 steps to making a prototype and supercharging your product design** [[link]](https://www.linkedin.com/pulse/7-steps-making-prototype-supercharging-your-product-design-gufhc)
 
-### 5.3. Ejemplo sencillo
+### 6.3. Ejemplo sencillo
 
 El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los primeros tres pasos. Para esto suponga que se desea diseñar un circuito que permita encender y apagar un del usando un interruptor.
 
@@ -596,7 +596,7 @@ El siguiente ejemplo se resume el procedimiento anterior haciendo enfasis en los
 
 Con el objetivo de afianzar el procedimiento anterior, lo invitamos a que desarrolle los siguientes dos ejercicios.
 
-### 5.4. Ejercicios de refuerzo
+### 6.4. Ejercicios de refuerzo
 
 #### Ejercicio 1
 
@@ -639,7 +639,7 @@ Realizar las siguientes tareas:
 
 3. Empleando [wokwi](https://wokwi.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
 
-### Ejercicio 2
+#### Ejercicio 2
 
 El siguiente sistema muestra un generador de tonos sencillo. La lista de componentes se muestra a continuación:
 
@@ -682,7 +682,7 @@ Realizar las siguientes tareas:
 
 3. Empleando [wokwi](https://wokwi.com/), realice el montaje, escriba el código para simular y proceda a realizar la simulación. Luego, haga publico el link de simulación para compartir su trabajo con la comunidad.
 
-## 6. Tarjetas de expación y modulos
+## 7. Tarjetas de expación y modulos
 
 El proceso de prototipado usando protoboard depende de la complejidad del circuito y de los componentes disponible y en el peor de los casos, puede ser sumamente completo (imagen tomada de **BREADBIN IS AN 8-BIT TTL CPU ON A BREADBOARD, IN A BREAD BIN** ([link](https://hackaday.com/2021/10/05/breadbin-is-an-8-bit-ttl-cpu-on-a-breadboard-in-a-bread-bin/))):
 
@@ -717,7 +717,7 @@ Existen una gran cantidad de fabricantes de modulos y tarjetas de expación, a c
 |keyestudio|https://www.keyestudio.com/|
 |Arduino|https://store-usa.arduino.cc/products/|
 
-## 7. Arduino Framework 
+## 8. Arduino Framework 
 
 Cuando hablamos de Arduino nos referimos al framework para microcontroladores mas popular en la actualidad.
 
@@ -729,14 +729,14 @@ El modelo de programación de arduino esta basado en el **API de Arduino** el cu
 
 Antes de empezar se recomienda que tenga a la mano el documento  **Arduino Cheat Sheet** ([link](https://github.com/UdeA-IoT/reference-sheets/blob/main/percepcion/arduino/Arduino_Cheat_Sheet.pdf)) de Sparkfun.
 
-## 8. Desarrollo básico de aplicaciónes usando las placas base
+## 9. Desarrollo básico de aplicaciónes usando las placas base
 
 Desarrollar aplicación implica combinar conocimientos de hardware y software. En lo que respecta al primero, en nuestro caso lo fundamental es tener un conocimiento claro de las capacidades de la placa a emplear y del diagrama de pines (para mas información consulte el siguiente. En lo que respecta al software, el conocimiento implica un conocimiento del lenguaje C++ (para nuestro caso) y del modelo de programación del Framework de Arduino.
 
 > **Para profundizar** <br>
 > Puede consultar las notas de clase donde se encuentra un resumen de las funciones mas comunes del API de Arduino en el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3)
 
-### 8.1. Caso para el ESP32
+### 9.1. Caso para el ESP32
 
 De todos las placas existentes, se va a hacer uso de la ESP32 ([datasheet](https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf)). De las diferentes diferentes plataformas de desarrollo para ESP32 existentes se dispone de la placa NodeMCU-32S de Ai-Thinker ([Nodemcu-32s Datasheet](https://docs.ai-thinker.com/_media/esp32/docs/nodemcu-32s_product_specification.pdf))
 
@@ -776,7 +776,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 > **Para profundizar mas** </br> Para tener mas claridad al respecto, remitase a la pagina **ESP32 Pinout Reference: Which GPIO pins should you use?** ([link](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/
 ))
 
-### 8.2. Digital I/O
+### 9.2. Digital I/O
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
@@ -784,14 +784,14 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`digitalWrite()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)|`digitalWrite(pin)`|Escribe un `HIGH` o `LOW` en el `pin` espeficicado|
 |[`digitalRead()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)|`int digitalRead(pin)`|Lee el valor del digital del `pin` especificado, el valor retornado puede ser `HIGH` o `LOW`|
 
-### 8.3. Analog I/O
+### 9.3. Analog I/O
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
 |[`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)|`analogRead(pin)`|Lee el valor de un pin ánalogo. El valor leido depende de la resolución (numero de bits) del conversor analogo digital del pin elegido.|
 |[`analogWrite()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)|`analogWrite(pin, value)`|Escribe un valor analogo ([señal PWM](https://docs.arduino.cc/learn/microcontrollers/analog-output/)) en el pin. El valor del ciclo de dureza de la señal PWM (`value`) es un valor entre `0` y `255`.|
 
-### 8.4. Tiempo
+### 9.4. Tiempo
 
 |Función|Sintaxis|Descripción|
 |---|---|---|
@@ -800,7 +800,7 @@ Una vez, se tiene claro que pines usar, el siguiente paso es determinar las func
 |[`millis()`](https://www.arduino.cc/reference/en/language/functions/time/millis/)|`time = millis()`|Devuelve la cantidad de milisegundos que pasan desde que el placa empieza la ejecución del programa.|
 |[`micros()`](https://www.arduino.cc/reference/en/language/functions/time/micros/)|`time = micros()`|Obtiene el numero de microsegundos que han pasado desde que el placa empieza la ejecución del programa.|
 
-### 8.5. Ejemplos básicos usando GPIO
+### 9.5. Ejemplos básicos usando GPIO
 
 A continuación, se muestran algunos ejemplos basicos donde se explota el API de Arduino para I/O:
 
@@ -1075,9 +1075,9 @@ Una de las aplicaciones mas utilies del puerto serial es que facilita el debug d
 
 A continuación se va a mostrar el procedimiento anterior mediante algunos ejemplos.
 
-### 8.6. Ejemplos de refuerzo
+### 9.6. Ejemplos de refuerzo
 
-#### 8.6.1. Ejemplo 1
+#### Ejemplo 1
 
 En el [**ejercicio 1**](#54-ejercicios-de-refuerzo) se mostró un sistema de sistema de parpadeo manual usando el Arduino UNO:
 
@@ -1119,11 +1119,11 @@ Reimplemente el sistema anterior empleando el ESP32 y usando los módulos descri
   - [ ] Realice este proceso usando el Arduino IDE (Ver la sección de ejemplos introductorios para el ESP32 siguiendo el siguiente [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion3))
   - [ ] Realice este proceso usando el Platformio (Siga los pasos mostrados en el ejemplo 2 de la sesión 4 [link](https://udea-iot.github.io/UdeA_IoT-page/docs/sesiones/percepcion/sesion4c))
 
-#### 8.6.2. Ejemplo 2
+#### Ejemplo 2
 
 Repita los pasos realizados anteriormente para el circuito de [**ejercicio 2**](#54-ejercicios-de-refuerzo)
 
-### 8.7. Descarga de aplicaciones en la placa base
+### 9.7. Descarga de aplicaciones en la placa base
 
 Antes de empezar, tenga a la mano, el diagrama de pines del NodeMCU (dada la importantci de esto, se lo volvemos a mostrar, disculpenos por cansones):
 
@@ -1133,7 +1133,7 @@ Luego, dependiendo de los requerimientos del sistema determine con claridad los 
 * Arduino IDE
 * Platformio ([link](../clase3/plaftormio_tutorial/))
 
-## 9. Algunos casos de aplicación
+## 10. Algunos casos de aplicación
 
 A continuación, se muestra una lista de proyectos aplicando algunas de las cosas previamente mensionadas.
 
@@ -1144,9 +1144,9 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
 |3|Arduino Solar Tracker|https://projecthub.arduino.cc/Aboubakr_Elhammoumi/arduino-solar-tracker-77347b||
 |4|Line Following Robot|https://projecthub.arduino.cc/lightthedreams/line-following-robot-34b1d3||
 
-## 10. Ejemplos adicionales
+## 11. Ejemplos adicionales
 
-### 10.1. Ejemplos usando un led RGB
+### 11.1. Ejemplos usando un led RGB
 
 1. Conectar al ESP32 un led RGB y ponerlo a alumbrar usando diferentes colores [[[simulacion]](https://wokwi.com/projects/391210532094486529) | [[solucion]](ejemplos_GPIO/RGB_example/example1/README.md)].
    
@@ -1156,7 +1156,7 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
    
    ![RGB_2](ESP32_RGB_2.png)
 
-### 10.2. Ejemplos usando un sensor PIR
+### 11.2. Ejemplos usando un sensor PIR
 
 1. Activar un led cuando se detecte presencia a traves del uso de un sensor PIR [[[simulacion]](https://wokwi.com/projects/391364172928279553) | [[solucion]](https://github.com/UdeA-IoT/clases-IoT_2024-2/blob/main/clase4/ejemplos_GPIO/PIR_example/example1/README.md)]
    
@@ -1167,7 +1167,7 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
    ![PIR_2](ESP32_PIR_example2.png)
 
 
-### 10.3. Ejemplos usando un sensor de ultrasonido
+### 11.3. Ejemplos usando un sensor de ultrasonido
 
 1. Este ejemplo fue adaptado de **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/project-3-motion)) para el ESP32 [[[simulacion]](https://wokwi.com/projects/391349504507707393) | [[solucion]](https://github.com/UdeA-IoT/clases-IoT_2024-2/blob/main/clase4/ejemplos_GPIO/ultrasonic-sensor_example/example1/README.md)].
    
@@ -1177,9 +1177,9 @@ A continuación, se muestra una lista de proyectos aplicando algunas de las cosa
    
    ![ultrasonido_2](esp32-ultrasonido_2.png)
 
-## 11. Sobre los componentes
+## 12. Sobre los componentes
 
-### 11.1. Fabricantes
+### 12.1. Fabricantes
 
 En la siguiente tabla se muestran algunas de las principales empresas que se dedican a la fabricación de modulos para prototipado IoT:
 
@@ -1193,7 +1193,7 @@ En la siguiente tabla se muestran algunas de las principales empresas que se ded
 
 Ademas de la fabricación, tambien documentan y muestran ejemplos demostrativos de como usar los componentes que allí se fabrican.
 
-### 11.2. Distribuidores
+### 12.2. Distribuidores
 
 Si lo que se quiere es comprar son componentes electronicos existen distribuidores para ello, en la siguiente tabla se muestran algunos de los principales distribuidores de componentes a nivel mundial (tomados de la pagina **2023 Top 50 Electronics Distributors List** ([link](https://www.supplychainconnect.com/rankings-research/article/21264998/2023-top-50-electronics-distributors-list))):
 
@@ -1216,7 +1216,7 @@ En el caso colombiano, la siguiente lista (tomada del foro **Listado de proveedo
 |Suconel|https://suconel.com/|
 |La Red Electronica|https://laredelectronica.com/|
 
-## 12. Actividad
+## 13. Actividad
 
 Si no lo recuerda, revise el **Tutorial de platformio** ([link](../clase3/plaftormio_tutorial/)) donde se muestra el procedimiento para para descargar una programa en la ESP32. Luego, trate de comprender los ejemplos basicos mostrados en el siguiente [link](ejemplos_GPIO/README.md). El objetivo con estos es que se entrene en el procedimiento, previamente mostrado, para descargar firmware en la tarjeta. 
 
@@ -1225,7 +1225,7 @@ Una vez entendidos los ejemplos anteriormente mostrados realice las siguientes t
 2. Copie y pegue en el directorio creado la siguiente template ([link](template/README.md)) y modifiquela de acuerdo a la descripción dada alli. Para esto se puede basar en el directorio como base el directorio [example1](example1/). 
 3. Realice el procedimiento de descarga en la ESP32 usando platformio, tome una foto del montaje físico y adjuntela en el directorio creado, haga un video en youtube del montaje en funcionamiento y finalmente adapte la plantilla adjuntando los recursos que necesarios (archivo fritzing, imagen esquematico y montaje, código fuente, directorio con el código fuente generado por platformio) la foto en el repo y el enlace del video en youtube donde se muestre el funcionamiento real.
 
-## 13. Recursos para ir mas lejos
+## 14. Recursos para ir mas lejos
 
 Explore los siguientes citios para que vaya teniendo una idea de lo que se puede hacer:
 * https://randomnerdtutorials.com/
@@ -1242,7 +1242,7 @@ Explore los siguientes citios para que vaya teniendo una idea de lo que se puede
 * https://www.wildernesslabs.co/
 
 
-## 14. Referencias
+## 15. Referencias
 
 * https://how2electronics.com/10-essential-iot-starter-kits-to-kickstart-your-journey/
 * https://github.com/UdeA-IoT/actividad-4
