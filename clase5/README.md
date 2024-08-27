@@ -141,18 +141,14 @@ Una vez hecho lo anterior, ya es posible empezar a trabajar en el archivo **main
    
    ![seeeduino_rgb](seeeduino_rgb.jpg)
 
-   Identifique en el ESP32 los pines I2C para realizar la conexión de este componente. Luego usando frizting realice la conexión a los pines apropiados:
-   
-   La idea es descargar el siguiente código:
-
-   
+   Identifique en el ESP32 los pines I2C para realizar la conexión de este componente. Luego usando frizting realice la conexión a los pines apropiados.
 
 3. Descargar el firmaware en el ESP32 siguiendo las siguientes instrucciones:
    - [x] Instalar la libreria necesaria para usar este LCD siguiendo los pasos descritos previamente. La siguiente tabla resume los detalles necesarios:
    
-   |# | Libreria|	Tipo [H: Harware / S: Software]|Descripción|
-   |---|---|---|---|
-   |1 |Grove - LCD RGB Backlight [[link]](https://registry.platformio.org/libraries/seeed-studio/Grove%20-%20LCD%20RGB%20Backlight) [[repo]](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight)|H|Grove - 16X2 LCD RGB Backlight - Full Color Display [[link]](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight.html)|
+     |# | Libreria|	Tipo [H: Harware / S: Software]|Descripción|
+     |---|---|---|---|
+     |1 |Grove - LCD RGB Backlight [[link]](https://registry.platformio.org/libraries/seeed-studio/Grove%20-%20LCD%20RGB%20Backlight) [[repo]](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight)|H|Grove - 16X2 LCD RGB Backlight - Full Color Display [[link]](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight.html)|
 
 
    - [x] Codificar el siguiente ejemplo en el archivo `main.cpp`.
@@ -248,26 +244,7 @@ En los siguientes sencillos ejemplos se ilustra el uso del LCD.
    <img src = "esp32_keypad_lcd_bb.png">
    </p> 
 
-### 2.3. Ejemplo Grove - OLED Display 0.96" (SSD1315)
-
-![oled_grove](Grove-OLED-Displey-0.96-SSD1315-pin.jpg)
-
-Enlaces:
-* https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/
-* https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/
-* https://docs.wokwi.com/parts/board-ssd1306
-* https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/
-* 
-
-Libreria:
-* U8g2 is a monochrome graphics library for embedded devices. U8g2 supports monochrome OLEDs and LCDs, which include our chip SSD1315.
-* https://github.com/olikraus/u8g2/wiki
-* https://github.com/olikraus/u8g2/wiki/u8g2reference
-* https://wokwi.com/projects/407297301135822849
-* https://wokwi.com/projects/407293686594197505
-
-
-### 2.4. Sensor de temperatura y humedad - DTHxx
+### 2.3. Sensor de temperatura y humedad - DTHxx
 
 Los sistemas embebidos perciben el ambiente por medio de sensores. Los sensores permiten medir diferentes variables ambientales. En el siguiente ejemplo se explorara el sensore de temperatura y humedad DHT11.
 
@@ -293,12 +270,34 @@ A continuación, se muestran un ejemplo relacionado.
    <img src = "dh11-esp32_bb-1.jpg">
    </p>
 
+<!---
+### 2.3. Ejemplo Grove - OLED Display 0.96" (SSD1315)
 
+![oled_grove](Grove-OLED-Displey-0.96-SSD1315-pin.jpg)
+
+Enlaces:
+* https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/
+* https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/
+* https://docs.wokwi.com/parts/board-ssd1306
+* https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/
+* 
+
+Libreria:
+* U8g2 is a monochrome graphics library for embedded devices. U8g2 supports monochrome OLEDs and LCDs, which include our chip SSD1315.
+* https://github.com/olikraus/u8g2/wiki
+* https://github.com/olikraus/u8g2/wiki/u8g2reference
+* https://wokwi.com/projects/407297301135822849
+* https://wokwi.com/projects/407293686594197505
+
+-->
+
+<!---
 **En remojo**:
 * https://randomnerdtutorials.com/esp32-flash-memory/
 * https://randomnerdtutorials.com/esp32-pir-motion-sensor-interrupts-timers/#:~:text=In%20this%20example%2C%20when%20motion,LED%20is%20automatically%20turned%20off.
 * 
 * 
+-->
 
 ## 3. Referencias
 
