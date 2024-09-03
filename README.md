@@ -38,17 +38,20 @@ La siguiente tabla muestra la lista de clases asociadas a esta sección:
 
 |Clase|Fecha|Tema|Recursos|Observaciones|
 |---|---|---|---|---|
-|1|08/08/2023|Introducción al IoT|[[link]](./clase1/)||
-|2|13/08/2023|Redes y protocolos |[[link]](./clase2/)||
-|3|15/08/2023|Componentes basicos de un Sistema IoT |[[link]](./clase3/)||
-|4|20/08/2023|Implementando una Cosa [Parte 1]|[[link]](./clase4/)||
-|5|22/08/2023|Implementando una Cosa [Parte 2]|[[link]](./clase4/)||
-|6|27/08/2023|Implementando una Cosa [Parte 3]|[[link]](./clase4/)||
-|7|27/08/2023|Uso de bibliotecas|[[link]](./clase5/)||
+|1|08/08/2024|Introducción al IoT|[[link]](./clase1/)||
+|2|13/08/2024|Redes y protocolos |[[link]](./clase2/)||
+
 
 ### Capa de percepción
 
-En construcción...
+|Clase|Fecha|Tema|Recursos|Observaciones|
+|---|---|---|---|---|
+|3|15/08/2024|Componentes basicos de un Sistema IoT |[[link]](./clase3/)||
+|4|20/08/2024|Implementando una Cosa [Parte 1]|[[link]](./clase4/)||
+|5|22/08/2024|Implementando una Cosa [Parte 2]|[[link]](./clase4/)||
+|6|27/08/2024|Implementando una Cosa [Parte 3]|[[link]](./clase4/)||
+|7|29/08/2024|Uso de bibliotecas|[[link]](./clase5/)||
+|8|03/08/2024|Uso de bibliotecas|[[link]](./clase6/)||
 
 ### Capa de Red
 
