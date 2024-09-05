@@ -51,7 +51,8 @@ La siguiente tabla muestra la lista de clases asociadas a esta sección:
 |5|22/08/2024|Implementando una Cosa [Parte 2]|[[link]](./clase4/)||
 |6|27/08/2024|Implementando una Cosa [Parte 3]|[[link]](./clase4/)||
 |7|29/08/2024|Uso de bibliotecas|[[link]](./clase5/)||
-|8|03/08/2024|Uso de bibliotecas|[[link]](./clase6/)||
+|8|03/08/2024|Protocolos de comunicación entre los componentes de un nodo [Parte 1]|[[link]](./clase6/)||
+|9|05/08/2024|Protocolos de comunicación entre los componentes de un nodo [Parte 2]|[[link]](./clase6/)||
 
 ### Capa de Red
 
