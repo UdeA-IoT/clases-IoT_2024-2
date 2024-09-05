@@ -155,7 +155,9 @@ La siguiente tabla resume algunas de las funciones principalmente usadas:
 
 ## 7. Ejemplos
 
-En construcción...
+1. I2C detection [[link]](https://wokwi.com/projects/377357264325640193)
+2. LCD I2C [[link]](https://wokwi.com/projects/377357455279723521)
+3. DTH 11 + LCD I2C [[link]](https://wokwi.com/projects/377357586406254593)
 
 ## 8. Referencias
 
