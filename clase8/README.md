@@ -142,7 +142,6 @@ La siguiente tabla resume algunas de las plataformas IoT disponibles:
 | **Kaa IoT**                   | Plataforma modular de código abierto para la gestión de dispositivos IoT.    | [Kaa IoT](https://www.kaaiot.com/)              | [API](https://kaaiot.io/docs/)                                  |
 | **ThingsBoard**               | Plataforma de código abierto para la gestión y visualización de dispositivos.| [ThingsBoard](https://thingsboard.io/)          | [API](https://thingsboard.io/docs/reference/http-api/)          |
 
-
 ## 4. Ejemplos 
 
 1. Realizar una petición Web empleando un microcontrolador como cliente como cliente.

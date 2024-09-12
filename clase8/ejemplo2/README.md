@@ -223,6 +223,18 @@ Explore la creación de una dashboard que se asocie a la información que usted 
 
 ![dweet8](dweet8.png)
 
+## Simulación
+
+La simulación en Wokwi del ejemplo anterior puede ser accedida a traves del siguiente [link](https://wokwi.com/projects/408644135818185729)
+
+La siguiente figura muestra el comportamiento de la cosa haciendo envios a la plataforma dweet.io:
+
+![thing](simulacion_thing_dweet_io.png)
+
+En la siguiente figura se muestra el despliegue de los datos enviados por la cosa en dweet.io:
+
+![dweet_io-panel](simulacion_dweet_io.png)
+
 ## Enlaces
 
 * https://wokwi.com/projects/348987008435094100
