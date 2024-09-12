@@ -1,4 +1,4 @@
-## Plataformas IoT
+# Plataformas IoT
 
 Hasta el momento hemos visto los siguientes temas:
 
@@ -17,7 +17,7 @@ En el modelo de referencia IoT, uno de los elementos claves son las plataformas 
 
 Respecto al manejo de APIs, el siguiente documento se muestra un ejemplo tipico de un API ([cheatsheet_api](cheatsheet_api.pdf))
 
-## APIs
+## 1. APIs
 
 Una interfaz de programación de aplicaciones (API) permite una conversación de software con otra.  Utiliza interacciones basadas en la web o protocolos de comunicación comunes y sus propios estándares patentados determinando qué tipo de datos, servicios y funcionalidad expone la aplicación a terceros.
 
@@ -30,7 +30,7 @@ Los tres tipos más populares de estilos arquitectónicos API son:
 * SOAP
 * ⁪REST
 
-## API REST
+## 2. API REST
 
 Transferencia de Estado Representacional (REST) es un estilo arquitectónico escrito por Roy Thomas Fielding.
 
@@ -44,7 +44,7 @@ Una API de servicio web REST (API REST) es una interfaz de programación que se 
 
 A continuación vamos a analizar tanto las solicitudes como las respuestas.
 
-### Solicitudes de API REST
+### 2.1. Solicitudes de API REST
 
 Las solicitudes de API REST son solicitudes HTTP en las que una aplicación (cliente) pide al servidor que realice una función.  Las solicitudes de API REST se componen de cuatro componentes principales:
 * **Identificador uniforme de recursos (URI)**: También conocido como **localizador uniforme de recursos (URL)**, identifica qué recurso desea manipular el cliente. 
@@ -82,7 +82,7 @@ Las solicitudes de API REST son solicitudes HTTP en las que una aplicación (cli
  
 * **Cuerpo**: El cuerpo de la solicitud de API REST contiene los datos correspondientes al recurso que el cliente desee manipular. Las solicitudes de API REST que utilizan el método HTTP POST, PUT y PATCH suelen incluir un cuerpo lo que hace que cuerpo sea opcional dependiendo del método HTTP. 
 
-### Respuestas API REST
+### 2.2. Respuestas API REST
 
 Las respuestas de la API REST son respuestas HTTP que comunica los resultados de la solicitud HTTP de un cliente. La Respuesta REST API se componen de tres componentes principales:
 * **Estado HTTP**: El código de estado HTTP ayuda al cliente a determinar el motivo del error y a veces puede proporcionar sugerencias para solucionar el problema. Los códigos de estado HTTP constan de tres dígitos, donde el primer dígito es la categoría de respuesta y los otros dos dígitos son asignados en orden numérico. Hay cinco categorías diferentes de códigos de estado HTTP:
@@ -122,9 +122,9 @@ Las respuestas de la API REST son respuestas HTTP que comunica los resultados de
     
 * **Cuerpo**: Contiene los datos asociados a la respuesta.
 
-## Algunos APIs de utilidad
+## 3. Plataformas IoT
 
-
+La siguiente tabla resume algunas de las plataformas IoT disponibles:
 
 
 | **Plataforma**               | **Descripción**                                                             | **Enlace**                                     | **Enlace API**                                     |
@@ -143,7 +143,7 @@ Las respuestas de la API REST son respuestas HTTP que comunica los resultados de
 | **ThingsBoard**               | Plataforma de código abierto para la gestión y visualización de dispositivos.| [ThingsBoard](https://thingsboard.io/)          | [API](https://thingsboard.io/docs/reference/http-api/)          |
 
 
-## Ejemplos 
+## 4. Ejemplos 
 
 1. Realizar una petición Web empleando un microcontrolador como cliente como cliente.
 
@@ -155,11 +155,11 @@ Las respuestas de la API REST son respuestas HTTP que comunica los resultados de
 
 3. **ToDo**: Enunciado en construcción ([link](ejemplo3/))
 
-## Actividad
+## 5. Actividad
 
 Dirijase al siguiente [link](actividad/README.md) para realizar la actividad.
 
-## Referencias
+## 6. Referencias
 
 * https://learn.adafruit.com/adafruit-io/rest-api
 * https://www.sparkfun.com/news/2379
