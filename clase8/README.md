@@ -124,10 +124,24 @@ Las respuestas de la API REST son respuestas HTTP que comunica los resultados de
 
 ## Algunos APIs de utilidad
 
-* https://learn.adafruit.com/adafruit-io/rest-api
-* https://www.sparkfun.com/news/2379
-* http://dweet.io/
-* http://freeboard.io/
+
+
+
+| **Plataforma**               | **Descripción**                                                             | **Enlace**                                     | **Enlace API**                                     |
+|------------------------------|-----------------------------------------------------------------------------|------------------------------------------------|---------------------------------------------------|
+|**Dweet.io**|Plataforma de Internet de las Cosas (IoT), similar de alguna manera a twiter, que permite a los dispositivos conectados "hablar" entre ellos al enviar y recibir mensajes (o "dweets") en tiempo real.|[Dweet.io](https://dweet.io/)|[API](https://dweet.io/play/)|
+|**Firebase**|Aunque esta plataforma no esta diseñada especificamente como una plataforma IoT, si puede emplearse para el desarrollo de aplicaciones IoT|[Firebase](https://firebase.google.com/)|[API](https://firebase.google.com/docs/reference)|
+| **Azure IoT Hub**             | Plataforma IoT de Microsoft para conectar y gestionar dispositivos a escala. | [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) | [API](https://learn.microsoft.com/en-us/rest/api/iothub/)        |
+| **AWS IoT Core**              | Solución IoT de Amazon Web Services para gestionar dispositivos y datos.     | [AWS IoT Core](https://aws.amazon.com/iot-core/) | [API](https://docs.aws.amazon.com/iot/latest/apireference/Welcome.html) |
+| **Ubidots**                   | Plataforma IoT en la nube para gestionar dispositivos y visualizar datos.    | [Ubidots](https://ubidots.com/)                 | [API](https://ubidots.com/docs/)                                |
+| **ThingSpeak**                | Plataforma de código abierto para almacenar y visualizar datos de sensores.  | [ThingSpeak](https://thingspeak.com/)           | [API](https://thingspeak.com/docs)                              |
+| **Losant**                    | Plataforma escalable para la gestión de dispositivos y análisis de datos.    | [Losant](https://www.losant.com/)               | [API](https://docs.losant.com/rest-api/overview/)               |
+| **Particle**                  | Ecosistema completo para IoT con hardware, conectividad y gestión de datos.  | [Particle](https://www.particle.io/)            | [API](https://docs.particle.io/reference/device-cloud/api/)     |
+| **Blynk**                     | Plataforma IoT para crear aplicaciones móviles que interactúan con hardware. | [Blynk](https://blynk.io/)                      | [API](https://blynkapi.docs.apiary.io/)                         |
+| **Thinger.io**                | Plataforma en la nube para la gestión de dispositivos IoT y visualización.   | [Thinger.io](https://thinger.io/)               | [API](https://docs.thinger.io/api/)                             |
+| **Kaa IoT**                   | Plataforma modular de código abierto para la gestión de dispositivos IoT.    | [Kaa IoT](https://www.kaaiot.com/)              | [API](https://kaaiot.io/docs/)                                  |
+| **ThingsBoard**               | Plataforma de código abierto para la gestión y visualización de dispositivos.| [ThingsBoard](https://thingsboard.io/)          | [API](https://thingsboard.io/docs/reference/http-api/)          |
+
 
 ## Ejemplos 
 
@@ -144,4 +158,11 @@ Las respuestas de la API REST son respuestas HTTP que comunica los resultados de
 ## Actividad
 
 Dirijase al siguiente [link](actividad/README.md) para realizar la actividad.
+
+## Referencias
+
+* https://learn.adafruit.com/adafruit-io/rest-api
+* https://www.sparkfun.com/news/2379
+* http://dweet.io/
+* http://freeboard.io/
 

@@ -54,6 +54,7 @@ La siguiente tabla muestra la lista de clases asociadas a esta sección:
 |8|03/09/2024|Protocolos de comunicación entre los componentes de un nodo [Parte 1]|[[link]](./clase6/)||
 |9|05/09/2024|Protocolos de comunicación entre los componentes de un nodo [Parte 2]|[[link]](./clase6/)||
 |10|10/09/2024|Conexión wifi para el ESP32 |[[link]](./clase7/)||
+|10|12/09/2024|Plataformas IoT |[[link]](./clase8/)||
 
 
 ### Capa de Red
