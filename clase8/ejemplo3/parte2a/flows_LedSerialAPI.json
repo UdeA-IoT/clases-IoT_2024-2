@@ -1,0 +1,234 @@
+[
+    {
+        "id": "b5b31cbd9a910d1b",
+        "type": "tab",
+        "label": "Serial LED API",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6602e729b6b79ff9",
+        "type": "junction",
+        "z": "b5b31cbd9a910d1b",
+        "x": 620,
+        "y": 80,
+        "wires": [
+            [
+                "ab7e753973d9733c"
+            ]
+        ]
+    },
+    {
+        "id": "85abb6af94429a1e",
+        "type": "junction",
+        "z": "b5b31cbd9a910d1b",
+        "x": 640,
+        "y": 240,
+        "wires": [
+            [
+                "00312c32e6214ce3"
+            ]
+        ]
+    },
+    {
+        "id": "dbda23ff8f0e1c46",
+        "type": "junction",
+        "z": "b5b31cbd9a910d1b",
+        "x": 600,
+        "y": 420,
+        "wires": [
+            [
+                "9e76ee7bf9289ac1"
+            ]
+        ]
+    },
+    {
+        "id": "7665c67d.899a38",
+        "type": "http in",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "url": "/on",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "faccb00de0fcc5ab",
+                "188994383076f162"
+            ]
+        ]
+    },
+    {
+        "id": "00312c32e6214ce3",
+        "type": "serial out",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "serial": "f83893b3a8817da8",
+        "x": 760,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "12206ac0a966c066",
+        "type": "http in",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "url": "/off",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "c9f667df18ff58bb",
+                "b8fe9f6776b4aed9"
+            ]
+        ]
+    },
+    {
+        "id": "faccb00de0fcc5ab",
+        "type": "change",
+        "z": "b5b31cbd9a910d1b",
+        "name": "Led ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "6602e729b6b79ff9",
+                "85abb6af94429a1e"
+            ]
+        ]
+    },
+    {
+        "id": "c9f667df18ff58bb",
+        "type": "change",
+        "z": "b5b31cbd9a910d1b",
+        "name": "Led OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "6602e729b6b79ff9",
+                "85abb6af94429a1e"
+            ]
+        ]
+    },
+    {
+        "id": "9e76ee7bf9289ac1",
+        "type": "http response",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "188994383076f162",
+        "type": "template",
+        "z": "b5b31cbd9a910d1b",
+        "name": "ON",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{led:on}",
+        "output": "str",
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "dbda23ff8f0e1c46"
+            ]
+        ]
+    },
+    {
+        "id": "b8fe9f6776b4aed9",
+        "type": "template",
+        "z": "b5b31cbd9a910d1b",
+        "name": "OFF",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{led:off}",
+        "output": "str",
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "dbda23ff8f0e1c46"
+            ]
+        ]
+    },
+    {
+        "id": "ab7e753973d9733c",
+        "type": "debug",
+        "z": "b5b31cbd9a910d1b",
+        "name": "commands",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f83893b3a8817da8",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM18",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    }
+]

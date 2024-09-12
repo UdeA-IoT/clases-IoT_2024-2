@@ -1,0 +1,332 @@
+[
+    {
+        "id": "b5b31cbd9a910d1b",
+        "type": "tab",
+        "label": "API_ledSerial",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6602e729b6b79ff9",
+        "type": "junction",
+        "z": "b5b31cbd9a910d1b",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "ab7e753973d9733c"
+            ]
+        ]
+    },
+    {
+        "id": "85abb6af94429a1e",
+        "type": "junction",
+        "z": "b5b31cbd9a910d1b",
+        "x": 660,
+        "y": 400,
+        "wires": [
+            [
+                "00312c32e6214ce3"
+            ]
+        ]
+    },
+    {
+        "id": "dbda23ff8f0e1c46",
+        "type": "junction",
+        "z": "b5b31cbd9a910d1b",
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "9e76ee7bf9289ac1"
+            ]
+        ]
+    },
+    {
+        "id": "7665c67d.899a38",
+        "type": "http in",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "url": "/on",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 280,
+        "wires": [
+            [
+                "faccb00de0fcc5ab",
+                "188994383076f162"
+            ]
+        ]
+    },
+    {
+        "id": "b5dc6824f60a6b52",
+        "type": "debug",
+        "z": "b5b31cbd9a910d1b",
+        "name": "Port Name",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.serialport",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "14a1a3b2d0de80d4",
+        "type": "serial control",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "serial": "594a5033915cc10d",
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "b5dc6824f60a6b52",
+                "11ab40c1d42289cb"
+            ]
+        ]
+    },
+    {
+        "id": "11ab40c1d42289cb",
+        "type": "debug",
+        "z": "b5b31cbd9a910d1b",
+        "name": "Port Speed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.serialbaud",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "181a9451566faae1",
+        "type": "inject",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "14a1a3b2d0de80d4"
+            ]
+        ]
+    },
+    {
+        "id": "00312c32e6214ce3",
+        "type": "serial out",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "serial": "f83893b3a8817da8",
+        "x": 800,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "12206ac0a966c066",
+        "type": "http in",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "url": "/off",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "c9f667df18ff58bb",
+                "b8fe9f6776b4aed9"
+            ]
+        ]
+    },
+    {
+        "id": "faccb00de0fcc5ab",
+        "type": "change",
+        "z": "b5b31cbd9a910d1b",
+        "name": "Led ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "6602e729b6b79ff9",
+                "85abb6af94429a1e"
+            ]
+        ]
+    },
+    {
+        "id": "c9f667df18ff58bb",
+        "type": "change",
+        "z": "b5b31cbd9a910d1b",
+        "name": "Led OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 400,
+        "wires": [
+            [
+                "6602e729b6b79ff9",
+                "85abb6af94429a1e"
+            ]
+        ]
+    },
+    {
+        "id": "9e76ee7bf9289ac1",
+        "type": "http response",
+        "z": "b5b31cbd9a910d1b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "188994383076f162",
+        "type": "template",
+        "z": "b5b31cbd9a910d1b",
+        "name": "ON",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{led:on}",
+        "output": "str",
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "dbda23ff8f0e1c46"
+            ]
+        ]
+    },
+    {
+        "id": "b8fe9f6776b4aed9",
+        "type": "template",
+        "z": "b5b31cbd9a910d1b",
+        "name": "OFF",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{led:off}",
+        "output": "str",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "dbda23ff8f0e1c46"
+            ]
+        ]
+    },
+    {
+        "id": "ab7e753973d9733c",
+        "type": "debug",
+        "z": "b5b31cbd9a910d1b",
+        "name": "commands",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "594a5033915cc10d",
+        "type": "serial-port",
+        "name": "Puerto Serial",
+        "serialport": "COM18",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "f83893b3a8817da8",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM18",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    }
+]

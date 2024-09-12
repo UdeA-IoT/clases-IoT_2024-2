@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Led Serial</title>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <h1> Control LED </h1>
+    <form action="control" id="port_form">
+        <select id="port_select" name="port">
+            {% for puerto in puertos %}
+            <option value="{{ puerto }}">{{ puerto }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Conectar</button>
+    </form>
+</body>
+
+</html>

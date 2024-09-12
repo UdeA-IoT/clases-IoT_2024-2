@@ -158,7 +158,7 @@ Siguiendo los comentacios que aparecen el código del ESP_STA proceda a realizar
 
 En nuestro caso, esta prueba se realizo cargando en el browser la siguiente pagina (alojada en el ESP32_STA) empleando para este caso la URL: ```192.168.1.25```. Si se observa el monitor serial de la ESP_STA cuando se hace la petición desde el navegador, la salida impresa será como la mostrada a continuación:
 
-![salida_servidor_ESP](server_station_client.png.png)
+![salida_servidor_ESP](server_station_client.png)
 
 ## Nota
 
