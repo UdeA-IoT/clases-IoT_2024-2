@@ -152,11 +152,11 @@ La siguiente tabla resume algunas de las plataformas IoT disponibles:
 
    **Procedimiento**: El procedimiento se describe en el ejemplo 2 [[link]](ejemplo2/README.md)
 
-3. **ToDo**: Enunciado en construcción ([link](ejemplo3/))
+3. Implementar un servicio web que permita encender y apagar un led de manera a traves de una interfaz web dentro de una misma red local. ([link](ejemplo3/))
 
 ## 5. Actividad
 
-Dirijase al siguiente [link](actividad/README.md) para realizar la actividad.
+En construcción...
 
 ## 6. Referencias
 

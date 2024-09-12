@@ -1,4 +1,4 @@
-# Parte 1 - Creación del API para controlar el arduino
+# Parte 2 - Creación del API para controlar el arduino
 
 ## Prerequisitos
 
