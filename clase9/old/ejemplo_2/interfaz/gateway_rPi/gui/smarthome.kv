@@ -1,0 +1,153 @@
+#: import hex kivy.utils.get_color_from_hex
+#:import images_path kivymd.images_path
+
+<ControlPanel>:
+    MDBoxLayout:
+        spacing: dp(10)
+        padding: dp(20)
+        orientation: 'vertical'
+        background_color: 1,0,0,1
+
+
+        MDLabel:
+            text: 'SMART HOME'
+            font_style: "H1"
+            font_color: [1, 0, 0, 1]
+            halign: "center"
+            background_color: 1,0,0,1
+
+
+        MDGridLayout:
+            cols: 2
+            spacing: dp(5)
+            halign: "center"
+            background_color: 1,0,0,1
+
+            MDFillRoundFlatIconButton:
+                icon: "sofa"
+                text: "Living Room"
+                icon_size: "60dp"
+                font_size: "40dp"
+                background_color: 1,1,1,1
+                size_hint_x: 0.5
+                on_press: root.showRoomPanel()
+                
+
+            MDFillRoundFlatIconButton:
+                icon: "fridge"
+                text: "Kitchen"
+                icon_size: "60dp"
+                font_size: "40dp"
+                size_hint_x: 0.5
+                on_press: root.showRoomPanel()
+                disabled: "true"
+
+            MDFillRoundFlatIconButton:
+                icon: "bed"
+                text: "Bedroom"
+                icon_size: "60dp"
+                font_size: "40dp"
+                size_hint_x: 0.5
+                on_press: root.showRoomPanel()
+                disabled: "true"
+
+        MDGridLayout:
+            cols: 3
+            spacing: 10
+
+            MDLabel:
+                text: root.currentTime
+                font_style: "H5"
+                font_color: 1, 0, 0, 1
+
+            MDLabel:
+                text: 'LEVEL 0'
+                font_style: "H5"
+                font_color: 1, 0, 0, 1
+
+            MDIconButton:
+                icon: root.home_status
+                icon_size: "60dp"
+                on_press: root.toggle_lookout()
+
+<RoomPanel>:
+    canvas:
+        Color:
+            rgba: hex('#fff')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    MDBoxLayout:
+        spacing: 20
+        orientation: "vertical"
+
+        MDTopAppBar:
+            title: "Living Room"
+            left_action_items: [["sofa"]]
+            right_action_items: [["home", lambda x: root.show_control_panel()]]
+
+        MDGridLayout:
+            cols: 2
+            spacing: dp(5)
+            padding: dp(90)
+
+            MDLabel:
+                text: 'Light:'
+                font_color: 1, 0, 0, 1
+                background_color: 1, 0, 0, 1
+                size_hint_x: 0.2
+
+
+            MDFillRoundFlatIconButton:
+                icon: "lightbulb"
+                text: "Primary"
+                icon_color: root.light_color
+                on_press: root.toggle_light()
+                size_hint_x: 0.8
+
+            MDLabel:
+                text: 'Noise:'
+                font_color: 1, 0, 0, 1
+                size_hint_x: 0.2
+
+
+            MDRectangleFlatIconButton:
+                icon: "speedometer-medium"
+                text: root.tmp_value
+                size_hint_x: 0.8
+
+            MDLabel:
+                text: 'Temperature:'
+                font_color: 1, 0, 0, 1
+                size_hint_x: 0.2
+
+
+            MDRectangleFlatIconButton:
+                icon: "thermometer"
+                text: root.tmp_value
+                size_hint_x: 0.8
+
+
+            MDLabel:
+                text: 'Movement:'
+                font_color: 1, 0, 0, 1
+                size_hint_x: 0.2
+
+
+            MDRectangleFlatIconButton:
+                icon: root.mov_icon
+                text: root.mov_text
+                size_hint_x: 0.8
+
+
+        AnchorLayout:
+            anchor_x: "right"
+            padding: dp(60)
+
+            MDFillRoundFlatIconButton:
+                icon: "cctv"
+                text: "Cam"
+                on_press: root.toggle_camera()
+                disabled: "true"
+

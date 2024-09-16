@@ -1,0 +1,11 @@
+<IoT>:
+    BoxLayout:
+        orientation: 'vertical'
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Alternar luz'
+                on_press: root.alternarLuz()
+            Image:
+                source: root.imagen_luz
+                size: self.texture_size
