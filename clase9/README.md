@@ -1,6 +1,6 @@
 # Implementación de una aplicación MQTT
 
-## Sobre MQTT
+## 1. Sobre MQTT
 
 Dentro de los diferentes protocolos ([link](https://learn.adafruit.com/alltheiot-protocols)) usados en la industria IoT, el protocolo **MQTT (Message Queue Telemetry Transport)** ([link](https://mqtt.org/)) se ha convertido en uno de los mas populares. El protocolo MQTT (Message Queuing Telemetry Transport) es un protocolo diseñado para transferir mensajes mediante el uso de un modelo **publish and subscribe**. Mediante este modelo, es posible enviar mensajes a 0, 1 o multiples clientes.
 
@@ -18,7 +18,7 @@ Los mensajes entre los clientes son direccionados por el broker por medio del **
 * **publish**: en este caso el cliente envia información a broker para que esta sea distribuida a los demas clientes interesados con base en el nombre del **topic**.
 * **subscribe**: cuando se suscriben, los clientes indican al broker cuales son los **topic(s)** en los que estos se encuentran interesados, de manera que cualquier mensaje publicado por el broker es distribuido a los clientes que se encuentra **suscritos** (interesados) a dicho topic. Un cliente tambien puede **unsubscribe** a un tipico para parar de recibir mensajes desde el broker a traves de dicho topic.
 
-## Elementos necesarios
+## 2. Elementos necesarios
 
 Para trabajar con MQTT es necesario tener como minimo instalados los siguientes programas:
 1. **El broker**: El software que implementa el broker debe estar instalado en uno de los dispositivos de la red MQTT (normalmente un PC, una RPi, cualquier dispositivo de borde o incluso en la nube) para hacer posible el redireccionamiento de los mensajes. 
@@ -34,11 +34,11 @@ Antes de empezar implementar una red MQTT, asegurese de tener instalados los sig
    
 Despues de realizar esto, es bueno verificar el correcto funcionamiento de las aplicaciones instaladas realizando una prueba sencilla en la que se verifique el funcionamiento del broker y los clientes.
 
-## Implementación de clientes MQTT en las cosas
+## 3. Implementación de clientes MQTT en las cosas
 
 Por cosas hacemos referencia a los dispositivos que interactuan con el ambiente en la capa de percepción, en otras palabras las placas. En nuestro caso, como estamos trabajando con la placa **ESP32** es necesario instalar las librerias necesarias para que un ESP32 pueda funcionar como cliente en una red MQTT.
 
-### Instalación en Arduino
+### 3.1. Instalación en Arduino
 
 El repositorio de la libreria **EspMQTTClient** se encuentra en el siguiente [link](https://github.com/plapointe6/EspMQTTClient). Para llevar a cabo la instalación de esta libreria en el IDE de Arduino, siga los siguientes pasos:
 1. Abra el administrador de librerias: **Tools -> Manage Libraries...**
@@ -53,7 +53,7 @@ El repositorio de la libreria **EspMQTTClient** se encuentra en el siguiente [li
 
 Si todo esta bien, ya esta todo listo para realizar programas que permitan la comunición de la ESP32 usando MQTT empleando como IDE el Arduino.
 
-### Instalación en Platformio
+### 3.2. Instalación en Platformio
 
 La instalación en platformio se reduce simplemente a agregar la libreria MQTT (en nuestro caso se instalo la libreria **Arduino Client for MQTT** ([link](https://pubsubclient.knolleary.net/))) en el archivo de configuración **platformio.ini** (tal y como se ha hecho con las otras librerias). Este quedará de la siguiente forma: 
 
@@ -84,7 +84,7 @@ Sin embargo a continuación se explica como se realiza el procedimiento paso a p
 
 Si todo esta bien, ya es posible, para este proyecto, codificar programas que permitan la comunicación de la ESP32 por medio del protocolo MQTT usand platformio.
 
-### Pasos para implementar el protocolo MQTT en el ESP32
+### 3.3. Pasos para implementar el protocolo MQTT en el ESP32
 
 Una vez instaladas las librerias necesarias en el IDE, el suguiente paso consiste en la codificación de la aplicación. A continuación, se detallan los pasos para la implementación de la aplicación:
 1. Definir el hardware que se usara para la **cosa**, esto implica definir:
@@ -257,9 +257,9 @@ Si desea profundizar un poco sobre esto, le recomendamos mirar los siguientes tu
 * **MQTT Protocol Guide: Everything You Need to Know** ([link](https://cedalo.com/blog/complete-mqtt-protocol-guide/))
 * **Getting Started with MQTT and Arduino** ([link](https://cedalo.com/blog/mqtt-and-arduino-setup-guide/))
 * **Step-by-Step Tutorial on Enabling MQTT on ESP32 Module** ([link](https://cedalo.com/blog/enabling-esp32-mqtt/))
-* **ss**
 
-### Caso de prueba
+
+## 4. Caso de prueba
 
 Supongamos que se nos da el siguiente problema: Se desea implementar un programa en una ESP32 que mida la temperatura y que envie este valor, de manera periodica, cada 5 segundos empleando MQTT.
 
@@ -350,12 +350,12 @@ const double C = 0.0000000876741;
 
 
 /* ----- Wifi ----- */
-const char* ssid = "IoT";   // name of your WiFi network
-const char* password = "1245678h"; // password of the WiFi network
+const char* ssid = "SSID";   // name of your WiFi network
+const char* password = "SSID_PASS"; // password of the WiFi network
 WiFiClient wClient;
  
 /* ----- MQTT ----- */
-const char* mqttBroker = "192.168.43.55"; // IP address of your MQTT 
+const char* mqttBroker = "xxx.xxx.xxx.xxx"; // IP address of your MQTT 
 const char *ID = "UdeA_thing-001";  // Name of our device, must be unique
 // Topics
 const char *topic = "/home/room/temperature"; 
@@ -487,7 +487,7 @@ La siguiente figura resume la implementación realizada para el el ESP32 pueda t
 ![mqtt_red](mqtt_ejemplo_temp-all.png)
 
 
-## Prueba
+### 4.1. Prueba
 
 Para realizar el debug de la **cosa** (ESP32 que transmite la temperatura), vamos a realizar la siguiente implementación conectando un segundo cliente que despliegue los mensajes enviados por el ESP32. La red MQTT tendra para el caso la siguienete forma:
 
@@ -534,15 +534,37 @@ Luego, procedermos analizar el topic de interes:
 
 Como vemos en la figura anterior, los resultados son similares.
 
-## Simulación
+### 4.2. Simulación
 
-En construcción...
+La simulación del programa anterior se puede ejecutar en el siguiente [link](https://wokwi.com/projects/409420819079671809):
 
-## Actividad
+![simulacion](simulacion_ESP32-temperatura.png)
+
+Tengase en cuenta que respecto al ejemplo original se hicieron unas leves modificaciones en el codigo asociadas los siguientes parametros:
+* **`ssid`**: `"Wokwi-GUEST"`;
+* **`password`**: `""`
+* **`mqttBroker`**: `"test.mosquitto.org"`
+* **`topic`**: `"udea_home/room/temperature"`
+
+Para mirar que en efecto, el ESP32 (simulado) estuviera enviando información de la temperatura, se uso un cliente que se suscribe al topic `udea_home/room/temperature` para ver la información enviada al broker:
+
+* **Cliente `mosquitto_sub`**: La siguiente figura muestra la información relacionada:
+  
+  ![mosquito_sub](mosquitto_sub_test1.png)
+  
+* **Cliente `MQTT Explorer`**: Primero, es necesario conectar el cliente al broker.
+  
+  ![mqtt_explorer1](mqtt_explorer_test1.png)
+
+  Luego, se puede explorar el topico al que se envia la información:
+  
+  ![mqtt_explorer1](mqtt_explorer_test2.png)
+
+### 4.3. Actividad
 
 Hagalo usted mismo replicando el proceso anteriormente mostrado. Para ello descargue el codigo del proyecto implementado en platformio **ESP32_Temp-NTC_MQTT** ([link](ESP32_Temp-NTC_MQTT.zip)), modifiquelo de acuerdo con los parametros de la red y observe el programa.
 
-## Ejemplos
+## 5. Ejemplos
 
 A continuación se muestran algunos ejemplos adicionales en los cuales se usa el protocolo MQTT.
 1. **Ejemplo 1**: Encendido y apagado de una lampara empleando el protocolo MQTT. ([link](ejemplo1/README.md))
