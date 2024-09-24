@@ -15,13 +15,13 @@ Tal y como se muestra en la figura, el broker se encuentra ejecutandose en un co
 
 ## Implentación de las cosas
 
-### Red MQTT
+### 1. Red MQTT
 
 Para este caso, el **topic tree** a implementar es el siguiente:
 
 ![topic_tree](topic_tree-ejemplo2.png)
 
-### Thing 1 - ESP-PIR 
+### 1.1. Thing 1 - ESP-PIR 
 
 1. **Hardware**:
    
@@ -260,7 +260,7 @@ La siguiente figura muestra el debug el ESP conectado al pir si se hubiera usado
 
 ![debug-pir_MQTT-explore](mqtt_ejemplo2_debug_pir-ESP-explorer.png)
 
-### Thing 2 - ESP-ALARM
+### 1.2. Thing 2 - ESP-ALARM
 
 1. **Hardware**:
    
@@ -494,16 +494,18 @@ La siguiente figura muestra el debug de la alarma si se hubiera usado el MQTT ex
 
 ![debug-alarma_MQTT-explore](mqtt_ejemplo2_debug_alarm-ESP-explorer.png)
 
-## Integración de las cosas
+## 2. Integración de las cosas
 
 Para hacer el debug completo de todo a la vez, se ponen a funcionar de manera simultanea todas las cosas y por medio de un cliente se puede observar el uso de mensajes entre las cosas implicadas:
 
 ![debug](mqtt-ejemplo2-local-debug.png)
 
-## Simulaciones
+## 3. Simulaciones
 
 * **Thing 1 (ESP-PIR)**: [link](https://wokwi.com/projects/378574466884158465)
 * **Thing 2 (ESP-ALARM)**: [link](https://wokwi.com/projects/378591120304957441)
+
+![ejemplo_sim](ejemplo2_sim.png)
 
 ## Referencias
 
