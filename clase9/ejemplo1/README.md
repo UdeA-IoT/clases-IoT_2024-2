@@ -4,9 +4,9 @@ Realizar una implementación sencilla que permita el encedido y apagado del led 
 
 ![caso_test](mqtt_caso.png)
 
-## Thing - ESP32
+## 1. Thing - ESP32
 
-### Red MQTT
+### 1.1. Red MQTT
 
 Para este caso, el **topic tree** a implementar es el siguiente:
 
@@ -200,7 +200,7 @@ void loop() {
 }
 ```
 
-## Prueba
+### 1.2. Prueba
 
 En la siguiente figura se muestra el monitor serial de la **cosa** (ESP32):
 
@@ -230,11 +230,22 @@ La saluda se muestra a continuación:
 ![](mosquitto_sub_test.png)
 
 
-## Simulacion
+### 1.3. Simulacion
 
-La simulación de este ejemplo se encuentra en el siguiente [link](https://wokwi.com/projects/378532525347307521)
+El procedimiento es similar al que se llevo a cabo en las pruebas. Para este caso, la simulación de este ejemplo se encuentra en el siguiente [link](https://wokwi.com/projects/378532525347307521)
 
-## Controlando el encendido y apagado del led desde python
+![sim-ESP32-lamp](esp32_lamp-sim.png)
+
+En el caso, mediante el uso de los clientes de mosquitto,fue posible enviar mensajes al ESP32 de la simulación tal y como se mostraba en la prueba real.
+
+![mosquitto_clients_sim](mosquito_clients_sim.png)
+
+El comportamiento al emplear otro cliente como el **MQTT Explorer** es similar. A continuación se muestra un posible resultado:
+
+![mqtt_explorer_sim](mqtt_explorer-sim.png)
+
+
+## 2. Controlando el encendido y apagado del led desde python
 
 El siguiente ejemplo muestra el control usando hecho en python. En construcción...
 
@@ -296,6 +307,11 @@ while True:
         print("--> OPCION INVALIDA\n")
 mqtt_client.loop_stop()
 ```
+
+A continuación se muestra el resultado de ejecutar el cliente hecho en python usando el simulador ([link](https://wokwi.com/projects/378532525347307521)). Note que el comportamiento esperado es independendiente del cliente que envie los resultados:
+
+![esp_lamp_python-sim](esp32_lamp_python-sim.png)
+
 
 ## Referencias
 
