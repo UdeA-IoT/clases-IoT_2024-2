@@ -5,7 +5,7 @@
 * https://projects.raspberrypi.org/en/projects/physical-computing/
 
 
-## Conector GPIO
+## 1. Conector GPIO
 
 En mayoria de los modelos de la Raspberry Pi los pines usan el mismo conector (header) de 40 pines (J8) tal y como se muestra en la siguiente figura:
 
@@ -41,7 +41,7 @@ En el conector se manejan tres tipos de pines los cuales son:
    <img src = "uart-spi-i2c.png">
    </p>
 
-## Pines de propósito general
+## 2. Pines de propósito general
 
 Los pines de propósito general GPIO (general-purpose input/output (GPIO)) hacen referencia a un conjunto de pines genéricos en un circuito integrado cuyo comportamiento puede ser definido mediante programación.
 
@@ -68,9 +68,9 @@ Estos se caracterizan por ser pines bidireccionales (por lo que pueden ser progr
   </table>
 </p>
 
-## Pines de propósito especial
+## 3. Pines de propósito especial
 
-### UART - Universal Asynchronous Receiver-Transmitter
+### 3.1. UART - Universal Asynchronous Receiver-Transmitter
 
 Estos pines permiten la comunicación entre la rPi y dispositivos de hardware externo. 
 
@@ -85,16 +85,15 @@ Por ejemplo, el UART es una manera útil y directa de comunicar Raspberry Pi con
 </p>
 
 
-### I2C: Inter-Integrated Circuit
+### 3.2. I2C: Inter-Integrated Circuit
 
 El I2C es un bus de datos serial desarrollado en 1982 por Philips para la comunicación entre diferentes partes de un circuito. En el caso de la Raspberry Pi, los pines de I2C son una manera extremadamente útil de permitir la comunicación entre esta con distintos tipos de periféricos externos, desde el expansor de puertos digital MCP23017, hasta un microcontrolador o incluso otra rPi.
 
 <p align = "center">
-   <img src = "i2c_rpi.png">
+   <img src = "i2c_rPi.png">
 </p>
 
-
-### SPI: Serial Peripheral Interface
+### 3.3. SPI: Serial Peripheral Interface
 
 Conocido como el bus serial de cuatro cables. El SPI permite encadenar múltiples dispositivos desde un solo conjunto de pines para lo cual asigna a cada chip un pin distinto de Chip Select.
 
@@ -103,19 +102,29 @@ Conocido como el bus serial de cuatro cables. El SPI permite encadenar múltiple
 </p>
 
 
-## Advertencias
+## 4. Advertencias
 
-* Una advertencia previa muy importante antes de empezar: **los pines GPIO no están protegidos** frente a voltajes excesivos de entrada o amperajes excesivos de salida. Si se conecta algo de manera inapropiada, **se puede quemar la RPi**. Antes de conectar algún montaje es necesario tener seguridad que se sabe lo que se hace.
-* No coloque más de 3.3 V en una señal de entrada ninguno de los pines de la GPIO.
-* En un pin de salida no coloque una carga que consuma más de 16 mA. 
-* En los conectores GPIO de 26 pines (RPi 1) la suma de las corrientes de todas las salidas no debe superar 50 mA. 
-* En los conectores GPIO (Rpi 2, Rpi3) la suma de las salidas no debe superar los 100mA.
-* Cuando utilice LEDs, 3 mA es suficiente para encenderlos. Para esto coloque el led con una resistencia en serie de 470 Ω.
-* Cuando la Raspberry esté encendida NO toque el conector GPIO con un destornillador o cualquier objeto metálico. 
-* No alimente la unidad con más de 5 V En los pines de 5V no coloque una carga que requiera más de 250 mA.
-* Los cortocircuitos (conectando +3v o +5v desde un pin de alimentación o un pin de salida directamente a tierra) pueden dañar la RPi.
-* Aunque existen pines de alimentación, hay un límite en la cantidad de corriente que estos pueden proporcionar de manera que puede ser posible que se necesite una fuente de alimentación externa si se está controlando un circuito que necesita algo mas que unos cuantos LEDs e interruptores.
-* Nunca conecte un motor o un speaker directamente a un GPIO pin. El electrical feedback puede dañarlo.
+Una advertencia previa muy importante antes de empezar: **los pines GPIO no están protegidos** frente a voltajes excesivos de entrada o amperajes excesivos de salida. Si se conecta algo de manera inapropiada, **se puede quemar la RPi**. Antes de conectar algún montaje es necesario tener seguridad que se sabe lo que se hace.
+
+La siguiente tabla resume algunas recomendaciones importates:
+
+| **Recomendación**                                      | **Descripción**                                                                                                                                             |
+|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Voltajes de GPIO**                                   | Los pines GPIO funcionan a 3.3V. Evite conectar dispositivos de 5V sin reguladores de nivel lógico para prevenir daños.                                       |
+| **Corriente máxima de GPIO**                           | Los pines GPIO soportan hasta 16mA por pin y 50mA en total. Use transistores o relés para controlar dispositivos de alto consumo.                             |
+| **Uso de resistencias**                                | Siempre use resistencias de protección (330Ω a 1kΩ) al conectar LEDs o botones para limitar la corriente.                                                     |
+| **Protección contra picos de voltaje**                 | Use diodos flyback en dispositivos como motores para evitar que los picos de voltaje dañen la Raspberry Pi.                                                   |
+| **Fuentes de alimentación externas**                   | Dispositivos de alto consumo (motores, pantallas) deben usar fuentes de alimentación externas, los puertos GPIO solo son usados para su control.                                      |
+| **Protección contra cortocircuitos**                   | Revise bien las conexiones y evite cables sueltos que puedan causar cortocircuitos en los pines GPIO.                                                         |
+| **Desconectar periféricos en caliente**                | Apague la Raspberry Pi antes de conectar o desconectar dispositivos para evitar daños eléctricos por picos de corriente.                                       |
+| **Condiciones ambientales**                            | Evite trabajar en ambientes con humedad o estática. Use pulseras antiestáticas cuando manipule los componentes.                                            |                                                                               |
+| **Transformadores y reguladores de voltaje**           | Asegúrate de que los circuitos de mayor potencia usen fuentes de alimentación estables y reguladores de voltaje.                                              |
+| **Pruebas antes de conectar**                          | Prueba tus circuitos en un protoboard antes de conectarlos a la Raspberry Pi para verificar que no haya riesgos de cortocircuito o sobrecorriente.             |
+| **Fusibles y reguladores de voltaje**                  | Instala fusibles y reguladores de voltaje para proteger la Raspberry Pi de sobrecorrientes y picos de tensión.                                                |
+| **Convertidores de nivel lógico**                      | Usa convertidores de nivel lógico cuando te comuniques con dispositivos de 5V desde los pines GPIO de 3.3V.                                                   |
+| **Uso de relés y optoacopladores**                     | Usa relés u optoacopladores para aislar eléctricamente la Raspberry Pi cuando controlas dispositivos de alto voltaje.                                         |
+| **Capacitores de filtrado**                            | Agrega capacitores de filtrado para suavizar la señal de voltaje si notas inestabilidad en el sistema por ruidos eléctricos.                                   |
+
 
 
 > **Importante**<br>
