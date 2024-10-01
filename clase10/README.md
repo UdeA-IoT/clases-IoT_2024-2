@@ -1,6 +1,11 @@
 # Clase 10
 
 
+
+
+
+<!--
+
 Seguir la siguiente guia: 
 * https://www.raspberrypi.com/documentation/computers/getting-started.html
 * https://www.raspberrypi.com/documentation/computers/raspberry-pi.html
@@ -24,3 +29,4 @@ En construcción...
 * https://www.sparkfun.com/products/17380
 * https://raspberry-valley.azurewebsites.net/
 * https://realpython.com/python-raspberry-pi/ 
+-->
