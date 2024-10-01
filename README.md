@@ -55,11 +55,17 @@ La siguiente tabla muestra la lista de clases asociadas a esta sección:
 |9|05/09/2024|Protocolos de comunicación entre los componentes de un nodo [Parte 2]|[[link]](./clase6/)||
 |10|10/09/2024|Conexión wifi para el ESP32 |[[link]](./clase7/)||
 |11|12/09/2024|Plataformas IoT |[[link]](./clase8/)||
-
+|12|17/09/2024|Plataformas IoT |[[link]](./clase8/)||
 
 ### Capa de Red
 
-En construcción...
+|Clase|Fecha|Tema|Recursos|Observaciones|
+|---|---|---|---|---|
+|13|19/09/2024|Introducción al protocolo MQTT (Parte 1) |[[link]](./clase9/)||
+|14|24/09/2024|Introducción al protocolo MQTT (Parte 1) |[[link]](./clase9/)||
+|15|26/09/2024|Introducción a la rPi|[[link]](./clase10/)||
+|16|01/10/2024|Introducción a la rPi |[[link]](./clase10/)||
+|17|03/10/2024|Uso de los pines de proposito general (GPIO) en la rPi |[[link]](./clase11/)||
 
 ### Capa de Aplicación
 
