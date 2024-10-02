@@ -2,6 +2,11 @@
 
 Cosas tomadas de la pagina de rPi.
 
+* https://trinket.io/sense-hat
+* https://www.raspberrypi.org/blog/desktop-sense-hat-emulator/
+* https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/2
+* https://trinket.io/sense-hat
+
 ## Setting up
 
 You have completed a number of computing projects now, so I will leave some of the details to you. As a reminder, here are the steps you need to take to set up the sensor in your program:
@@ -96,6 +101,11 @@ while True:
 
 ## Camara:
 
+* https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/2
+* https://sense-emu.readthedocs.io/en/v1.1/#
+* https://www.raspberrypi.com/news/sense-hat-emulator/
+* https://www.raspberrypi.org/blog/desktop-sense-hat-emulator/
+* https://atareao.es/tutorial/raspberry-pi-400/sense-hat-emulator/
 * https://www.raspberrypi.com/news/a-hedgehog-cam-or-two/
 * https://iancarpenter.dev/2016/08/28/a-step-by-step-guide-to-building-a-raspberry-pi-hedgehog-camera/
 * https://blog.adafruit.com/2022/12/15/outdoor-case-raspberry-pi-zero-for-hedgehog-house-3dthursday-3dprinting/

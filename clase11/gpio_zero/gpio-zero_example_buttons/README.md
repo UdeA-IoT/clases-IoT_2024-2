@@ -134,6 +134,8 @@ To Do...
 
 Un **juego de reacción** es un juego que consiste en probar el tiempo de reacción del jugador ante un estímulo determinado (visual, auditivo o tactil) que de presenta en forma inesperada. El siguiente programa muestra como se implementa en la RPi un juego de reacción tipico.
 
+> **Nota**: La implementación de este juego mejor implementada y explicada en el siguiente [link](https://projects.raspberrypi.org/en/projects/python-quick-reaction-game)
+
 ### Hardware
 
 La siguiente tabla muestra los componentes principales del circuito a montar:

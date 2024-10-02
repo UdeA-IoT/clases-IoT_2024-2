@@ -51,13 +51,14 @@
 
 1. Ejemplo con leds [[link]](gpio-zero_example_leds/)
 2. Ejemplo con botones [[link]](gpio-zero_example_buttons/)
+3. Ejemplo con buzzer [[link]](gpio-zero_example_buzzer/)
 
 No se han documentado
 
-3. Ejemplo con buzzer [[link]](gpio-zero_example_buzzer/)
-4. Ejemplo usando el teclado [[link]](gpio-zero_example_keyboard/)
-5.  Ejemplo con sensores [[link]](gpio-zero_example_sensors/)
-6.  Ejemplo con servos [[link]](gpio-zero_example_servos/)
+
+1. Ejemplo usando el teclado [[link]](gpio-zero_example_keyboard/)
+2.  Ejemplo con sensores [[link]](gpio-zero_example_sensors/)
+3.  Ejemplo con servos [[link]](gpio-zero_example_servos/)
 
 ## Referencias
 
