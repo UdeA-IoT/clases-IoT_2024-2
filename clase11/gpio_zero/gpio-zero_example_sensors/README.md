@@ -1,22 +1,33 @@
 # Sensores
 
-Cosas tomadas de la pagina de rPi.
+El uso de sensores y actuadores con la RPi se reduce a una conexión a los pines teniendo en cuenta las consideraciones para garantizar el funcionamiento seguro y eficiente de estos. 
 
-* https://trinket.io/sense-hat
-* https://www.raspberrypi.org/blog/desktop-sense-hat-emulator/
-* https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/2
-* https://trinket.io/sense-hat
+La RPi cuenta con gran cantidad de accesorios para exteneder su funcionalidad. Uno de estos es el [Sense HAT](https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat) el cual contiene diferentes tipos de sensores y una matriz de LED RGB de 8x8 para facilitar la diseñado para facilitar la recolección de datos del entorno y su visualización.
 
-## Setting up
+![sense_hat](sense-hat.png)
 
-You have completed a number of computing projects now, so I will leave some of the details to you. As a reminder, here are the steps you need to take to set up the sensor in your program:
-* To interact with a component, you have to import a class from the GPIO Zero library
-* To use the class you must create an object, store it in a variable, and provide a GPIO pin for the specific component
+Una de las ventajas del sense hat es que puede ser simulado de modo que se pueden hacer pruebas con este aunque no se tenga mediante el uso de un emulador:
+* **Sense HAT Emulator**: Esta aplicación se puede instalar en la ultima versión del Rapbian ([instrucciones](https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/1)) permitiendo emular el Sense Hat.
+  
+  ![pi_emulator](pi-emulator.png)
 
-## Sense hat
+  Para mayor información sobre el emulador puede consultar la documentación ([link](https://sense-emu.readthedocs.io/en/v1.1/#))
+
+* **Online sense HAT emulator**: Este es un emulador que puede ser usado desde el navegador.
+  
+  ![sense-hat-trinket](sense-hat-trinket.png)
+  
+  Para usarlo, abra el navegador y vaya a la dirección https://trinket.io/sense-hat y borre el demo existente el cual se encuentra codificado en el editor. Para almacenar el trabajo realizado puede crear una cuenta gratuita ([](https://trinket.io/signup)) en Trinket.
+  
+> **Nota**: Para mas información sobre el **Sense HAT** puede empezar consultando la documentación de la fundación Raspberry Pi ([link](https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/))
 
 
-Ejemplo 1: https://trinket.io/python/667839c0c4
+## Algunos ejemplos
+
+A continuación, se encuentran algunos ejemplos donde se hace uso del emulador online para interactuar con sensores.
+
+
+**Ejemplo 1** [[link]](https://trinket.io/python/667839c0c4)
 
 ```python
 from sense_hat import SenseHat
@@ -28,7 +39,7 @@ temperature = round(sense.temperature, 1)
 sense.show_message("It is " + str(temperature) + " degrees")
 ```
 
-Ejemplo 2: https://trinket.io/python/9dbff599d9
+**Ejemplo 2** [[link]](https://trinket.io/python/9dbff599d9)
 
 ```python
 from sense_hat import SenseHat
@@ -43,7 +54,7 @@ pressure = round(sense.pressure, 1)
 sense.show_message("It is " + str(pressure) + " hPa")
 ```
 
-Ejemplo 3: https://trinket.io/python/7c798bd6b2
+**Ejemplo 3** [[link]](https://trinket.io/python/7c798bd6b2)
 
 
 ```python
@@ -70,17 +81,11 @@ elif temperature >= 35 or temperature <= -15:
     sense.show_message("The temperature is extreme!")
 ```
 
-Ejemplo 4 - Make an outfit recommender: https://trinket.io/python/cca7dc0dd1
+**Ejemplo 4 - Make an outfit recommender** [[link]](https://trinket.io/python/cca7dc0dd1): Realice un programa utilizando el emulador de Sense HAT que sugiera un atuendo dependiendo de la temperatura y la humedad.
 
-Create a program using the Sense HAT emulator that suggests an outfit depending on the temperature and humidity.
-
-Your program should suggest:
-
-* A thick winter jacket when the temperature is under 10°C and the humidity is over 35%
-* A hat when the temperature is at least 22°C OR the humidity is over 40%
-
-What other outfit suggestions could your program make?
-
+El programa debería sugerir como minimo:
+* Una chaqueta de invierno gruesa cuando la temperatura sea inferior a 10°C y la humedad sea superior al 35%.
+* Un sombrero cuando la temperatura sea al menos de 22°C O la humedad sea superior al 40%.
 
 ```python
 from sense_hat import SenseHat
@@ -99,7 +104,7 @@ while True:
     sense.show_message("You need a hat")
 ```
 
-## Camara:
+## Referencias
 
 * https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/2
 * https://sense-emu.readthedocs.io/en/v1.1/#
@@ -111,6 +116,10 @@ while True:
 * https://blog.adafruit.com/2022/12/15/outdoor-case-raspberry-pi-zero-for-hedgehog-house-3dthursday-3dprinting/
 * https://makezine.com/article/craft/photography-video/spy-on-garden-critters-with-raspberry-pi-powered-night-vision/
 * https://www-users.york.ac.uk/~mjf5/hedgehog_camera/index.html
+* https://trinket.io/sense-hat
+* https://www.raspberrypi.org/blog/desktop-sense-hat-emulator/
+* https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/2
+* https://trinket.io/sense-hat
 
 
 
