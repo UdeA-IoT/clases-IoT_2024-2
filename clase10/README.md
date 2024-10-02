@@ -1,7 +1,8 @@
 # Clase 10
 
 
-
+* https://docs.sunfounder.com/projects/raphael-kit/en/latest/install_setup_os/installing_the_os.html
+* https://docs.sunfounder.com/projects/pironman-u1/en/latest/home_assistant/home_assistant.html
 
 
 <!--
