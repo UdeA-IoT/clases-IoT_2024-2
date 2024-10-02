@@ -41,6 +41,9 @@ En el conector se manejan tres tipos de pines los cuales son:
    <img src = "uart-spi-i2c.png">
    </p>
 
+> **Importante**<br>
+> En la siguiente pagina puede consultar el diagrama de pines para diferentes versiones de la rPi. https://pinout.xyz/
+
 ## 2. Pines de propósito general
 
 Los pines de propósito general GPIO (general-purpose input/output (GPIO)) hacen referencia a un conjunto de pines genéricos en un circuito integrado cuyo comportamiento puede ser definido mediante programación.
@@ -117,21 +120,14 @@ La siguiente tabla resume algunas recomendaciones importates:
 | **Fuentes de alimentación externas**                   | Dispositivos de alto consumo (motores, pantallas) deben usar fuentes de alimentación externas, los puertos GPIO solo son usados para su control.                                      |
 | **Protección contra cortocircuitos**                   | Revise bien las conexiones y evite cables sueltos que puedan causar cortocircuitos en los pines GPIO.                                                         |
 | **Desconectar periféricos en caliente**                | Apague la Raspberry Pi antes de conectar o desconectar dispositivos para evitar daños eléctricos por picos de corriente.                                       |
-| **Condiciones ambientales**                            | Evite trabajar en ambientes con humedad o estática. Use pulseras antiestáticas cuando manipule los componentes.                                            |                                                                               |
-| **Transformadores y reguladores de voltaje**           | Asegúrate de que los circuitos de mayor potencia usen fuentes de alimentación estables y reguladores de voltaje.                                              |
-| **Pruebas antes de conectar**                          | Prueba tus circuitos en un protoboard antes de conectarlos a la Raspberry Pi para verificar que no haya riesgos de cortocircuito o sobrecorriente.             |
+| **Condiciones ambientales**  | Evite trabajar en ambientes con humedad o estática. Use pulseras antiestáticas cuando manipule los componentes.  |                             
+| **Pruebas antes de conectar**                          | Pruebe us circuitos en un protoboard antes de conectarlos a la Raspberry Pi para verificar que no haya riesgos de cortocircuito o sobrecorriente.             |
 | **Fusibles y reguladores de voltaje**                  | Instala fusibles y reguladores de voltaje para proteger la Raspberry Pi de sobrecorrientes y picos de tensión.                                                |
 | **Convertidores de nivel lógico**                      | Usa convertidores de nivel lógico cuando te comuniques con dispositivos de 5V desde los pines GPIO de 3.3V.                                                   |
 | **Uso de relés y optoacopladores**                     | Usa relés u optoacopladores para aislar eléctricamente la Raspberry Pi cuando controlas dispositivos de alto voltaje.                                         |
 | **Capacitores de filtrado**                            | Agrega capacitores de filtrado para suavizar la señal de voltaje si notas inestabilidad en el sistema por ruidos eléctricos.                                   |
 
-
-
-> **Importante**<br>
-> En la siguiente pagina puede consultar el diagrama de pines para diferentes versiones de la rPi. https://pinout.xyz/
-
-
-## Control de puertos
+## 5. Control de puertos
 
 Para el control de pines GPIO en la Raspberry Pi existen diferentes bibliotecas dentro de las que se destacan:
 * **GPIO Zero**: Esta es la opción ideal para empezar pues permite gestionar de manera mas facil e intuitiva el control de los puertos. Para mas información puede consultar la documentación en el siguiente [link](https://gpiozero.readthedocs.io/en/latest/).

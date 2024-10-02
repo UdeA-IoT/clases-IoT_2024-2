@@ -13,6 +13,8 @@ La siguiente tabla muestra los componentes principales del circuito a montar:
 |1|1|rPi (3 o 4)||
 |2|1|Pulsador||
 
+<br>
+
 > **Archivo Fritzing** <br>
 > El archivo fritzing asociado al ejemplo es [button_internal_pullUp.fzz](button_internal_pullUp.fzz)
 

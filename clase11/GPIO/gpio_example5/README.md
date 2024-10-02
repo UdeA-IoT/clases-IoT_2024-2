@@ -15,6 +15,8 @@ La siguiente tabla muestra los componentes principales del circuito a montar:
 |2|1|Resistencia $470 \Omega$||
 |3|1|Led||
 
+<br>
+
 > **Archivo Fritzing** <br>
 > El archivo fritzing asociado al ejemplo es [led_out.fzz](led_out.fzz)
 
